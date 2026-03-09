@@ -4,7 +4,7 @@
 (function () {
     'use strict';
 
-    var APP_URL = 'http://pathpro.test';
+    var APP_URL = 'https://app.pathpro.co';
     var plans = [];
     var isYearly = false;
 

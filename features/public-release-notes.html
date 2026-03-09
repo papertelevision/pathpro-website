@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Release Notes for Product Teams &mdash; PathPro</title>
+  <meta name="description" content="Ship features, celebrate contributors, and keep your community in the loop with beautiful, interactive release notes. Free forever.">
+  <meta name="keywords" content="release notes, changelog, product updates, community shoutouts, version history, release notifications, interactive changelog, free release notes tool">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pathpro.app/features/public-release-notes">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Interactive Release Notes for Product Teams &mdash; PathPro">
+  <meta property="og:description" content="Ship features, celebrate contributors, and keep your community in the loop with beautiful, interactive release notes. Free forever.">
+  <meta property="og:url" content="https://pathpro.app/features/public-release-notes">
+  <meta property="og:site_name" content="PathPro">
+  <meta property="og:image" content="https://pathpro.app/images/overview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Interactive Release Notes for Product Teams &mdash; PathPro">
+  <meta name="twitter:description" content="Ship features, celebrate contributors, and keep your community in the loop with beautiful, interactive release notes. Free forever.">
+  <meta name="twitter:image" content="https://pathpro.app/images/overview.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/features-releases.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PathPro Release Notes",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Interactive release notes for product teams. Ship features, celebrate contributors, and keep your community in the loop with beautiful, public release pages — free forever.",
+    "url": "https://pathpro.app/features/public-release-notes",
+    "featureList": [
+      "Interactive release notes",
+      "Community shoutouts",
+      "Version history",
+      "Release notifications",
+      "Contributor tagging",
+      "Searchable release history",
+      "Release drafting with PathFox AI",
+      "Public release pages",
+      "Free forever plan"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free plan available. No credit card required."
+    }
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav nav--light-dropdowns" id="nav" role="banner">
+    <nav class="nav__container" aria-label="Main navigation">
+      <a href="../index.html" class="nav__logo" aria-label="PathPro home">
+        <img src="../images/logo_header.png" alt="PathPro" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Features
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="feature-voting.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></span>
+                <span><span class="nav__dropdown-title">Validate</span><span class="nav__dropdown-desc">Let your users tell you what they want.</span></span>
+              </a>
+              <a href="../features/tasks.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M10 4v16"/></svg></span>
+                <span><span class="nav__dropdown-title">Build</span><span class="nav__dropdown-desc">AI-driven task management tools.</span></span>
+              </a>
+              <a href="public-roadmaps.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <span><span class="nav__dropdown-title">Inform</span><span class="nav__dropdown-desc">Roadmaps, public and internal.</span></span>
+              </a>
+              <a href="public-release-notes.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+                <span><span class="nav__dropdown-title">Ship</span><span class="nav__dropdown-desc">Announce each win, celebrate together.</span></span>
+              </a>
+              <a href="provide-support.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/><path d="M18 17a4 4 0 0 1-4 4h-2a1 1 0 0 1 0-2h2a2 2 0 0 0 2-2"/></svg></span>
+                <span><span class="nav__dropdown-title">Provide Support</span><span class="nav__dropdown-desc">Boost customer tech support.</span></span>
+              </a>
+              <a href="analyze-feedback.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+                <span><span class="nav__dropdown-title">Analyze</span><span class="nav__dropdown-desc">Track growth, sentiment, and team performance.</span></span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Resources
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel nav__dropdown-panel--compact" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="../about.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span><span class="nav__dropdown-title">About</span><span class="nav__dropdown-desc">Meet our team.</span></span></a>
+              <a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span><span class="nav__dropdown-title">Docs</span><span class="nav__dropdown-desc">Learn how to use PathPro.</span></span></a>
+              <a href="../blog.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span><span><span class="nav__dropdown-title">Blog</span><span class="nav__dropdown-desc">Let&rsquo;s talk product development.</span></span></a>
+              <a href="#" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span><span><span class="nav__dropdown-title">Get Support</span><span class="nav__dropdown-desc">Submit a support ticket.</span></span></a>
+              <a href="../contact.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span><span class="nav__dropdown-title">Contact</span><span class="nav__dropdown-desc">Talk to our team.</span></span></a>
+              <a href="../pathpro-official-roadmap.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></span><span><span class="nav__dropdown-title">Our Roadmap</span><span class="nav__dropdown-desc">See what&rsquo;s coming next.</span></span></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      </ul>
+      <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-sm nav__cta">Get Started Free</a>
+      <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><span class="mobile-menu__product-label">Product</span></li>
+      <li><a href="feature-voting.html" class="mobile-menu__product-item">Validate</a></li>
+      <li><a href="../features/tasks.html" class="mobile-menu__product-item">Build</a></li>
+      <li><a href="public-roadmaps.html" class="mobile-menu__product-item">Inform</a></li>
+      <li><a href="public-release-notes.html" class="mobile-menu__product-item">Ship</a></li>
+      <li><a href="provide-support.html" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="analyze-feedback.html" class="mobile-menu__product-item">Analyze</a></li>
+      <li><a href="../pathfox.html">Meet PathFox</a></li>
+      <li><span class="mobile-menu__product-label">Resources</span></li>
+      <li><a href="../about.html" class="mobile-menu__product-item">About</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Docs</a></li>
+      <li><a href="../blog.html" class="mobile-menu__product-item">Blog</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      <li><a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary">Get Started Free</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="frelease-hero">
+      <div class="container">
+        <div class="frelease-hero__content">
+          <span class="frelease-hero__badge">Release Notes</span>
+          <h1 class="frelease-hero__title">Ship it. Share it. Celebrate it.</h1>
+          <div class="frelease-hero__pills">
+            <span class="frelease-hero__pill">Release Notes</span>
+            <span class="frelease-hero__pill">Shoutouts</span>
+            <span class="frelease-hero__pill">Version History</span>
+            <span class="frelease-hero__pill">Notifications</span>
+          </div>
+        </div>
+        <div class="frelease-hero__visual animate-on-scroll">
+          <div class="frelease-board">
+            <div class="frelease-board__chrome">
+              <span class="frelease-board__chrome-dot" style="background:#EF4444"></span>
+              <span class="frelease-board__chrome-dot" style="background:#F59E0B"></span>
+              <span class="frelease-board__chrome-dot" style="background:#10B981"></span>
+              <span class="frelease-board__chrome-url">yourproduct.pathpro.co</span>
+            </div>
+            <div class="frelease-board__topnav">
+              <div class="frelease-board__topnav-project">
+                <span class="frelease-board__project-dot"></span>
+                <span>Product Roadmap</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+              <nav class="frelease-board__tabs">
+                <span class="frelease-board__tab">Feature Voting</span>
+                <span class="frelease-board__tab">Roadmap</span>
+                <span class="frelease-board__tab frelease-board__tab--active">Release Notes</span>
+              </nav>
+              <div class="frelease-board__topnav-actions">
+                <span class="frelease-board__topnav-btn">Submit Feedback</span>
+                <span class="frelease-board__topnav-btn">Support</span>
+              </div>
+            </div>
+            <div class="frelease-releases">
+              <!-- Release Entry 1 (expanded) -->
+              <div class="frelease-release frelease-release--expanded">
+                <div class="frelease-release__header">
+                  <span class="frelease-release__version">v2.4.0</span>
+                  <span class="frelease-release__title">Dark Mode, CSV Export &amp; Keyboard Shortcuts</span>
+                  <span class="frelease-release__date">Feb 28, 2026</span>
+                  <span class="frelease-release__chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+                </div>
+                <div class="frelease-release__body">
+                  <p class="frelease-release__desc">This release brings some of our most requested features to life. Thanks to everyone who voted and gave feedback!</p>
+                  <div class="frelease-release__features">
+                    <div class="frelease-release__feature">
+                      <span class="frelease-release__feature-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+                      <span><strong>Dark Mode</strong> &mdash; Full dark mode support across all views including dashboard, boards, and settings.</span>
+                    </div>
+                    <div class="frelease-release__feature">
+                      <span class="frelease-release__feature-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span>
+                      <span><strong>CSV Export</strong> &mdash; Export tasks, feedback, and analytics data to CSV with one click.</span>
+                    </div>
+                    <div class="frelease-release__feature">
+                      <span class="frelease-release__feature-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01"/><path d="M10 8h.01"/><path d="M14 8h.01"/><path d="M18 8h.01"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/><path d="M7 16h10"/></svg></span>
+                      <span><strong>Keyboard Shortcuts</strong> &mdash; Navigate boards, create tasks, and manage items without touching your mouse.</span>
+                    </div>
+                  </div>
+                  <div class="frelease-release__shoutouts">
+                    <span class="frelease-release__shoutouts-label">Community Shoutouts</span>
+                    <div class="frelease-release__shoutout-row">
+                      <div class="frelease-release__shoutout-list">
+                        <div class="frelease-release__shoutout">
+                          <img class="frelease-release__shoutout-avatar" src="../images/jordan.jpg" alt="Jordan">
+                          <span class="frelease-release__shoutout-name">@jordan</span>
+                        </div>
+                        <div class="frelease-release__shoutout">
+                          <img class="frelease-release__shoutout-avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                          <span class="frelease-release__shoutout-name">@sarah</span>
+                        </div>
+                        <div class="frelease-release__shoutout">
+                          <img class="frelease-release__shoutout-avatar" src="../images/marcus.jpg" alt="Marcus">
+                          <span class="frelease-release__shoutout-name">@marcus</span>
+                        </div>
+                      </div>
+                      <span class="frelease-release__thanks-pill">Thanks to our community for the feedback!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Release Entry 2 (collapsed) -->
+              <div class="frelease-release">
+                <div class="frelease-release__header">
+                  <span class="frelease-release__version">v2.3.0</span>
+                  <span class="frelease-release__title">Comment Threads &amp; Activity Log</span>
+                  <span class="frelease-release__date">Feb 14, 2026</span>
+                  <span class="frelease-release__chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+                </div>
+              </div>
+              <!-- Release Entry 3 (collapsed) -->
+              <div class="frelease-release">
+                <div class="frelease-release__header">
+                  <span class="frelease-release__version">v2.2.0</span>
+                  <span class="frelease-release__title">Public Feature Voting &amp; Custom Subdomains</span>
+                  <span class="frelease-release__date">Jan 30, 2026</span>
+                  <span class="frelease-release__chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+                </div>
+              </div>
+              <!-- Release Entry 4 (collapsed) -->
+              <div class="frelease-release">
+                <div class="frelease-release__header">
+                  <span class="frelease-release__version">v2.1.0</span>
+                  <span class="frelease-release__title">SSO Login &amp; Email Notifications</span>
+                  <span class="frelease-release__date">Jan 15, 2026</span>
+                  <span class="frelease-release__chevron"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 01: Interactive Release Notes -->
+    <section class="frelease-section">
+      <div class="container">
+        <div class="frelease-section__grid">
+          <div class="frelease-section__content animate-on-scroll">
+            <h2 class="frelease-section__title">Release notes your users actually read.</h2>
+            <p class="frelease-section__desc">Ditch the boring changelog. PathPro release notes are interactive, public-facing pages where your community can see exactly what shipped, who contributed, and why it matters. Every release becomes a moment worth celebrating.</p>
+            <ul class="frelease-section__bullets">
+              <li><strong>Rich release entries</strong> &mdash; add descriptions, feature breakdowns, and images to every version</li>
+              <li><strong>Feature-linked releases</strong> &mdash; connect release items directly to roadmap features and completed tasks</li>
+              <li><strong>Public and shareable</strong> &mdash; your release notes live on your custom subdomain, accessible to everyone</li>
+              <li><strong>Notifications on publish</strong> &mdash; community members who voted or commented are notified when features ship</li>
+            </ul>
+          </div>
+          <div class="frelease-section__visual animate-on-scroll" id="section01-visual">
+            <div class="frelease-placeholder">
+              <div class="frelease-placeholder__header">
+                <span class="frelease-placeholder__dot frelease-placeholder__dot--red"></span>
+                <span class="frelease-placeholder__dot frelease-placeholder__dot--yellow"></span>
+                <span class="frelease-placeholder__dot frelease-placeholder__dot--green"></span>
+                <span class="frelease-placeholder__title">Release Notes</span>
+              </div>
+              <div class="frelease-placeholder__body">
+                <div class="frelease-note-card" id="note-card">
+                  <div class="frelease-note-card__header">
+                    <span class="frelease-note-card__version">v2.4.0</span>
+                  </div>
+                  <h3 class="frelease-note-card__title">Dark Mode, CSV Export &amp; Keyboard Shortcuts</h3>
+                  <p class="frelease-note-card__desc">This release brings some of our most requested features to life. Thanks to everyone who voted and gave feedback!</p>
+                  <div class="frelease-note-card__features">
+                    <div class="frelease-note-card__feature">
+                      <span class="frelease-note-card__check" data-check="1">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      </span>
+                      <span><strong>Dark Mode</strong> &mdash; Full dark mode support across all views</span>
+                    </div>
+                    <div class="frelease-note-card__feature">
+                      <span class="frelease-note-card__check" data-check="2">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      </span>
+                      <span><strong>CSV Export</strong> &mdash; Export data to CSV with one click</span>
+                    </div>
+                    <div class="frelease-note-card__feature">
+                      <span class="frelease-note-card__check" data-check="3">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      </span>
+                      <span><strong>Keyboard Shortcuts</strong> &mdash; Navigate without your mouse</span>
+                    </div>
+                  </div>
+                  <div class="frelease-release__shoutouts" style="margin-top: 1rem;">
+                    <span class="frelease-release__shoutouts-label">Community Shoutouts</span>
+                    <div class="frelease-release__shoutout-list">
+                      <div class="frelease-release__shoutout" style="opacity:1;transform:none;">
+                        <img class="frelease-release__shoutout-avatar" src="../images/jordan.jpg" alt="Jordan">
+                        <span class="frelease-release__shoutout-name">@jordan</span>
+                      </div>
+                      <div class="frelease-release__shoutout" style="opacity:1;transform:none;">
+                        <img class="frelease-release__shoutout-avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                        <span class="frelease-release__shoutout-name">@sarah</span>
+                      </div>
+                      <div class="frelease-release__shoutout" style="opacity:1;transform:none;">
+                        <img class="frelease-release__shoutout-avatar" src="../images/marcus.jpg" alt="Marcus">
+                        <span class="frelease-release__shoutout-name">@marcus</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Community Shoutouts (reversed) -->
+    <section class="frelease-section frelease-section--reversed">
+      <div class="container">
+        <div class="frelease-section__grid">
+          <div class="frelease-section__content animate-on-scroll">
+            <h2 class="frelease-section__title">Give credit where it&rsquo;s due.</h2>
+            <p class="frelease-section__desc">Behind every great feature is a community member who asked for it. PathPro lets you highlight the users who suggested, voted for, and shaped each release &mdash; turning your changelog into a celebration of your community.</p>
+            <ul class="frelease-section__bullets">
+              <li><strong>Tag contributors in releases</strong> &mdash; highlight the community members whose feedback drove each feature</li>
+              <li><strong>Automated shoutout suggestions</strong> &mdash; PathPro surfaces top voters and commenters for each shipped feature</li>
+              <li><strong>Build community loyalty</strong> &mdash; users who see their impact are more likely to stay engaged and keep contributing</li>
+              <li><strong>Social proof built in</strong> &mdash; shoutouts show new users that your team listens and delivers</li>
+            </ul>
+          </div>
+          <div class="frelease-section__visual animate-on-scroll" id="section02-visual">
+            <div class="frelease-placeholder">
+              <div class="frelease-placeholder__header">
+                <span class="frelease-placeholder__dot frelease-placeholder__dot--red"></span>
+                <span class="frelease-placeholder__dot frelease-placeholder__dot--yellow"></span>
+                <span class="frelease-placeholder__dot frelease-placeholder__dot--green"></span>
+                <span class="frelease-placeholder__title">Community Shoutouts</span>
+              </div>
+              <div class="frelease-placeholder__body">
+                <div class="frelease-shoutout-card" id="shoutout-card">
+                  <div class="frelease-shoutout-card__header">
+                    <span class="frelease-shoutout-card__header-icon frelease-shoutout-card__sparkle">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </span>
+                    <span class="frelease-shoutout-card__header-title">Community Shoutouts &mdash; v2.4.0</span>
+                  </div>
+                  <div class="frelease-shoutout-card__rows">
+                    <div class="frelease-shoutout-card__row">
+                      <img class="frelease-shoutout-card__avatar" src="../images/jordan.jpg" alt="Jordan">
+                      <div class="frelease-shoutout-card__info">
+                        <span class="frelease-shoutout-card__name">@jordan</span>
+                        <span class="frelease-shoutout-card__note">Suggested Dark Mode</span>
+                      </div>
+                    </div>
+                    <div class="frelease-shoutout-card__row">
+                      <img class="frelease-shoutout-card__avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                      <div class="frelease-shoutout-card__info">
+                        <span class="frelease-shoutout-card__name">@sarah</span>
+                        <span class="frelease-shoutout-card__note">Voted for CSV Export</span>
+                      </div>
+                    </div>
+                    <div class="frelease-shoutout-card__row">
+                      <img class="frelease-shoutout-card__avatar" src="../images/marcus.jpg" alt="Marcus">
+                      <div class="frelease-shoutout-card__info">
+                        <span class="frelease-shoutout-card__name">@marcus</span>
+                        <span class="frelease-shoutout-card__note">Reported keyboard navigation bug</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Release History & Versioning -->
+    <section class="frelease-section">
+      <div class="container">
+        <div class="frelease-section__grid">
+          <div class="frelease-section__content animate-on-scroll">
+            <h2 class="frelease-section__title">A living record of every improvement.</h2>
+            <p class="frelease-section__desc">Your release history tells the story of your product&rsquo;s evolution. PathPro organizes every version, every feature, and every fix into a searchable, browsable timeline &mdash; so your team and community can always see how far you&rsquo;ve come.</p>
+            <ul class="frelease-section__bullets">
+              <li><strong>Version-based organization</strong> &mdash; each release is tagged with a version number and date for easy reference</li>
+              <li><strong>Searchable history</strong> &mdash; find any past release, feature, or fix with instant search across your full history</li>
+              <li><strong>Filter by type</strong> &mdash; browse releases by category: features, bug fixes, improvements, or breaking changes</li>
+              <li><strong>Milestone markers</strong> &mdash; highlight major versions and product milestones in your release timeline</li>
+            </ul>
+          </div>
+          <div class="frelease-section__visual animate-on-scroll" id="section03-visual">
+            <div class="frelease-placeholder">
+              <div class="frelease-placeholder__header">
+                <span class="frelease-placeholder__dot frelease-placeholder__dot--red"></span>
+                <span class="frelease-placeholder__dot frelease-placeholder__dot--yellow"></span>
+                <span class="frelease-placeholder__dot frelease-placeholder__dot--green"></span>
+                <span class="frelease-placeholder__title">Release History</span>
+              </div>
+              <div class="frelease-placeholder__body">
+                <div class="frelease-timeline" id="timeline-visual">
+                  <div class="frelease-timeline__line">
+                    <svg class="frelease-timeline__line-svg" viewBox="0 0 2 300" preserveAspectRatio="none">
+                      <line class="frelease-timeline__line-stroke" x1="1" y1="0" x2="1" y2="300" stroke="#E2E8F0"/>
+                    </svg>
+                  </div>
+                  <div class="frelease-timeline__entries">
+                    <div class="frelease-timeline__entry frelease-timeline__entry--latest">
+                      <span class="frelease-timeline__dot"></span>
+                      <div class="frelease-timeline__entry-content">
+                        <div class="frelease-timeline__entry-meta">
+                          <span class="frelease-timeline__entry-version">v2.4.0</span>
+                          <span class="frelease-timeline__entry-date">Feb 28, 2026</span>
+                          <span class="frelease-timeline__entry-badge">Latest</span>
+                        </div>
+                        <span class="frelease-timeline__entry-title">Dark Mode, CSV Export &amp; Keyboard Shortcuts</span>
+                      </div>
+                    </div>
+                    <div class="frelease-timeline__entry">
+                      <span class="frelease-timeline__dot"></span>
+                      <div class="frelease-timeline__entry-content">
+                        <div class="frelease-timeline__entry-meta">
+                          <span class="frelease-timeline__entry-version">v2.3.0</span>
+                          <span class="frelease-timeline__entry-date">Feb 14, 2026</span>
+                        </div>
+                        <span class="frelease-timeline__entry-title">Comment Threads &amp; Activity Log</span>
+                      </div>
+                    </div>
+                    <div class="frelease-timeline__entry">
+                      <span class="frelease-timeline__dot"></span>
+                      <div class="frelease-timeline__entry-content">
+                        <div class="frelease-timeline__entry-meta">
+                          <span class="frelease-timeline__entry-version">v2.2.0</span>
+                          <span class="frelease-timeline__entry-date">Jan 30, 2026</span>
+                        </div>
+                        <span class="frelease-timeline__entry-title">Public Feature Voting &amp; Custom Subdomains</span>
+                      </div>
+                    </div>
+                    <div class="frelease-timeline__entry">
+                      <span class="frelease-timeline__dot"></span>
+                      <div class="frelease-timeline__entry-content">
+                        <div class="frelease-timeline__entry-meta">
+                          <span class="frelease-timeline__entry-version">v2.1.0</span>
+                          <span class="frelease-timeline__entry-date">Jan 15, 2026</span>
+                        </div>
+                        <span class="frelease-timeline__entry-title">SSO Login &amp; Email Notifications</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PathFox Section -->
+    <section class="frelease-pathfox">
+      <div class="container">
+        <div class="frelease-pathfox__grid">
+          <div class="frelease-pathfox__content">
+            <span class="frelease-pathfox__badge">PathFox Release Intelligence&#8482;</span>
+            <h2 class="frelease-pathfox__title">Let AI write your release notes for you.</h2>
+            <p class="frelease-pathfox__desc">PathFox&#8319;&#7522; scans your completed tasks, merged features, and closed tickets to automatically draft release notes &mdash; complete with descriptions, feature breakdowns, and suggested community shoutouts. Review, tweak, and publish in minutes instead of hours.</p>
+            <div class="frelease-pathfox__pills">
+              <span class="frelease-pathfox__pill">Auto-draft release notes</span>
+              <span class="frelease-pathfox__pill">Summarize shipped features</span>
+              <span class="frelease-pathfox__pill">Suggest community shoutouts</span>
+              <span class="frelease-pathfox__pill">Detect breaking changes</span>
+              <span class="frelease-pathfox__pill">Generate release emails</span>
+              <span class="frelease-pathfox__pill">Track release velocity</span>
+            </div>
+            <a href="../pathfox.html" class="btn-primary btn-sm"><span>Learn More About PathFox<sup style="font-size:0.5em;vertical-align:super;font-weight:700">AI</sup></span></a>
+          </div>
+          <div class="frelease-pathfox__visual animate-on-scroll">
+            <img src="../images/pathfox-thumbs.png" alt="PathFox AI Assistant" class="frelease-pathfox__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq__header">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq__grid">
+          <div class="faq__item">
+            <h3>What are interactive release notes?</h3>
+            <p>PathPro release notes are public-facing pages where you document what shipped in each version. They include feature descriptions, contributor shoutouts, and direct links to roadmap items &mdash; far more engaging than a plain changelog.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Can my community see release notes without logging in?</h3>
+            <p>Yes. Release notes are public by default on your custom subdomain. Anyone can view them without creating an account.</p>
+          </div>
+          <div class="faq__item">
+            <h3>How do community shoutouts work?</h3>
+            <p>When publishing a release, you can tag community members who suggested or voted for shipped features. PathFox can also auto-suggest top contributors based on voting and comment history.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Are community members notified when a feature ships?</h3>
+            <p>Yes. Members who voted on or commented on a feature receive a notification when it&rsquo;s included in a published release.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Can PathFox draft release notes automatically?</h3>
+            <p>Yes. PathFox analyzes your completed tasks and shipped features to generate a draft &mdash; including descriptions, categorization, and suggested shoutouts. You review and publish.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Is the release notes feature included in the free plan?</h3>
+            <p>Yes. Publishing release notes with version tagging and community shoutouts is included in the free plan. AI-powered auto-drafting is available on paid plans.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="frelease-cta">
+      <div class="frelease-cta__glow" aria-hidden="true"></div>
+      <div class="container">
+        <h2 class="frelease-cta__title">Ready to make every release a <span class="gradient-text">celebration?</span></h2>
+        <p class="frelease-cta__subtitle">Free forever plan. No credit card required.</p>
+        <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-lg">Get Started Free</a>
+        <p class="frelease-cta__note">Join product teams who ship, share, and celebrate with PathPro.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../images/logo-footer.png" alt="PathPro" class="footer__logo-img">
+          <p class="footer__tagline">The Community-Driven Product Development OS for modern teams.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Product</h4>
+          <ul class="footer__list">
+            <li><a href="../index.html#features">Features</a></li>
+            <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+            <li><a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener">Knowledge Base</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../pathpro-official-roadmap.html">Our Roadmap</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Other</h4>
+          <ul class="footer__list">
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 PathPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/home.js"></script>
+  <script>
+    // Section 01: Checkmark animation
+    (function() {
+      var noteCard = document.getElementById('note-card');
+      if (!noteCard) return;
+      var checks = noteCard.querySelectorAll('.frelease-note-card__check');
+      var started = false;
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !started) {
+            started = true;
+            checks.forEach(function(check, i) {
+              setTimeout(function() {
+                check.classList.add('frelease-note-card__check--checked');
+              }, 600 + (i * 500));
+            });
+          }
+        });
+      }, { threshold: 0.4 });
+      obs.observe(noteCard);
+    })();
+
+    // Section 02: Shoutout card row slide-in
+    (function() {
+      var card = document.getElementById('shoutout-card');
+      if (!card) return;
+      var started = false;
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !started) {
+            started = true;
+            card.classList.add('frelease-shoutout-card--active');
+          }
+        });
+      }, { threshold: 0.4 });
+      obs.observe(card);
+    })();
+  </script>
+</body>
+</html>

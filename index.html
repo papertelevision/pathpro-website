@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PathPro — The Product Development OS</title>
+  <meta name="description" content="Collect feedback. Plan your roadmap. Track every task. Ship release notes. Support your users. One platform, zero context-switching.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="dark-hero">
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav" role="banner">
+    <nav class="nav__container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="PathPro home">
+        <img src="images/logo_header.png" alt="PathPro" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Features
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="features/feature-voting.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Validate</span>
+                  <span class="nav__dropdown-desc">Let your users tell you what they want.</span>
+                </span>
+              </a>
+              <a href="features/tasks.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M10 4v16"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Build</span>
+                  <span class="nav__dropdown-desc">AI-driven task management tools.</span>
+                </span>
+              </a>
+              <a href="features/public-roadmaps.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Inform</span>
+                  <span class="nav__dropdown-desc">Roadmaps, public and internal.</span>
+                </span>
+              </a>
+              <a href="features/public-release-notes.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Ship</span>
+                  <span class="nav__dropdown-desc">Announce each win, celebrate together.</span>
+                </span>
+              </a>
+              <a href="features/provide-support.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/><path d="M18 17a4 4 0 0 1-4 4h-2a1 1 0 0 1 0-2h2a2 2 0 0 0 2-2"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Provide Support</span>
+                  <span class="nav__dropdown-desc">Boost customer tech support.</span>
+                </span>
+              </a>
+              <a href="features/analyze-feedback.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Analyze</span>
+                  <span class="nav__dropdown-desc">Track growth, sentiment, and team performance.</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Resources
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel nav__dropdown-panel--compact" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="about.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">About</span>
+                  <span class="nav__dropdown-desc">Meet our team.</span>
+                </span>
+              </a>
+              <a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Docs</span>
+                  <span class="nav__dropdown-desc">Learn how to use PathPro.</span>
+                </span>
+              </a>
+              <a href="blog.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Blog</span>
+                  <span class="nav__dropdown-desc">Let&rsquo;s talk product development.</span>
+                </span>
+              </a>
+              <a href="#" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Get Support</span>
+                  <span class="nav__dropdown-desc">Submit a support ticket.</span>
+                </span>
+              </a>
+              <a href="contact.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Contact</span>
+                  <span class="nav__dropdown-desc">Talk to our team.</span>
+                </span>
+              </a>
+              <a href="pathpro-official-roadmap.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Our Roadmap</span>
+                  <span class="nav__dropdown-desc">See what&rsquo;s coming next.</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li><a href="pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      </ul>
+      <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-sm nav__cta">Get Started Free</a>
+      <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><span class="mobile-menu__product-label">Product</span></li>
+      <li><a href="features/feature-voting.html" class="mobile-menu__product-item">Validate</a></li>
+      <li><a href="features/tasks.html" class="mobile-menu__product-item">Build</a></li>
+      <li><a href="features/public-roadmaps.html" class="mobile-menu__product-item">Inform</a></li>
+      <li><a href="features/public-release-notes.html" class="mobile-menu__product-item">Ship</a></li>
+      <li><a href="features/provide-support.html" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="features/analyze-feedback.html" class="mobile-menu__product-item">Analyze</a></li>
+      <li><a href="pathfox.html">Meet PathFox</a></li>
+      <li><span class="mobile-menu__product-label">Resources</span></li>
+      <li><a href="about.html" class="mobile-menu__product-item">About</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Docs</a></li>
+      <li><a href="blog.html" class="mobile-menu__product-item">Blog</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      <li><a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary">Get Started Free</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <!-- Hero Section — Stripe -->
+    <section class="hero-stripe" id="hero">
+      <!-- Stripe background -->
+      <div class="stripe-container">
+        <div class="stripe-animator">
+          <svg class="stripe-svg" viewBox="0 -55 1600 710" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          </svg>
+        </div>
+      </div>
+
+      <!-- Left fade overlay -->
+      <div class="left-fade"></div>
+
+      <!-- Avatars -->
+      <div class="avatar-container">
+        <div class="avatar-sizer">
+          <div class="avatar" id="avatar-maria" style="top: 24.3%; left: 59%;">
+            <img src="images/maria.jpg.jpg" alt="Maria">
+          </div>
+          <div class="speech-bubble bubble-right" id="bubble-maria" style="top: calc(24.3% + 2.25vw); left: calc(59% + 4.5vw + 12px);">Your product really needs keyboard shortcuts.<span class="attribution">-Maria, Community Member</span></div>
+          <div class="avatar" id="avatar-marcus" style="top: 14%; left: 90.3%;">
+            <img src="images/marcus.jpg" alt="Marcus">
+          </div>
+          <div class="speech-bubble bubble-left" id="bubble-marcus" style="top: calc(14% + 2.25vw); left: calc(90.3% - 12px);">Sprint complete, let's ship the update!<span class="attribution">-Marcus, Developer</span></div>
+          <div class="avatar" id="avatar-aisha" style="top: 38%; left: 79.8%;">
+            <img src="images/aisha.jpg" alt="Aisha">
+          </div>
+          <div class="speech-bubble bubble-left" id="bubble-aisha" style="top: calc(38% + 2.25vw); left: calc(79.8% - 12px);">Wow, they really listened, looks great!<span class="attribution">-Aisha, Community Member</span></div>
+          <div class="avatar" id="avatar-josh" style="top: 65%; left: 70.4%;">
+            <img src="images/josh_avatar.jpg" alt="Josh">
+          </div>
+          <div class="speech-bubble bubble-left" id="bubble-josh" style="top: calc(65% + 2.25vw); left: calc(70.4% - 12px);">Feature confirmed, adding it to the roadmap.<span class="attribution">-Josh, Product Lead</span></div>
+          <div class="speech-bubble bubble-left" id="bubble-sarah" style="top: calc(75% + 2.25vw); left: calc(89% - 12px);">Great suggestion! highlighting for later.<span class="attribution">-Sarah, Support Lead</span></div>
+          <div class="avatar" id="avatar-sarah" style="top: 75%; left: 89%;">
+            <img src="images/sarah_chen.jpg" alt="Sarah">
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero content -->
+      <div class="hero-stripe__content">
+        <h1 class="hero-stripe__heading">
+          The Community-Driven<br>
+          <span class="gradient-text">Product Development OS</span>
+        </h1>
+        <p class="hero-stripe__subtitle">
+          <strong>Know exactly what to build next</strong> — <strong>powered by user feedback and
+          PathFox Product Intelligence&#8482;</strong>. Plan, build, ship, and support your
+          users in one connected platform.
+        </p>
+        <div class="hero-stripe__buttons">
+          <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary">Get Started Free</a>
+          <a href="#features" class="btn-secondary">See How It Works</a>
+        </div>
+        <p class="hero-stripe__note"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Access your free workspace in minutes. <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> No credit card required.</p>
+        <div class="hero-stripe__subdomain"><span class="hero-stripe__url"><span class="prefix">yourproduct</span>.pathpro.co</span></div>
+      </div>
+
+      <!-- Trusted By -->
+      <div class="trusted" aria-label="Trusted by companies">
+        <div class="container">
+          <p class="trusted__label">Trusted by product teams at</p>
+          <div class="trusted__logos">
+            <span class="trusted__logo">StartupCo</span>
+            <span class="trusted__logo">MapSamurai</span>
+            <span class="trusted__logo">DevTools</span>
+            <span class="trusted__logo">SaaSLab</span>
+            <span class="trusted__logo">AppWorks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <div id="features">
+
+      <!-- Feature 01: Feedback -->
+      <section class="feature feature--normal" id="feedback">
+        <div class="container">
+          <div class="feature__grid">
+            <div class="feature__content animate-on-scroll">
+              <h2 class="feature__title">Test your audience<br><span class="gradient-text">before you build.</span></h2>
+              <p class="feature__desc">Stop guessing what to build next. Let your community tell you. PathPro gives your users a voice — and gives you the signal to act on.</p>
+              <ul class="feature__bullets">
+                <li><strong>Community submissions</strong> — users submit ideas from a public-facing portal</li>
+                <li><strong>Upvoting &amp; prioritization</strong> — real demand signals reveal what matters most</li>
+                <li><strong>From idea to task</strong> — promote ideas directly into your roadmap</li>
+                <li><strong>Contributor recognition</strong> — highlight top contributors and give customers visibility when their ideas shape your product</li>
+              </ul>
+            </div>
+            <div class="feature__visual animate-on-scroll">
+              <div class="mock-ui">
+                <div class="mock-ui__header">
+                  <span class="mock-ui__dot mock-ui__dot--red"></span>
+                  <span class="mock-ui__dot mock-ui__dot--yellow"></span>
+                  <span class="mock-ui__dot mock-ui__dot--green"></span>
+                  <span class="mock-ui__title">Community Feedback</span>
+                </div>
+                <div class="mock-ui__body mock-ui__body--cards">
+                  <div class="fvoting-feature-card">
+                    <div class="fvoting-feature-card__top">
+                      <div class="fvoting-feature-card__upvote fvoting-feature-card__upvote--gray">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                        <span class="fvoting-feature-card__upvote-count">7</span>
+                      </div>
+                      <div class="fvoting-feature-card__info">
+                        <span class="fvoting-feature-card__title">Ability to @ Other Members</span>
+                        <span class="fvoting-feature-card__type">New Feature</span>
+                        <p class="fvoting-feature-card__desc">Allow users to mention and tag other team members directly in comments, threaded discussions, and feature descriptions for better collaboration.</p>
+                      </div>
+                    </div>
+                    <div class="fvoting-feature-card__meta">
+                      <span class="fvoting-feature-card__status"><span class="fvoting-feature-card__status-dot"></span>Open for Voting</span>
+                      <div class="fvoting-feature-card__voters">
+                        <img class="fvoting-feature-card__voter" src="images/jordan.jpg" alt="Voter">
+                        <img class="fvoting-feature-card__voter" src="images/maria.jpg.jpg" alt="Voter">
+                        <img class="fvoting-feature-card__voter" src="images/marcus.jpg" alt="Voter">
+                        <svg class="fvoting-feature-card__cursor" viewBox="0 0 24 24" fill="none"><path d="M5 3l14 8.5-6.5 1.5L9 19.5 5 3z" fill="#1A202C" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                        <span class="fvoting-feature-card__tooltip">@Jordan + 2 others contributed feedback</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fvoting-feature-card fvoting-feature-card--secondary">
+                    <div class="fvoting-feature-card__top">
+                      <div class="fvoting-feature-card__upvote fvoting-feature-card__upvote--gray">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+                        <span class="fvoting-feature-card__upvote-count">5</span>
+                      </div>
+                      <div class="fvoting-feature-card__info">
+                        <span class="fvoting-feature-card__title">Translation Support</span>
+                        <span class="fvoting-feature-card__type">New Feature</span>
+                        <p class="fvoting-feature-card__desc">Add multi-language translation support for projects and community-facing pages.</p>
+                      </div>
+                    </div>
+                    <div class="fvoting-feature-card__meta">
+                      <span class="fvoting-feature-card__status"><span class="fvoting-feature-card__status-dot"></span>Open for Voting</span>
+                      <div class="fvoting-feature-card__voters">
+                        <img class="fvoting-feature-card__voter" src="images/sarah_chen.jpg" alt="Voter">
+                        <img class="fvoting-feature-card__voter" src="images/aisha.jpg" alt="Voter">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature 02: Roadmap -->
+      <section class="feature feature--reversed" id="roadmap">
+        <div class="container">
+          <div class="feature__grid">
+            <div class="feature__content animate-on-scroll">
+              <h2 class="feature__title">A public roadmap your community <span class="gradient-text">believes in.</span></h2>
+              <p class="feature__desc">Show your community what's planned, what's in progress, and what's shipped — and let them participate every step of the way.</p>
+              <ul class="feature__bullets">
+                <li><strong>Feature timeline</strong> — keep your community informed of what's coming next, and when</li>
+                <li><strong>Progress tracking</strong> — visual progress bars so everyone sees momentum</li>
+                <li><strong>Community engagement</strong> — users comment and upvote features directly</li>
+                <li><strong>Community attribution</strong> — show users when their feedback becomes planned or shipped features</li>
+              </ul>
+            </div>
+            <div class="feature__visual animate-on-scroll">
+              <div class="mock-ui">
+                <div class="mock-ui__header">
+                  <span class="mock-ui__dot mock-ui__dot--red"></span>
+                  <span class="mock-ui__dot mock-ui__dot--yellow"></span>
+                  <span class="mock-ui__dot mock-ui__dot--green"></span>
+                  <span class="mock-ui__title">Public Roadmap</span>
+                </div>
+                <div class="mock-ui__body mock-ui__body--integrate">
+                  <div class="froadmap-integrate-mockup">
+                    <div class="froadmap-integrate-mockup__browser">
+                      <div class="froadmap-integrate-mockup__url-bar">
+                        <span class="froadmap-integrate-mockup__lock-icon">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        </span>
+                        <span class="froadmap-integrate-mockup__url">roadmap.<strong>yoursite</strong>.com</span>
+                      </div>
+                      <div class="froadmap-integrate-mockup__page">
+                        <div class="froadmap-integrate-mockup__nav">
+                          <span class="froadmap-integrate-mockup__nav-logo"></span>
+                          <span class="froadmap-integrate-mockup__nav-link"></span>
+                          <span class="froadmap-integrate-mockup__nav-link"></span>
+                          <span class="froadmap-integrate-mockup__nav-link froadmap-integrate-mockup__nav-link--active"></span>
+                          <span class="froadmap-integrate-mockup__nav-link"></span>
+                        </div>
+                        <div class="froadmap-integrate-mockup__embed">
+                          <div class="froadmap-integrate-mockup__mini-cols">
+                            <div class="froadmap-integrate-mockup__mini-col">
+                              <span class="froadmap-integrate-mockup__mini-head froadmap-integrate-mockup__mini-head--blue">Confirmed</span>
+                              <span class="froadmap-integrate-mockup__mini-card"></span>
+                              <span class="froadmap-integrate-mockup__mini-card"></span>
+                              <span class="froadmap-integrate-mockup__mini-card"></span>
+                            </div>
+                            <div class="froadmap-integrate-mockup__mini-col">
+                              <span class="froadmap-integrate-mockup__mini-head froadmap-integrate-mockup__mini-head--amber">In Development</span>
+                              <span class="froadmap-integrate-mockup__mini-card"></span>
+                              <span class="froadmap-integrate-mockup__mini-card"></span>
+                            </div>
+                            <div class="froadmap-integrate-mockup__mini-col">
+                              <span class="froadmap-integrate-mockup__mini-head froadmap-integrate-mockup__mini-head--green">Released</span>
+                              <span class="froadmap-integrate-mockup__mini-card"></span>
+                              <span class="froadmap-integrate-mockup__mini-card"></span>
+                              <span class="froadmap-integrate-mockup__mini-card"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature 03: Tasks -->
+      <section class="feature feature--normal" id="tasks">
+        <div class="container">
+          <div class="feature__grid">
+            <div class="feature__content animate-on-scroll">
+              <h2 class="feature__title">Task management built for <span class="gradient-text">modern product teams.</span></h2>
+              <p class="feature__desc">Not another generic project manager. PathPro's task system is designed for how product teams actually work — with subtasks, kanban views, and AI-powered workflows.</p>
+              <ul class="feature__bullets">
+                <li><strong>Kanban &amp; list views</strong> — drag-and-drop boards or structured lists, your call</li>
+                <li><strong>Subtasks &amp; checklists</strong> — break work down to any level of detail</li>
+                <li><strong>File attachments</strong> — attach specs, designs, and documents to any task</li>
+                <li><strong>Team management</strong> — invite team members, assign to tasks and community support</li>
+                <li><strong>PathFox Product Intelligence™</strong> — automatically summarizes discussions, analyzes feedback trends, and surfaces priority insights</li>
+              </ul>
+            </div>
+            <div class="feature__visual animate-on-scroll">
+              <div class="mock-ui">
+                <div class="mock-ui__header">
+                  <span class="mock-ui__dot mock-ui__dot--red"></span>
+                  <span class="mock-ui__dot mock-ui__dot--yellow"></span>
+                  <span class="mock-ui__dot mock-ui__dot--green"></span>
+                  <span class="mock-ui__title">Task Board</span>
+                </div>
+                <div class="mock-ui__body mock-ui__body--cards">
+                  <div class="ftasks-kanban">
+                    <!-- In Progress Column -->
+                    <div class="ftasks-kanban__col">
+                      <div class="ftasks-kanban__col-head ftasks-kanban__col-head--amber">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        In Progress
+                      </div>
+                      <div class="ftasks-kanban__bar">
+                        <div class="ftasks-kanban__bar-track"><div class="ftasks-kanban__bar-fill ftasks-kanban__bar-fill--amber"></div></div>
+                        <span class="ftasks-kanban__bar-label ftasks-kanban__bar-label--amber">17% Complete</span>
+                      </div>
+                      <div class="ftasks-kanban__card">
+                        <span class="ftasks-kanban__card-title">Dark Mode</span>
+                        <div class="ftasks-kanban__card-tags">
+                          <span class="ftasks-kanban__tag ftasks-kanban__tag--complete">Complete</span>
+                          <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--medium"></span> Medium</span>
+                        </div>
+                        <div class="ftasks-kanban__card-footer">
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="ftasks-kanban__card-count">1</span>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="ftasks-kanban__card-count">1</span>
+                        </div>
+                      </div>
+                      <div class="ftasks-kanban__card">
+                        <span class="ftasks-kanban__card-title">Stripe Payment Integration</span>
+                        <div class="ftasks-kanban__card-tags">
+                          <span class="ftasks-kanban__tag ftasks-kanban__tag--dev">In Development</span>
+                          <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--low"></span> Low</span>
+                        </div>
+                        <div class="ftasks-kanban__card-footer">
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                      </div>
+                      <div class="ftasks-kanban__card ftasks-kanban__card--drag">
+                        <span class="ftasks-kanban__card-title">Mobile-Responsive Product Pages</span>
+                        <div class="ftasks-kanban__card-tags">
+                          <span class="ftasks-kanban__tag ftasks-kanban__tag--dev ftasks-kanban__drag-tag"><span class="ftasks-kanban__drag-status">In Development</span></span>
+                          <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--low"></span> Low</span>
+                        </div>
+                        <div class="ftasks-kanban__card-footer">
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Done Column -->
+                    <div class="ftasks-kanban__col">
+                      <div class="ftasks-kanban__col-head ftasks-kanban__col-head--green">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Done
+                      </div>
+                      <div class="ftasks-kanban__bar">
+                        <div class="ftasks-kanban__bar-track"><div class="ftasks-kanban__bar-fill ftasks-kanban__bar-fill--green ftasks-kanban__done-fill"></div></div>
+                        <span class="ftasks-kanban__bar-label ftasks-kanban__bar-label--green ftasks-kanban__done-label">80% Complete</span>
+                      </div>
+                      <div class="ftasks-kanban__card">
+                        <span class="ftasks-kanban__card-title">Shopping Cart Functionality</span>
+                        <div class="ftasks-kanban__card-tags">
+                          <span class="ftasks-kanban__tag ftasks-kanban__tag--complete">Complete</span>
+                          <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--low"></span> Low</span>
+                        </div>
+                        <div class="ftasks-kanban__card-footer">
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                      </div>
+                      <div class="ftasks-kanban__card">
+                        <span class="ftasks-kanban__card-title">User Registration and Login</span>
+                        <div class="ftasks-kanban__card-tags">
+                          <span class="ftasks-kanban__tag ftasks-kanban__tag--complete">Complete</span>
+                          <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--low"></span> Low</span>
+                        </div>
+                        <div class="ftasks-kanban__card-footer">
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature 04: Release Notes -->
+      <section class="feature feature--reversed" id="releases">
+        <div class="container">
+          <div class="feature__grid">
+            <div class="feature__content animate-on-scroll">
+              <h2 class="feature__title">Announce every win. <span class="gradient-text">Build momentum.</span></h2>
+              <p class="feature__desc">Your users want to know what's new. Release notes keep your community engaged, reduce support tickets, and build trust that your product is always improving.</p>
+              <ul class="feature__bullets">
+                <li><strong>Release notes</strong> — beautiful, public changelog your users actually read</li>
+                <li><strong>Notifications</strong> — keep your community informed of each release with automated notifications</li>
+                <li><strong>Version tagging</strong> — organize updates by version for easy reference</li>
+                <li><strong>Contributor shoutouts</strong> — recognize users whose feedback helped shape each release</li>
+              </ul>
+            </div>
+            <div class="feature__visual animate-on-scroll">
+              <div class="mock-ui">
+                <div class="mock-ui__header">
+                  <span class="mock-ui__dot mock-ui__dot--red"></span>
+                  <span class="mock-ui__dot mock-ui__dot--yellow"></span>
+                  <span class="mock-ui__dot mock-ui__dot--green"></span>
+                  <span class="mock-ui__title">Release History</span>
+                </div>
+                <div class="mock-ui__body mock-ui__body--timeline">
+                  <div class="frelease-timeline">
+                    <div class="frelease-timeline__line">
+                      <svg class="frelease-timeline__line-svg" viewBox="0 0 2 300" preserveAspectRatio="none">
+                        <line class="frelease-timeline__line-stroke" x1="1" y1="0" x2="1" y2="300" stroke="#E2E8F0"/>
+                      </svg>
+                    </div>
+                    <div class="frelease-timeline__entries">
+                      <div class="frelease-timeline__entry frelease-timeline__entry--latest">
+                        <span class="frelease-timeline__dot"></span>
+                        <div class="frelease-timeline__entry-content">
+                          <div class="frelease-timeline__entry-meta">
+                            <span class="frelease-timeline__entry-version">v2.4.0</span>
+                            <span class="frelease-timeline__entry-date">Feb 28, 2026</span>
+                            <span class="frelease-timeline__entry-badge">Latest</span>
+                          </div>
+                          <span class="frelease-timeline__entry-title">Dark Mode, CSV Export &amp; Keyboard Shortcuts</span>
+                        </div>
+                      </div>
+                      <div class="frelease-timeline__entry">
+                        <span class="frelease-timeline__dot"></span>
+                        <div class="frelease-timeline__entry-content">
+                          <div class="frelease-timeline__entry-meta">
+                            <span class="frelease-timeline__entry-version">v2.3.0</span>
+                            <span class="frelease-timeline__entry-date">Feb 14, 2026</span>
+                          </div>
+                          <span class="frelease-timeline__entry-title">Comment Threads &amp; Activity Log</span>
+                        </div>
+                      </div>
+                      <div class="frelease-timeline__entry">
+                        <span class="frelease-timeline__dot"></span>
+                        <div class="frelease-timeline__entry-content">
+                          <div class="frelease-timeline__entry-meta">
+                            <span class="frelease-timeline__entry-version">v2.2.0</span>
+                            <span class="frelease-timeline__entry-date">Jan 30, 2026</span>
+                          </div>
+                          <span class="frelease-timeline__entry-title">Public Feature Voting &amp; Custom Subdomains</span>
+                        </div>
+                      </div>
+                      <div class="frelease-timeline__entry">
+                        <span class="frelease-timeline__dot"></span>
+                        <div class="frelease-timeline__entry-content">
+                          <div class="frelease-timeline__entry-meta">
+                            <span class="frelease-timeline__entry-version">v2.1.0</span>
+                            <span class="frelease-timeline__entry-date">Jan 15, 2026</span>
+                          </div>
+                          <span class="frelease-timeline__entry-title">SSO Login &amp; Email Notifications</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature 05: Support -->
+      <section class="feature feature--normal" id="support">
+        <div class="container">
+          <div class="feature__grid">
+            <div class="feature__content animate-on-scroll">
+              <h2 class="feature__title">Support your users <span class="gradient-text">without switching tools.</span></h2>
+              <p class="feature__desc">Give your customers a direct line to your team with an integrated support system built directly in your product portal.</p>
+              <ul class="feature__bullets">
+                <li><strong>Support ticket system</strong> — convenient support means a massive uptick in customer satisfaction without switching tools</li>
+                <li><strong>Threaded replies</strong> — full conversation history on every ticket</li>
+                <li><strong>Email notifications</strong> — automatic updates keep users in the loop</li>
+                <li><strong>Status tracking</strong> — open, in progress, resolved — clear at a glance</li>
+              </ul>
+            </div>
+            <div class="feature__visual animate-on-scroll">
+              <div class="mock-ui">
+                <div class="mock-ui__header">
+                  <span class="mock-ui__dot mock-ui__dot--red"></span>
+                  <span class="mock-ui__dot mock-ui__dot--yellow"></span>
+                  <span class="mock-ui__dot mock-ui__dot--green"></span>
+                  <span class="mock-ui__title">Support Tickets</span>
+                </div>
+                <div class="mock-ui__body mock-ui__body--cards">
+                  <div class="fsupport-stats" id="home-support-stats">
+                    <div class="fsupport-stats__title">Support Performance</div>
+                    <div class="fsupport-stats__grid">
+                      <div class="fsupport-stats__card">
+                        <span class="fsupport-stats__card-value" data-target="2.4" data-suffix=" hrs" data-decimals="1">0</span>
+                        <span class="fsupport-stats__card-label">Avg. Resolution Time</span>
+                      </div>
+                      <div class="fsupport-stats__card fsupport-stats__card--highlight">
+                        <span class="fsupport-stats__card-value" data-target="96" data-suffix="%">0</span>
+                        <span class="fsupport-stats__card-label">Customer Satisfaction</span>
+                      </div>
+                      <div class="fsupport-stats__card">
+                        <span class="fsupport-stats__card-value" data-target="142">0</span>
+                        <span class="fsupport-stats__card-label">Tickets Resolved This Month</span>
+                      </div>
+                      <div class="fsupport-stats__card">
+                        <span class="fsupport-stats__card-value" data-target="18">0</span>
+                        <span class="fsupport-stats__card-label">Open Tickets</span>
+                      </div>
+                    </div>
+                    <div class="fsupport-stats__chart">
+                      <div class="fsupport-stats__bar" data-height="35"></div>
+                      <div class="fsupport-stats__bar" data-height="50"></div>
+                      <div class="fsupport-stats__bar" data-height="40"></div>
+                      <div class="fsupport-stats__bar" data-height="65"></div>
+                      <div class="fsupport-stats__bar" data-height="55"></div>
+                      <div class="fsupport-stats__bar fsupport-stats__bar--accent" data-height="80"></div>
+                      <div class="fsupport-stats__bar fsupport-stats__bar--accent" data-height="100"></div>
+                    </div>
+                    <div class="fsupport-stats__chart-label">
+                      <span>Oct</span>
+                      <span>Nov</span>
+                      <span>Dec</span>
+                      <span>Jan</span>
+                      <span>Feb</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /#features -->
+
+    <!-- PathFox Product Intelligence -->
+    <section class="pathfox-spotlight" id="pathfox">
+      <div class="container">
+        <div class="pathfox-spotlight__grid">
+          <div class="pathfox-spotlight__visual animate-on-scroll">
+            <div class="pf-chat" id="pfChatDemo">
+              <div class="pf-chat__header">
+                <img class="pf-chat__avatar" src="images/pathfox_icon.png" alt="PathFox" width="28" height="28">
+                <span class="pf-chat__name">PathFox<sup class="nav__sup">AI</sup></span>
+                <span class="pf-chat__status">Online</span>
+              </div>
+              <div class="pf-chat__body" id="pfChatBody">
+                <div class="pf-chat__user" id="pfChatUser">What are our users asking for most?</div>
+                <div class="pf-chat__thinking" id="pfChatThinking">
+                  <img class="pf-chat__thinking-avatar" src="images/pathfox_icon.png" alt="PathFox" width="24" height="24">
+                  <div class="pf-chat__dots"><span></span><span></span><span></span></div>
+                </div>
+                <div class="pf-chat__response" id="pfChatResponse">
+                  <img class="pf-chat__response-avatar" src="images/pathfox_icon.png" alt="PathFox" width="24" height="24">
+                  <div class="pf-chat__response-bubble">
+                    <div class="pf-chat__line" data-line="0">Based on 47 submissions this month, here's what your users want most:</div>
+                    <div class="pf-chat__line" data-line="1"><br><strong>1. Dark mode</strong> &mdash; 32 upvotes &middot; 12 comments</div>
+                    <div class="pf-chat__line" data-line="2"><strong>2. Slack integration</strong> &mdash; 28 upvotes &middot; 8 comments</div>
+                    <div class="pf-chat__line" data-line="3"><strong>3. CSV export</strong> &mdash; 21 upvotes &middot; 15 comments</div>
+                    <div class="pf-chat__line pf-chat__line--highlight" data-line="4"><br>Dark mode has 3x more engagement than average. I'd recommend prioritizing it.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-chat__input">
+                <span class="pf-chat__input-placeholder">Ask PathFox anything...</span>
+                <div class="pf-chat__input-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pathfox-spotlight__content animate-on-scroll">
+            <h2 class="pathfox-spotlight__title">Meet PathFox <span class="gradient-text">Product Intelligence™</span></h2>
+            <p class="pathfox-spotlight__desc">PathFox<sup class="nav__sup">AI</sup> analyzes feedback trends, community demand, and task progress to help you decide what to build next — faster and with confidence.</p>
+            <ul class="pathfox-spotlight__benefits">
+              <li>Detect emerging feature demand</li>
+              <li>Summarize conversations instantly</li>
+              <li>Surface risks early</li>
+              <li>Understand product momentum</li>
+              <li>Automate task creation</li>
+              <li>Analyze team and community sentiment</li>
+            </ul>
+            <a href="pathfox.html" class="btn-primary btn-sm">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Everything Else Grid -->
+    <section class="extras" id="extras">
+      <div class="container">
+        <h2 class="section-title">Everything else you need.</h2>
+        <p class="section-subtitle">The details that make PathPro feel like home for your product team.</p>
+        <div class="extras__grid">
+          <div class="extras__card glass-card animate-on-scroll">
+            <div class="extras__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/><path d="M10 21v1a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-1"/></svg>
+            </div>
+            <h3 class="extras__card-title">PathFox Intelligence&trade;</h3>
+            <p class="extras__card-desc">Your tireless product companion. Understand feedback, rank demand, spot problems, and get answers instantly.</p>
+            <a href="pathfox.html" class="extras__link">Learn more &rarr;</a>
+          </div>
+          <div class="extras__card glass-card animate-on-scroll">
+            <div class="extras__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="extras__card-title">Growth Analytics</h3>
+            <p class="extras__card-desc">Your product growth dashboard captures community growth, organizes tasks, and gives a snapshot of your product's journey.</p>
+          </div>
+          <div class="extras__card glass-card animate-on-scroll">
+            <div class="extras__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="extras__card-title">Customer CRM</h3>
+            <p class="extras__card-desc">Capture customer details as well as valuable analytics on how they've helped shape your product.</p>
+          </div>
+          <div class="extras__card glass-card animate-on-scroll">
+            <div class="extras__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="extras__card-title">Team Roles</h3>
+            <p class="extras__card-desc">Admin, team member, community member — granular permissions per project.</p>
+          </div>
+          <div class="extras__card glass-card animate-on-scroll">
+            <div class="extras__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="extras__card-title">Seamless Integration</h3>
+            <p class="extras__card-desc">PathPro integrates into your site and adapts to your brand for a truly seamless presentation of roadmaps, feature voting, tech support, and more.</p>
+          </div>
+          <div class="extras__card glass-card animate-on-scroll">
+            <div class="extras__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="extras__card-title">Submission Tracking</h3>
+            <p class="extras__card-desc">Highlight suggestions and comments for later reference, review and filter feedback, and automatically sort duplicate submissions.</p>
+          </div>
+          <div class="extras__card glass-card animate-on-scroll">
+            <div class="extras__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="extras__card-title">Custom Domains</h3>
+            <p class="extras__card-desc">Use your own domain for your project portal. Full DNS validation and SSL included for each of your projects.</p>
+          </div>
+          <div class="extras__card glass-card animate-on-scroll">
+            <div class="extras__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="extras__card-title">API-Ready</h3>
+            <p class="extras__card-desc">Full REST API with Sanctum authentication. Integrate PathPro into your existing workflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Comparison Matrix -->
+    <section class="matrix-section" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Replace your <span class="gradient-text">entire product stack.</span></h2>
+        <p class="section-subtitle">Stop paying for 5 tools that don't talk to each other.</p>
+
+        <div class="matrix-table-wrapper animate-on-scroll">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="is-highlight">PathPro</th>
+                <th>Canny</th>
+                <th>Linear</th>
+                <th>Fibery</th>
+                <th>Zendesk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="category-row"><td colspan="6">Roadmap &amp; Planning</td></tr>
+              <tr><td>Public roadmap</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr><td>Task groups / epics</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr><td>Subtasks</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr><td>Task assignment</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr class="category-row"><td colspan="6">Customer Feedback</td></tr>
+              <tr><td>Feature voting</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr><td>Submissions / feedback</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="check">&#10003;</span></td></tr>
+              <tr><td>Community profiles</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr class="category-row"><td colspan="6">Communication</td></tr>
+              <tr><td>Comments &amp; threads</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td></tr>
+              <tr><td>Upvoting</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr><td>Release notes / changelog</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr class="category-row"><td colspan="6">Support</td></tr>
+              <tr><td>Support tickets</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="check">&#10003;</span></td></tr>
+              <tr><td>Ticket tracking</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="check">&#10003;</span></td></tr>
+              <tr class="category-row"><td colspan="6">Customization</td></tr>
+              <tr><td>Custom domains</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="check">&#10003;</span></td></tr>
+              <tr><td>White labeling</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="check">&#10003;</span></td></tr>
+              <tr><td>Custom CSS</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr class="category-row"><td colspan="6">Intelligence</td></tr>
+              <tr><td>Product intelligence</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr><td>Task summaries</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr><td>Feature insights</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td><td><span class="dash">&mdash;</span></td></tr>
+              <tr class="category-row"><td colspan="6">Developer</td></tr>
+              <tr><td>REST API</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td></tr>
+              <tr><td>Webhooks</td><td class="is-highlight"><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">Teams ship faster with PathPro.</h2>
+        <p class="section-subtitle">Here's what product teams are saying.</p>
+        <div class="testimonials__grid">
+          <div class="testimonial glass-card animate-on-scroll">
+            <div class="testimonial__stars" aria-label="5 stars">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+            </div>
+            <blockquote class="testimonial__quote">
+              &ldquo;We replaced Trello, UserVoice, and a shared Google Doc with PathPro. Our team finally has one source of truth.&rdquo;
+            </blockquote>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="images/laura.jpg" alt="Laura Chen">
+              <div>
+                <div class="testimonial__name">Laura Chen</div>
+                <div class="testimonial__role">Head of Product, LaunchPad</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial glass-card animate-on-scroll">
+            <div class="testimonial__stars" aria-label="5 stars">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+            </div>
+            <blockquote class="testimonial__quote">
+              &ldquo;The public roadmap alone cut our 'when is X coming?' support tickets by 60%. Our users feel heard.&rdquo;
+            </blockquote>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="images/travis.jpg" alt="Travis Rivera">
+              <div>
+                <div class="testimonial__name">Travis Rivera</div>
+                <div class="testimonial__role">CTO, Devbridge</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial glass-card animate-on-scroll">
+            <div class="testimonial__stars" aria-label="5 stars">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#FBBF24" aria-hidden="true"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
+            </div>
+            <blockquote class="testimonial__quote">
+              &ldquo;Setup took 10 minutes. We had our public roadmap, feedback board, and support portal live the same day.&rdquo;
+            </blockquote>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="images/monique.jpg" alt="Monique Patel">
+              <div>
+                <div class="testimonial__name">Monique Patel</div>
+                <div class="testimonial__role">Founder, PixelStack</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="cta">
+      <div class="final-cta__glow" aria-hidden="true"></div>
+      <div class="container">
+        <h2 class="final-cta__title">Ready to build products people <span class="gradient-text">love?</span></h2>
+        <p class="final-cta__subtitle">Join product teams who use PathPro to collect feedback, plan roadmaps, track tasks, and ship faster.</p>
+        <div class="final-cta__actions">
+          <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-lg">Get Started Free</a>
+        </div>
+        <p class="final-cta__note">Free forever plan. No credit card required.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="images/logo-footer.png" alt="PathPro" class="footer__logo-img">
+          <p class="footer__tagline">The Community-Driven Product Development OS for modern teams.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Product</h4>
+          <ul class="footer__list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+            <li><a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener">Knowledge Base</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pathpro-official-roadmap.html">Our Roadmap</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Other</h4>
+          <ul class="footer__list">
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 PathPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/home.js"></script>
+  <script>
+    // PathFox chat demo animation
+    (function() {
+      var demo = document.getElementById('pfChatDemo');
+      if (!demo) return;
+      var userMsg = document.getElementById('pfChatUser');
+      var thinking = document.getElementById('pfChatThinking');
+      var response = document.getElementById('pfChatResponse');
+      var lines = response.querySelectorAll('.pf-chat__line');
+      var started = false;
+
+      var chatBody = document.getElementById('pfChatBody');
+
+      function run() {
+        setTimeout(function() { userMsg.classList.add('visible'); }, 500);
+        setTimeout(function() { thinking.classList.add('visible'); }, 2000);
+        setTimeout(function() {
+          chatBody.style.minHeight = chatBody.offsetHeight + 'px';
+          thinking.classList.remove('visible');
+          thinking.style.display = 'none';
+          response.classList.add('visible');
+        }, 3500);
+        lines.forEach(function(line, i) {
+          setTimeout(function() { line.classList.add('visible'); }, 3500 + (i * 600));
+        });
+      }
+
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !started) {
+            started = true;
+            run();
+          }
+        });
+      }, { threshold: 0.3 });
+      obs.observe(demo);
+    })();
+
+    // Feature Detail: vote bump → cursor hover → tooltip animation
+    (function() {
+      var featureCard = document.querySelector('.fvoting-feature-card');
+      if (!featureCard) return;
+      var fcUpvoteBtn = featureCard.querySelector('.fvoting-feature-card__upvote');
+      var fcCountEl = featureCard.querySelector('.fvoting-feature-card__upvote-count');
+      var cursor = featureCard.querySelector('.fvoting-feature-card__cursor');
+      var tooltip = featureCard.querySelector('.fvoting-feature-card__tooltip');
+      var fcStarted = false;
+      var fcObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !fcStarted) {
+            fcStarted = true;
+            setTimeout(function() {
+              fcUpvoteBtn.classList.remove('fvoting-feature-card__upvote--gray');
+              fcCountEl.textContent = '8';
+              fcCountEl.classList.remove('is-bumping');
+              void fcCountEl.offsetWidth;
+              fcCountEl.classList.add('is-bumping');
+              fcUpvoteBtn.classList.remove('is-pulsing');
+              void fcUpvoteBtn.offsetWidth;
+              fcUpvoteBtn.classList.add('is-pulsing');
+              setTimeout(function() {
+                cursor.classList.add('is-visible');
+                setTimeout(function() {
+                  cursor.classList.remove('is-visible');
+                  cursor.classList.add('is-hovering');
+                  setTimeout(function() {
+                    tooltip.classList.add('is-visible');
+                  }, 500);
+                }, 700);
+              }, 600);
+            }, 800);
+          }
+        });
+      }, { threshold: 0.5 });
+      fcObs.observe(featureCard);
+    })();
+
+    // Kanban drag animation
+    (function() {
+      var kanban = document.querySelector('.ftasks-kanban');
+      if (!kanban) return;
+      var kanbanStarted = false;
+      var kanbanObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !kanbanStarted) {
+            kanbanStarted = true;
+            kanban.classList.add('ftasks-kanban--active');
+            // Confetti burst when card lands
+            setTimeout(function() {
+              var mockUI = kanban.closest('.mock-ui');
+              if (mockUI) mockUI.style.overflow = 'visible';
+              var container = document.createElement('div');
+              container.className = 'ftasks-kanban__confetti';
+              kanban.appendChild(container);
+              var colors = ['#10B981', '#F59E0B', '#8B5CF6', '#EC4899', '#3B82F6', '#EF4444'];
+              for (var i = 0; i < 30; i++) {
+                var piece = document.createElement('div');
+                piece.className = 'ftasks-kanban__confetti-piece' + (Math.random() > 0.5 ? ' ftasks-kanban__confetti-piece--circle' : '');
+                piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+                piece.style.left = (70 + Math.random() * 15) + '%';
+                piece.style.top = (45 + Math.random() * 20) + '%';
+                piece.style.setProperty('--tx', (Math.random() * 80 - 40) + 'px');
+                piece.style.setProperty('--ty', (Math.random() * 60 - 40) + 'px');
+                piece.style.setProperty('--rot', (Math.random() * 360) + 'deg');
+                piece.style.setProperty('--duration', (0.6 + Math.random() * 0.6) + 's');
+                container.appendChild(piece);
+                (function(el, delay) {
+                  setTimeout(function() { el.classList.add('is-active'); }, delay);
+                })(piece, Math.random() * 150);
+              }
+              setTimeout(function() {
+                container.remove();
+                if (mockUI) mockUI.style.overflow = '';
+              }, 2000);
+            }, 4800);
+
+            var dragStatus = kanban.querySelector('.ftasks-kanban__drag-status');
+            var dragTag = kanban.querySelector('.ftasks-kanban__drag-tag');
+            var doneFill = kanban.querySelector('.ftasks-kanban__done-fill');
+            var doneLabel = kanban.querySelector('.ftasks-kanban__done-label');
+            setTimeout(function() {
+              if (dragStatus) dragStatus.textContent = 'Complete';
+              if (dragTag) {
+                dragTag.classList.remove('ftasks-kanban__tag--dev');
+                dragTag.classList.add('ftasks-kanban__tag--complete');
+              }
+              if (doneFill) doneFill.style.width = '100%';
+              if (doneLabel) {
+                var pct = 80;
+                var countInterval = setInterval(function() {
+                  pct++;
+                  doneLabel.textContent = pct + '% Complete';
+                  if (pct >= 100) clearInterval(countInterval);
+                }, 40);
+              }
+            }, 5000);
+          }
+        });
+      }, { threshold: 0.3 });
+      kanbanObs.observe(kanban);
+    })();
+
+    /* ── Support Stats: count-up + bar chart grow ── */
+    (function() {
+      var statsSection = document.getElementById('home-support-stats');
+      if (!statsSection) return;
+      var statsStarted = false;
+      var statsObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !statsStarted) {
+            statsStarted = true;
+            statsObs.unobserve(entry.target);
+
+            // Count-up animation
+            var values = statsSection.querySelectorAll('.fsupport-stats__card-value[data-target]');
+            values.forEach(function(el) {
+              var target = parseFloat(el.getAttribute('data-target'));
+              var suffix = el.getAttribute('data-suffix') || '';
+              var decimals = parseInt(el.getAttribute('data-decimals')) || 0;
+              var duration = 1600;
+              var startTime = null;
+
+              function animate(timestamp) {
+                if (!startTime) startTime = timestamp;
+                var progress = Math.min((timestamp - startTime) / duration, 1);
+                var eased = 1 - Math.pow(1 - progress, 3);
+                var current = eased * target;
+                el.textContent = current.toFixed(decimals) + suffix;
+                if (progress < 1) {
+                  requestAnimationFrame(animate);
+                }
+              }
+              requestAnimationFrame(animate);
+            });
+
+            // Bar chart grow animation
+            var bars = statsSection.querySelectorAll('.fsupport-stats__bar[data-height]');
+            bars.forEach(function(bar) {
+              bar.style.height = bar.getAttribute('data-height') + '%';
+            });
+          }
+        });
+      }, { threshold: 0.3 });
+      statsObs.observe(statsSection);
+    })();
+  </script>
+</body>
+</html>

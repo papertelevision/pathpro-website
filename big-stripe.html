@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PathPro Stripe</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 56vw;
+      min-height: 650px;
+      background: linear-gradient(160deg, #1A0A2E 0%, #2D1150 40%, #3B1668 70%, #2A0E45 100%);
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      position: relative;
+    }
+
+    /* --- Stripe background layer --- */
+    .stripe-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .stripe-animator {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .stripe-animator.active {
+      animation: color-shift 20s ease-in-out 3s infinite;
+    }
+
+    .stripe-svg {
+      display: block;
+      width: 115%;
+      margin-left: -7.5%;
+      opacity: 0;
+    }
+
+    .stripe-svg.visible {
+      opacity: 1;
+    }
+
+    .stripe {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .stripe-1 { stroke: #2A0E45; stroke-width: 84; }
+    .stripe-2 { stroke: #3D1663; stroke-width: 72; }
+    .stripe-3 { stroke: #511E81; stroke-width: 60; }
+    .stripe-4 { stroke: #65269F; stroke-width: 48; }
+    .stripe-5 { stroke: #7A2EBD; stroke-width: 36; }
+    .stripe-6 { stroke: #9344D0; stroke-width: 24; }
+    .stripe-7 { stroke: #B06ADF; stroke-width: 12; }
+
+    @keyframes color-shift {
+      0%, 100% { filter: hue-rotate(0deg); }
+      33% { filter: hue-rotate(15deg); }
+      66% { filter: hue-rotate(-10deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .stripe { transition: none !important; }
+      .stripe-animator.active { animation: none !important; }
+      .stripe-svg { opacity: 1; }
+    }
+
+    /* --- Left fade overlay --- */
+    .left-fade {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, #1c0d33, transparent);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* --- Hero content layer --- */
+    .hero {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 8% 80px 8%;
+    }
+
+    .hero-heading {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.1;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+      white-space: nowrap;
+    }
+
+    .hero-heading .gradient-text {
+      background: linear-gradient(90deg, #8B5CF6, #D946EF, #EC4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-subtitle {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+
+    .hero-subtitle strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 36px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #FFFFFF;
+      background: linear-gradient(90deg, #5a0eb8, #d53aee);
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: box-shadow 0.2s;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 0 20px rgba(213, 58, 238, 0.5), 0 0 40px rgba(236, 72, 153, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 32px;
+      font-size: 15px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+      background: linear-gradient(315deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.08) 100%);
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-secondary:hover {
+      background: linear-gradient(315deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.1) 100%);
+    }
+
+    .hero-note {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.4);
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .subdomain-pill {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 9999px;
+      background: transparent;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .subdomain-pill .prefix {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* --- Speech bubble --- */
+    .speech-bubble {
+      position: absolute;
+      background: #1E0A3C;
+      color: #C4B5FD;
+      font-size: 12px;
+      font-weight: 400;
+      padding: 8px 14px;
+      border-radius: 10px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      line-height: 1.5;
+    }
+
+    .speech-bubble .attribution {
+      display: block;
+      font-size: 11px;
+      color: rgba(196, 181, 253, 0.5);
+    }
+
+    /* Arrow pointing right (bubble to the left of avatar) */
+    .speech-bubble.bubble-left::after {
+      content: '';
+      position: absolute;
+      right: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 6px solid #1E0A3C;
+    }
+
+    /* Arrow pointing left (bubble to the right of avatar) */
+    .speech-bubble.bubble-right::after {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-right: 6px solid #1E0A3C;
+    }
+
+    /* Arrow pointing down (bubble above avatar) */
+    .speech-bubble.bubble-top::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #1E0A3C;
+    }
+
+    .speech-bubble.bubble-left.show {
+      animation: bubbleFadeLeft 4s ease-in-out forwards;
+    }
+
+    .speech-bubble.bubble-right.show {
+      animation: bubbleFadeRight 4s ease-in-out forwards;
+    }
+
+    .speech-bubble.bubble-top.show {
+      animation: bubbleFadeTop 4s ease-in-out forwards;
+    }
+
+    @keyframes bubbleFadeLeft {
+      0% { opacity: 0; transform: translateX(-100%) translateY(-50%) translateX(4px); }
+      12% { opacity: 1; transform: translateX(-100%) translateY(-50%); }
+      75% { opacity: 1; transform: translateX(-100%) translateY(-50%); }
+      100% { opacity: 0; transform: translateX(-100%) translateY(-50%); }
+    }
+
+    @keyframes bubbleFadeRight {
+      0% { opacity: 0; transform: translateY(-50%) translateX(-4px); }
+      12% { opacity: 1; transform: translateY(-50%); }
+      75% { opacity: 1; transform: translateY(-50%); }
+      100% { opacity: 0; transform: translateY(-50%); }
+    }
+
+    @keyframes bubbleFadeTop {
+      0% { opacity: 0; transform: translateX(-50%) translateY(4px); }
+      12% { opacity: 1; transform: translateX(-50%); }
+      75% { opacity: 1; transform: translateX(-50%); }
+      100% { opacity: 0; transform: translateX(-50%); }
+    }
+
+    /* --- Avatars --- */
+    .avatar-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .avatar-sizer {
+      position: relative;
+      width: 100%;
+      height: 56vw;
+      min-height: 650px;
+    }
+
+    .avatar {
+      position: absolute;
+      width: 4.5vw;
+      height: 4.5vw;
+      min-width: 40px;
+      min-height: 40px;
+      border-radius: 50%;
+      border: 1.25px solid rgba(255, 255, 255, 0.25);
+      opacity: 0;
+      transform: scale(0);
+      pointer-events: none;
+    }
+
+    .avatar.pop-in {
+      animation: avatarPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .avatar::before {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg, transparent 0%, transparent 70%, rgba(255, 255, 255, 0.8) 85%, transparent 100%);
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .avatar.shine {
+      animation: avatarPulse 0.6s ease-in-out;
+    }
+
+    .avatar.shine::before {
+      animation: borderShine 0.8s linear forwards;
+    }
+
+    @keyframes borderShine {
+      0% { opacity: 1; transform: rotate(0deg); }
+      100% { opacity: 0; transform: rotate(360deg); }
+    }
+
+    @keyframes avatarPulse {
+      0% { transform: scale(1); }
+      40% { transform: scale(1.12); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes avatarPop {
+      0% { opacity: 0; transform: scale(0); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Stripe background -->
+  <div class="stripe-container">
+    <div class="stripe-animator">
+      <svg class="stripe-svg" viewBox="0 -55 1600 710" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      </svg>
+    </div>
+  </div>
+
+  <!-- Left fade overlay -->
+  <div class="left-fade"></div>
+
+  <!-- Avatars -->
+  <div class="avatar-container">
+    <div class="avatar-sizer">
+      <div class="avatar" id="avatar-maria" style="top: 24.3%; left: 59%;">
+        <img src="images/maria.jpg.jpg" alt="Maria">
+      </div>
+      <div class="speech-bubble bubble-right" id="bubble-maria" style="top: calc(24.3% + 2.25vw); left: calc(59% + 4.5vw + 12px);">Your product really needs keyboard shortcuts.<span class="attribution">-Maria, Community Member</span></div>
+      <div class="avatar" id="avatar-marcus" style="top: 14%; left: 90.3%;">
+        <img src="images/marcus.jpg" alt="Marcus">
+      </div>
+      <div class="speech-bubble bubble-left" id="bubble-marcus" style="top: calc(14% + 2.25vw); left: calc(90.3% - 12px);">Sprint complete, let's ship the update!<span class="attribution">-Marcus, Developer</span></div>
+      <div class="avatar" id="avatar-aisha" style="top: 38%; left: 79.8%;">
+        <img src="images/aisha.jpg" alt="Aisha">
+      </div>
+      <div class="speech-bubble bubble-left" id="bubble-aisha" style="top: calc(38% + 2.25vw); left: calc(79.8% - 12px);">Wow, they really listened, looks great!<span class="attribution">-Aisha, Community Member</span></div>
+      <div class="avatar" id="avatar-josh" style="top: 65%; left: 70.4%;">
+        <img src="images/josh_avatar.jpg" alt="Josh">
+      </div>
+      <div class="speech-bubble bubble-left" id="bubble-josh" style="top: calc(65% + 2.25vw); left: calc(70.4% - 12px);">Feature confirmed, adding it to the roadmap.<span class="attribution">-Josh, Product Lead</span></div>
+      <div class="speech-bubble bubble-left" id="bubble-sarah" style="top: calc(75% + 2.25vw); left: calc(89% - 12px);">Great suggestion! highlighting for later.<span class="attribution">-Sarah, Support Lead</span></div>
+      <div class="avatar" id="avatar-sarah" style="top: 75%; left: 89%;">
+        <img src="images/sarah_chen.jpg" alt="Sarah">
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero content -->
+  <div class="hero">
+    <h1 class="hero-heading">
+      The Community-Driven<br>
+      <span class="gradient-text">Product Development OS</span>
+    </h1>
+    <p class="hero-subtitle">
+      <strong>Know exactly what to build next</strong> — <strong>powered by user feedback and
+      PathFox Product Intelligence&#8482;</strong>. Plan, build, ship, and support your
+      users in one connected platform.
+    </p>
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">Get Started Free</a>
+      <a href="#" class="btn-secondary">See How It Works</a>
+    </div>
+    <p class="hero-note">Access your free workspace in minutes. No credit card required.</p>
+    <div class="subdomain-pill"><span class="prefix">yourproduct</span>.pathpro.co</div>
+  </div>
+
+  <script>
+    (function() {
+      // --- Geometry ---
+      var r = 70;
+      var centerY = 300;
+      var startAmp = 40;
+      var endAmp = 276;
+      var numPairs = 7;
+      var k = 0.5523;
+      var kr = k * r;
+
+      function R(v) { return Math.round(v * 10) / 10; }
+
+      // --- Progressive growth: amplitude increases left to right ---
+      var botLevels = [];
+      var topLevels = [];
+      for (var j = 0; j < numPairs; j++) {
+        var t = numPairs > 1 ? j / (numPairs - 1) : 0;
+        var amp = R(startAmp + (endAmp - startAmp) * Math.pow(t, 1.5));
+        botLevels.push(R(centerY + amp));
+        topLevels.push(R(centerY - amp));
+      }
+
+      // --- Build serpentine path with cubic bezier turns ---
+      var x = -r;
+      var d = 'M' + x + ',' + topLevels[0];
+
+      for (var j = 0; j < numPairs; j++) {
+        var yBot = botLevels[j];
+        var yTop = topLevels[j];
+        var isLast = (j === numPairs - 2);
+
+        // Full bottom U-turn
+        d += ' V' + yBot;
+        d += ' C' + x + ',' + R(yBot + kr);
+        d += ' ' + R(x + r - kr) + ',' + R(yBot + r);
+        d += ' ' + R(x + r) + ',' + R(yBot + r);
+        d += ' C' + R(x + r + kr) + ',' + R(yBot + r);
+        d += ' ' + R(x + 2 * r) + ',' + R(yBot + kr);
+        d += ' ' + R(x + 2 * r) + ',' + yBot;
+        x += 2 * r;
+
+        d += ' V' + yTop;
+
+        if (isLast) {
+          // 90° top turn, then horizontal off-screen
+          d += ' C' + x + ',' + R(yTop - kr);
+          d += ' ' + R(x + r - kr) + ',' + R(yTop - r);
+          d += ' ' + R(x + r) + ',' + R(yTop - r);
+          d += ' H2000';
+          break;
+        } else {
+          d += ' C' + x + ',' + R(yTop - kr);
+          d += ' ' + R(x + r - kr) + ',' + R(yTop - r);
+          d += ' ' + R(x + r) + ',' + R(yTop - r);
+          d += ' C' + R(x + r + kr) + ',' + R(yTop - r);
+          d += ' ' + R(x + 2 * r) + ',' + R(yTop - kr);
+          d += ' ' + R(x + 2 * r) + ',' + yTop;
+          x += 2 * r;
+        }
+      }
+
+      // --- Create border-only stripes using SVG mask ---
+      var svg = document.querySelector('.stripe-svg');
+      var ns = 'http://www.w3.org/2000/svg';
+      var widths = [84, 72, 60, 48, 36, 24, 12];
+      var bw = 1;
+
+      var defs = document.createElementNS(ns, 'defs');
+      var mask = document.createElementNS(ns, 'mask');
+      mask.setAttribute('id', 'border-mask');
+
+      function makeMaskPath(color, width) {
+        var p = document.createElementNS(ns, 'path');
+        p.setAttribute('d', d);
+        p.setAttribute('fill', 'none');
+        p.setAttribute('stroke', color);
+        p.setAttribute('stroke-width', width);
+        p.setAttribute('stroke-linecap', 'round');
+        p.setAttribute('stroke-linejoin', 'round');
+        return p;
+      }
+
+      for (var i = 0; i < widths.length; i++) {
+        mask.appendChild(makeMaskPath('white', widths[i] + bw));
+        mask.appendChild(makeMaskPath('black', widths[i] - bw));
+      }
+      mask.appendChild(makeMaskPath('white', bw));
+
+      defs.appendChild(mask);
+      svg.appendChild(defs);
+
+      var g = document.createElementNS(ns, 'g');
+      g.setAttribute('mask', 'url(#border-mask)');
+
+      var paths = [];
+      for (var s = 1; s <= 7; s++) {
+        var p = document.createElementNS(ns, 'path');
+        p.setAttribute('d', d);
+        p.setAttribute('class', 'stripe stripe-' + s);
+        g.appendChild(p);
+        paths.push(p);
+      }
+      svg.appendChild(g);
+
+      // --- Draw-in animation ---
+      var pathLength = paths[0].getTotalLength();
+
+      var timing = [
+        { delay: 0,    duration: 3.2 },
+        { delay: 0.7,  duration: 2.9 },
+        { delay: 1.4,  duration: 2.7 },
+        { delay: 2.1,  duration: 2.4 },
+        { delay: 2.8,  duration: 2.6 },
+        { delay: 3.5,  duration: 2.2 },
+        { delay: 4.2,  duration: 2.0 }
+      ];
+
+      // First stripe (outermost, darkest) is already visible
+      paths[0].style.strokeDasharray = 'none';
+      paths[0].style.strokeDashoffset = '0';
+
+      // Remaining stripes start hidden
+      for (var i = 1; i < paths.length; i++) {
+        paths[i].style.strokeDasharray = pathLength;
+        paths[i].style.strokeDashoffset = pathLength;
+      }
+
+      svg.classList.add('visible');
+      svg.getBoundingClientRect();
+
+      // Animate stripes 2-7 with staggered delays
+      for (var i = 1; i < paths.length; i++) {
+        paths[i].style.transition =
+          'stroke-dashoffset ' + timing[i].duration + 's ease-out ' + timing[i].delay + 's';
+        paths[i].style.strokeDashoffset = '0';
+      }
+
+      document.querySelector('.stripe-animator').classList.add('active');
+
+      // --- Avatar pop-in timed to stripe progress ---
+      var avatarTimings = [
+        { id: 'avatar-maria',  delay: 2.5 },
+        { id: 'avatar-josh',   delay: 3.2 },
+        { id: 'avatar-aisha',  delay: 3.8 },
+        { id: 'avatar-sarah',  delay: 4.5 },
+        { id: 'avatar-marcus', delay: 5.0 }
+      ];
+
+      avatarTimings.forEach(function(a) {
+        setTimeout(function() {
+          document.getElementById(a.id).classList.add('pop-in');
+        }, a.delay * 1000);
+      });
+
+      // Speech bubbles cycle randomly after all avatars are in place
+      var quotes = {
+        maria: [
+          'Your product really needs keyboard shortcuts.',
+          'Just upvoted the dark mode request!',
+          'A mobile app would be a game changer.',
+          'Would love to see better export options.',
+          'Upvoted! Bulk editing is a must-have.',
+          'Can we get email notification settings?',
+          'Just submitted a request for templates.',
+          'The API integration idea is brilliant, voted!',
+          'Would love drag-and-drop file uploads.',
+          'Voted for the calendar view, need that!'
+        ],
+        aisha: [
+          'Wow, they really listened, looks great!',
+          'Love that they shipped this so fast!',
+          'This update is exactly what we needed.',
+          'Upvoted, this would help our whole team.',
+          'Just saw the fix go live, incredible support!',
+          'The new feature works perfectly, thank you!',
+          'So glad this made it to the roadmap.',
+          'Voted! This would save us hours weekly.',
+          'Finally, a team that actually listens to users.',
+          'The response time on this was amazing!',
+          'I bet the creator of PathPro is extra handsome.'
+        ],
+        josh: [
+          'Feature confirmed, adding it to the roadmap.',
+          'Great feedback, creating a task for this now.',
+          'Community spoke, we\'re building it next sprint.',
+          'Hearing you loud and clear, it\'s prioritized.',
+          'Added to the backlog, shipping next month.',
+          'Love this idea, assigning it to the team.',
+          'This has 50 votes now, fast-tracking it.',
+          'Confirmed, the team is on it this week.',
+          'Moved to in-progress, stay tuned for updates.',
+          'We hear you, releasing a fix by Friday.',
+          'PathFox flagged this as a top request.',
+          'PathFox detected a trend, users want this.',
+          'PathFox analyzed 200 comments, clear winner.',
+          'PathFox insights confirm, this is priority #1.',
+          'PathFox surfaced this from community feedback.'
+        ],
+        sarah: [
+          'Great suggestion! highlighting for later.',
+          'Looking into this now, will update shortly.',
+          'Thanks for flagging, passing to the team!',
+          'Good catch, I\'ll escalate this right away.',
+          'Noted! Adding context for the dev team.',
+          'On it! Expect an update within 24 hours.',
+          'Great idea, linking to a related request.',
+          'Reproduced the issue, fix is in the works.',
+          'Tagging the team, this needs attention.',
+          'Helpful feedback, documenting for the team.',
+          'Shoutout to @maria for suggesting this one!',
+          'Big thanks to @aisha for the detailed feedback!',
+          'Props to the community for driving this feature!',
+          'Hat tip to @marcus for building this so fast!',
+          'Huge shoutout to everyone who voted on this!'
+        ],
+        marcus: [
+          'Sprint complete, let\'s ship the update!',
+          'Bug fixed, deploying to production now.',
+          'Feature done, ready for QA review.',
+          'Pushed the update, should be live shortly.',
+          'Task complete, moving on to the next one.',
+          'Merged the PR, releasing tomorrow morning.',
+          'All tests passing, marking this complete.',
+          'Hotfix deployed, issue should be resolved.',
+          'Finished the integration, works like a charm.',
+          'Release notes updated, version 2.4 is live.'
+        ]
+      };
+
+      var bubbles = [
+        { bubble: 'bubble-aisha',  avatar: 'avatar-aisha',  quotes: quotes.aisha },
+        { bubble: 'bubble-josh',   avatar: 'avatar-josh',   quotes: quotes.josh },
+        { bubble: 'bubble-marcus', avatar: 'avatar-marcus', quotes: quotes.marcus },
+        { bubble: 'bubble-maria',  avatar: 'avatar-maria',  quotes: quotes.maria },
+        { bubble: 'bubble-sarah',  avatar: 'avatar-sarah',  quotes: quotes.sarah }
+      ];
+      var lastBubble = -1;
+
+      function showRandomBubble() {
+        var idx;
+        do {
+          idx = Math.floor(Math.random() * bubbles.length);
+        } while (idx === lastBubble);
+        lastBubble = idx;
+
+        var b = bubbles[idx];
+        var bubbleEl = document.getElementById(b.bubble);
+        var avatarEl = document.getElementById(b.avatar);
+
+        // Pick a random quote for this avatar
+        var quote = b.quotes[Math.floor(Math.random() * b.quotes.length)];
+        var attribution = bubbleEl.querySelector('.attribution');
+        bubbleEl.firstChild.textContent = quote;
+
+        bubbleEl.classList.remove('show');
+        avatarEl.classList.remove('shine');
+        void bubbleEl.offsetWidth;
+        void avatarEl.offsetWidth;
+        bubbleEl.classList.add('show');
+        avatarEl.classList.add('shine');
+
+        // 4s animation + 2s pause before next
+        setTimeout(showRandomBubble, 6000);
+      }
+
+      setTimeout(showRandomBubble, 5800);
+    })();
+  </script>
+</body>
+</html>

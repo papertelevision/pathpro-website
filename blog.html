@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — PathPro</title>
+  <meta name="description" content="Insights for product teams. Comparisons, guides, and best practices for feedback management, roadmapping, and product development.">
+  <meta name="keywords" content="product management blog, feedback tools, roadmap software, product development, SaaS tools, product intelligence, AI product management">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pathpro.app/blog">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog — PathPro">
+  <meta property="og:description" content="Insights for product teams. Comparisons, guides, and best practices for feedback management, roadmapping, and product development.">
+  <meta property="og:url" content="https://pathpro.app/blog">
+  <meta property="og:site_name" content="PathPro">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — PathPro">
+  <meta name="twitter:description" content="Insights for product teams. Comparisons, guides, and best practices for feedback management, roadmapping, and product development.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body class="dark-hero">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav" role="banner">
+    <nav class="nav__container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="PathPro home">
+        <img src="images/logo_header.png" alt="PathPro" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Features
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="features/feature-voting.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Validate</span>
+                  <span class="nav__dropdown-desc">Let your users tell you what they want.</span>
+                </span>
+              </a>
+              <a href="features/tasks.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M10 4v16"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Build</span>
+                  <span class="nav__dropdown-desc">AI-driven task management tools.</span>
+                </span>
+              </a>
+              <a href="features/public-roadmaps.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Inform</span>
+                  <span class="nav__dropdown-desc">Roadmaps, public and internal.</span>
+                </span>
+              </a>
+              <a href="features/public-release-notes.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Ship</span>
+                  <span class="nav__dropdown-desc">Announce each win, celebrate together.</span>
+                </span>
+              </a>
+              <a href="features/provide-support.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/><path d="M18 17a4 4 0 0 1-4 4h-2a1 1 0 0 1 0-2h2a2 2 0 0 0 2-2"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Provide Support</span>
+                  <span class="nav__dropdown-desc">Boost customer tech support.</span>
+                </span>
+              </a>
+              <a href="features/analyze-feedback.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Analyze</span>
+                  <span class="nav__dropdown-desc">Track growth, sentiment, and team performance.</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Resources
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel nav__dropdown-panel--compact" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="about.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">About</span>
+                  <span class="nav__dropdown-desc">Meet our team.</span>
+                </span>
+              </a>
+              <a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Docs</span>
+                  <span class="nav__dropdown-desc">Learn how to use PathPro.</span>
+                </span>
+              </a>
+              <a href="blog.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Blog</span>
+                  <span class="nav__dropdown-desc">Let&rsquo;s talk product development.</span>
+                </span>
+              </a>
+              <a href="#" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Get Support</span>
+                  <span class="nav__dropdown-desc">Submit a support ticket.</span>
+                </span>
+              </a>
+              <a href="contact.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Contact</span>
+                  <span class="nav__dropdown-desc">Talk to our team.</span>
+                </span>
+              </a>
+              <a href="pathpro-official-roadmap.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Our Roadmap</span>
+                  <span class="nav__dropdown-desc">See what&rsquo;s coming next.</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li><a href="pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      </ul>
+      <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-sm nav__cta">Get Started Free</a>
+      <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><span class="mobile-menu__product-label">Product</span></li>
+      <li><a href="features/feature-voting.html" class="mobile-menu__product-item">Validate</a></li>
+      <li><a href="features/tasks.html" class="mobile-menu__product-item">Build</a></li>
+      <li><a href="features/public-roadmaps.html" class="mobile-menu__product-item">Inform</a></li>
+      <li><a href="features/public-release-notes.html" class="mobile-menu__product-item">Ship</a></li>
+      <li><a href="features/provide-support.html" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="features/analyze-feedback.html" class="mobile-menu__product-item">Analyze</a></li>
+      <li><a href="pathfox.html">Meet PathFox</a></li>
+      <li><span class="mobile-menu__product-label">Resources</span></li>
+      <li><a href="about.html" class="mobile-menu__product-item">About</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Docs</a></li>
+      <li><a href="blog.html" class="mobile-menu__product-item">Blog</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      <li><a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary">Get Started Free</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+      <div class="container">
+        <h1 class="blog-hero__title">On Building <span class="gradient-text">Smarter...</span></h1>
+        <p class="blog-hero__subtitle">Insights for product teams &mdash; comparisons, guides, and best practices for building products people love.</p>
+      </div>
+    </section>
+
+    <!-- Blog Listing -->
+    <section class="blog-listing">
+      <div class="container">
+        <div class="blog-filters" role="group" aria-label="Filter articles by category">
+          <button class="blog-filter is-active" data-filter="all">All</button>
+<button class="blog-filter" data-filter="community">Community</button>
+          <button class="blog-filter" data-filter="ai">AI</button>
+          <button class="blog-filter" data-filter="news">News</button>
+          <button class="blog-filter" data-filter="product-development">Product Development</button>
+        </div>
+        <div class="blog-grid">
+          <a href="blog/how-we-rebuilt-pathpro-with-customer-data.html" class="blog-card animate-on-scroll" data-category="product-development">
+            <div class="blog-card__body">
+              <div class="blog-card__categories"><span class="blog-card__category">Product Development</span></div>
+              <h2 class="blog-card__title">How We Rebuilt PathPro Using Our Own Customer Feedback...and Our Own Platform</h2>
+              <p class="blog-card__excerpt">One year after launch, we used our own tools to collect real user data and completely overhauled PathPro. No guessing. No wasted features. Every change backed by what our customers actually asked for.</p>
+              <div class="blog-card__meta">
+                <span><time datetime="2026-02-26">Feb 26, 2026</time></span>
+                <span>10 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="blog/the-human-element.html" class="blog-card animate-on-scroll" data-category="ai product-development">
+            <div class="blog-card__body">
+              <div class="blog-card__categories"><span class="blog-card__category">AI</span><span class="blog-card__category">Product Development</span></div>
+              <h2 class="blog-card__title">The Human Element: Why AI Can&rsquo;t Replace the Product Builder&rsquo;s Journey</h2>
+              <p class="blog-card__excerpt">PathPro was built from the real experience of creating, scaling, and selling a product business. AI is a powerful tool, but it can&rsquo;t replicate the lessons learned from shipping, failing, and iterating with real users.</p>
+              <div class="blog-card__meta">
+                <span><time datetime="2026-02-12">Feb 12, 2026</time></span>
+                <span>7 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="blog/how-pathfox-was-built.html" class="blog-card animate-on-scroll" data-category="ai product-development">
+            <div class="blog-card__body">
+              <div class="blog-card__categories"><span class="blog-card__category">AI</span><span class="blog-card__category">Product Development</span></div>
+              <h2 class="blog-card__title">How We Built PathFox: A Custom Product Intelligence AI That Knows What Your Customers Want</h2>
+              <p class="blog-card__excerpt">PathFox is not a chatbot wrapper. It is a purpose-built product intelligence engine that analyzes feedback, scores demand, and tells you exactly what your customers want next.</p>
+              <div class="blog-card__meta">
+                <span><time datetime="2026-01-28">Jan 28, 2026</time></span>
+                <span>9 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="blog/welcome-to-the-new-pathpro.html" class="blog-card animate-on-scroll" data-category="news product-development">
+            <div class="blog-card__body">
+              <div class="blog-card__categories"><span class="blog-card__category">News</span><span class="blog-card__category">Product Development</span></div>
+              <h2 class="blog-card__title">Welcome to the New PathPro &mdash; and the Story of the Final 5% in UX Design</h2>
+              <p class="blog-card__excerpt">A visual overhaul, a platform redesign, and a personal story about the maddening gap between what you envision and what you can actually ship &mdash; until you learn to close it yourself.</p>
+              <div class="blog-card__meta">
+                <span><time datetime="2026-01-07">Jan 7, 2026</time></span>
+                <span>7 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="blog/public-roadmap-appsumo-campaign.html" class="blog-card animate-on-scroll" data-category="community">
+            <div class="blog-card__body">
+              <div class="blog-card__categories"><span class="blog-card__category">Community</span></div>
+              <h2 class="blog-card__title">Why a Public Roadmap Is Essential for Your AppSumo Campaign (2026)</h2>
+              <p class="blog-card__excerpt">AppSumo buyers expect transparency. A free public roadmap builds trust, reduces refund rates, and turns lifetime deal customers into long-term advocates for your product.</p>
+              <div class="blog-card__meta">
+                <span><time datetime="2025-12-03">Dec 3, 2025</time></span>
+                <span>10 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="blog/best-product-management-tools.html" class="blog-card animate-on-scroll" data-category="product-development">
+            <div class="blog-card__body">
+              <div class="blog-card__categories"><span class="blog-card__category">Product Development</span></div>
+              <h2 class="blog-card__title">Best All-in-One Product Management Tools (2026)</h2>
+              <p class="blog-card__excerpt">Most product teams use 3&ndash;5 separate tools for feedback, roadmaps, tasks, and support. These platforms combine everything into one workspace so you can stop context-switching.</p>
+              <div class="blog-card__meta">
+                <span><time datetime="2025-11-14">Nov 14, 2025</time></span>
+                <span>9 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="blog/best-uservoice-alternatives.html" class="blog-card animate-on-scroll" data-category="product-development">
+            <div class="blog-card__body">
+              <div class="blog-card__categories"><span class="blog-card__category">Product Development</span></div>
+              <h2 class="blog-card__title">Best UserVoice Alternatives for Product Feedback (2026)</h2>
+              <p class="blog-card__excerpt">The best UserVoice alternatives in 2026 are PathPro, Canny, Productboard, and Fider. UserVoice pioneered feedback portals, but newer tools offer more features at lower price points.</p>
+              <div class="blog-card__meta">
+                <span><time datetime="2025-10-21">Oct 21, 2025</time></span>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="blog/best-jira-alternatives.html" class="blog-card animate-on-scroll" data-category="product-development">
+            <div class="blog-card__body">
+              <div class="blog-card__categories"><span class="blog-card__category">Product Development</span></div>
+              <h2 class="blog-card__title">Best Jira Alternatives for Product Teams (2026)</h2>
+              <p class="blog-card__excerpt">The best Jira alternatives for product teams in 2026 are PathPro, Linear, Asana, and Shortcut. Jira works well for engineering-heavy workflows, but product teams often need something leaner.</p>
+              <div class="blog-card__meta">
+                <span><time datetime="2025-09-16">Sep 16, 2025</time></span>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="blog/best-canny-alternatives.html" class="blog-card animate-on-scroll" data-category="product-development">
+            <div class="blog-card__body">
+              <div class="blog-card__categories"><span class="blog-card__category">Product Development</span></div>
+              <h2 class="blog-card__title">Best Canny Alternatives for Feedback &amp; Roadmaps (2026)</h2>
+              <p class="blog-card__excerpt">The best Canny alternatives in 2026 are PathPro, Productboard, UserVoice, and Nolt. Each offers feedback collection and public roadmaps, but they differ in pricing, built-in task management, and AI features.</p>
+              <div class="blog-card__meta">
+                <span><time datetime="2025-08-22">Aug 22, 2025</time></span>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="images/logo-footer.png" alt="PathPro" class="footer__logo-img">
+          <p class="footer__tagline">The Community-Driven Product Development OS for modern teams.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Product</h4>
+          <ul class="footer__list">
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+            <li><a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener">Knowledge Base</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pathpro-official-roadmap.html">Our Roadmap</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Other</h4>
+          <ul class="footer__list">
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 PathPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/home.js"></script>
+  <script>
+    // Blog category filters
+    (function() {
+      var filters = document.querySelectorAll('.blog-filter');
+      var cards = document.querySelectorAll('.blog-card');
+      if (!filters.length) return;
+
+      filters.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var filter = btn.getAttribute('data-filter');
+          filters.forEach(function(b) { b.classList.remove('is-active'); });
+          btn.classList.add('is-active');
+
+          cards.forEach(function(card) {
+            var categories = (card.getAttribute('data-category') || '').split(' ');
+            if (filter === 'all' || categories.indexOf(filter) !== -1) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

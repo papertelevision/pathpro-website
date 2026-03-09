@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics &amp; Growth Dashboard for Product Teams &mdash; PathPro</title>
+  <meta name="description" content="Track product growth, analyze customer feedback, measure sentiment, and monitor team performance &mdash; all from one dashboard. Free forever.">
+  <meta name="keywords" content="product analytics dashboard, growth tracking, customer feedback analysis, sentiment analysis, team performance, sprint health, AI analytics, product management">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pathpro.app/features/analyze-feedback">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Analytics &amp; Growth Dashboard for Product Teams &mdash; PathPro">
+  <meta property="og:description" content="Track product growth, analyze customer feedback, measure sentiment, and monitor team performance &mdash; all from one dashboard. Free forever.">
+  <meta property="og:url" content="https://pathpro.app/features/analyze-feedback">
+  <meta property="og:site_name" content="PathPro">
+  <meta property="og:image" content="https://pathpro.app/images/overview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Analytics &amp; Growth Dashboard for Product Teams &mdash; PathPro">
+  <meta name="twitter:description" content="Track product growth, analyze customer feedback, measure sentiment, and monitor team performance &mdash; all from one dashboard. Free forever.">
+  <meta name="twitter:image" content="https://pathpro.app/images/overview.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/features-analyze.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PathPro Analytics & Growth Dashboard",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Analytics and growth dashboard for product teams. Track product growth, analyze customer feedback, measure sentiment, and monitor team performance.",
+    "url": "https://pathpro.app/features/analyze-feedback",
+    "featureList": [
+      "Product growth dashboard",
+      "Community growth tracking",
+      "Feedback analysis",
+      "Customer sentiment scoring",
+      "Team performance tracking",
+      "Sprint health indicators",
+      "Exportable reports",
+      "Shareable dashboards",
+      "Predictive analytics with PathFox AI",
+      "Free forever plan"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free plan available. No credit card required."
+    }
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav nav--light-dropdowns" id="nav" role="banner">
+    <nav class="nav__container" aria-label="Main navigation">
+      <a href="../index.html" class="nav__logo" aria-label="PathPro home">
+        <img src="../images/logo_header.png" alt="PathPro" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Features
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="feature-voting.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></span>
+                <span><span class="nav__dropdown-title">Validate</span><span class="nav__dropdown-desc">Let your users tell you what they want.</span></span>
+              </a>
+              <a href="tasks.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M10 4v16"/></svg></span>
+                <span><span class="nav__dropdown-title">Build</span><span class="nav__dropdown-desc">AI-driven task management tools.</span></span>
+              </a>
+              <a href="public-roadmaps.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <span><span class="nav__dropdown-title">Inform</span><span class="nav__dropdown-desc">Roadmaps, public and internal.</span></span>
+              </a>
+              <a href="public-release-notes.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+                <span><span class="nav__dropdown-title">Ship</span><span class="nav__dropdown-desc">Announce each win, celebrate together.</span></span>
+              </a>
+              <a href="provide-support.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/><path d="M18 17a4 4 0 0 1-4 4h-2a1 1 0 0 1 0-2h2a2 2 0 0 0 2-2"/></svg></span>
+                <span><span class="nav__dropdown-title">Provide Support</span><span class="nav__dropdown-desc">Boost customer tech support.</span></span>
+              </a>
+              <a href="analyze-feedback.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+                <span><span class="nav__dropdown-title">Analyze</span><span class="nav__dropdown-desc">Track growth, sentiment, and team performance.</span></span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Resources
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel nav__dropdown-panel--compact" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="../about.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span><span class="nav__dropdown-title">About</span><span class="nav__dropdown-desc">Meet our team.</span></span></a>
+              <a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span><span class="nav__dropdown-title">Docs</span><span class="nav__dropdown-desc">Learn how to use PathPro.</span></span></a>
+              <a href="../blog.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span><span><span class="nav__dropdown-title">Blog</span><span class="nav__dropdown-desc">Let&rsquo;s talk product development.</span></span></a>
+              <a href="#" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span><span><span class="nav__dropdown-title">Get Support</span><span class="nav__dropdown-desc">Submit a support ticket.</span></span></a>
+              <a href="../contact.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span><span class="nav__dropdown-title">Contact</span><span class="nav__dropdown-desc">Talk to our team.</span></span></a>
+              <a href="../pathpro-official-roadmap.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></span><span><span class="nav__dropdown-title">Our Roadmap</span><span class="nav__dropdown-desc">See what&rsquo;s coming next.</span></span></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      </ul>
+      <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-sm nav__cta">Get Started Free</a>
+      <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><span class="mobile-menu__product-label">Product</span></li>
+      <li><a href="feature-voting.html" class="mobile-menu__product-item">Validate</a></li>
+      <li><a href="tasks.html" class="mobile-menu__product-item">Build</a></li>
+      <li><a href="public-roadmaps.html" class="mobile-menu__product-item">Inform</a></li>
+      <li><a href="public-release-notes.html" class="mobile-menu__product-item">Ship</a></li>
+      <li><a href="provide-support.html" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="analyze-feedback.html" class="mobile-menu__product-item">Analyze</a></li>
+      <li><a href="../pathfox.html">Meet PathFox</a></li>
+      <li><span class="mobile-menu__product-label">Resources</span></li>
+      <li><a href="../about.html" class="mobile-menu__product-item">About</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Docs</a></li>
+      <li><a href="../blog.html" class="mobile-menu__product-item">Blog</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      <li><a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary">Get Started Free</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="fanalyze-hero">
+      <div class="container">
+        <div class="fanalyze-hero__content">
+          <span class="fanalyze-hero__badge">Analytics &amp; Insights</span>
+          <h1 class="fanalyze-hero__title">Measure what matters. Act on what counts.</h1>
+          <div class="fanalyze-hero__pills">
+            <span class="fanalyze-hero__pill">Growth Tracking</span>
+            <span class="fanalyze-hero__pill">Feature Analysis</span>
+            <span class="fanalyze-hero__pill">Sprint Health</span>
+            <span class="fanalyze-hero__pill">AI Powered</span>
+            <span class="fanalyze-hero__pill">Reports</span>
+          </div>
+        </div>
+        <div class="fanalyze-hero__visual animate-on-scroll">
+          <div class="fanalyze-platform">
+            <div class="fanalyze-platform__chrome">
+              <span class="fanalyze-platform__chrome-dot" style="background:#EF4444"></span>
+              <span class="fanalyze-platform__chrome-dot" style="background:#F59E0B"></span>
+              <span class="fanalyze-platform__chrome-dot" style="background:#10B981"></span>
+              <span class="fanalyze-platform__chrome-url">yourproduct.pathpro.co</span>
+            </div>
+            <div class="fanalyze-platform__topnav">
+              <div class="fanalyze-platform__topnav-overview">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                Overview
+              </div>
+              <div class="fanalyze-platform__topnav-project">
+                <span class="fanalyze-platform__project-dot"></span>
+                <span>Development Board</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+              <nav class="fanalyze-platform__tabs">
+                <span class="fanalyze-platform__tab">Feature Voting</span>
+                <span class="fanalyze-platform__tab">Roadmap</span>
+                <span class="fanalyze-platform__tab">Release Notes</span>
+                <span class="fanalyze-platform__tab">Project News</span>
+              </nav>
+              <div class="fanalyze-platform__topnav-actions">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <img class="fanalyze-platform__topnav-avatar" src="../images/sarah_chen.jpg" alt="User avatar">
+              </div>
+            </div>
+            <div class="fanalyze-platform__main">
+              <aside class="fanalyze-platform__sidebar">
+                <div class="fanalyze-platform__sidebar-group">
+                  <span class="fanalyze-platform__sidebar-label">NAVIGATION</span>
+                  <div class="fanalyze-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>Projects</div>
+                  <div class="fanalyze-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>Submissions</div>
+                  <div class="fanalyze-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/></svg>Support Tickets</div>
+                </div>
+                <div class="fanalyze-platform__sidebar-group">
+                  <span class="fanalyze-platform__sidebar-label">MEMBERS</span>
+                  <div class="fanalyze-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Your Community</div>
+                  <div class="fanalyze-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Your Team</div>
+                </div>
+                <div class="fanalyze-platform__sidebar-foot">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                  Settings &amp; Design
+                </div>
+              </aside>
+              <div class="fanalyze-dashboard">
+                <!-- KPI Stat Cards -->
+                <div class="fanalyze-dashboard__stats">
+                  <div class="fanalyze-stat">
+                    <span class="fanalyze-stat__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></span>
+                    <span class="fanalyze-stat__value" data-count="32">0</span>
+                    <span class="fanalyze-stat__label">Open Tasks</span>
+                    <span class="fanalyze-stat__sub">+12 this week</span>
+                  </div>
+                  <div class="fanalyze-stat">
+                    <span class="fanalyze-stat__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg></span>
+                    <span class="fanalyze-stat__value" data-count="38">0</span>
+                    <span class="fanalyze-stat__label">Submissions</span>
+                    <span class="fanalyze-stat__sub">5 new</span>
+                  </div>
+                  <div class="fanalyze-stat">
+                    <span class="fanalyze-stat__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                    <span class="fanalyze-stat__value" data-count="156">0</span>
+                    <span class="fanalyze-stat__label">Community</span>
+                    <span class="fanalyze-stat__sub">+8 this month</span>
+                  </div>
+                  <div class="fanalyze-stat">
+                    <span class="fanalyze-stat__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/></svg></span>
+                    <span class="fanalyze-stat__value" data-count="4">0</span>
+                    <span class="fanalyze-stat__label">Support Tickets</span>
+                    <span class="fanalyze-stat__sub">2 open</span>
+                  </div>
+                  <div class="fanalyze-stat">
+                    <span class="fanalyze-stat__icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg></span>
+                    <span class="fanalyze-stat__value" data-count="31">0</span>
+                    <span class="fanalyze-stat__label">Releases</span>
+                    <span class="fanalyze-stat__sub">0 drafts</span>
+                  </div>
+                </div>
+                <!-- Content: two-column layout -->
+                <div class="fanalyze-dashboard__columns">
+                  <!-- Left column: Chart + Feedback Submissions -->
+                  <div class="fanalyze-dashboard__col-left">
+                    <div class="fanalyze-dashboard__chart">
+                      <div class="fanalyze-chart__header">
+                        <span class="fanalyze-chart__title">Community Growth</span>
+                        <span class="fanalyze-chart__range-btn">7D</span>
+                        <span class="fanalyze-chart__range-btn">30D</span>
+                        <span class="fanalyze-chart__range-btn">90D</span>
+                        <span class="fanalyze-chart__range-btn">12M</span>
+                        <span class="fanalyze-chart__range-btn fanalyze-chart__range-btn--active">ALL TIME</span>
+                      </div>
+                      <svg class="fanalyze-chart__svg" viewBox="0 0 500 200" preserveAspectRatio="none">
+                        <text x="2" y="15" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">160</text>
+                        <text x="2" y="65" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">120</text>
+                        <text x="2" y="115" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">80</text>
+                        <text x="2" y="165" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">40</text>
+                        <text x="2" y="198" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">0</text>
+                        <line x1="30" y1="10" x2="495" y2="10" stroke="#F1F5F9" stroke-width="0.5"/>
+                        <line x1="30" y1="60" x2="495" y2="60" stroke="#F1F5F9" stroke-width="0.5"/>
+                        <line x1="30" y1="110" x2="495" y2="110" stroke="#F1F5F9" stroke-width="0.5"/>
+                        <line x1="30" y1="160" x2="495" y2="160" stroke="#F1F5F9" stroke-width="0.5"/>
+                        <text x="50" y="198" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif" text-anchor="middle">Jun 23</text>
+                        <text x="110" y="198" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif" text-anchor="middle">Oct 23</text>
+                        <text x="170" y="198" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif" text-anchor="middle">Feb 24</text>
+                        <text x="230" y="198" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif" text-anchor="middle">Jun 24</text>
+                        <text x="290" y="198" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif" text-anchor="middle">Oct 24</text>
+                        <text x="350" y="198" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif" text-anchor="middle">Feb 25</text>
+                        <text x="410" y="198" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif" text-anchor="middle">Jun 25</text>
+                        <text x="470" y="198" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif" text-anchor="middle">Feb 26</text>
+                        <path class="fanalyze-chart__area" d="M50,190 C80,190 100,188 140,186 C180,184 200,182 230,178 C260,170 280,158 310,140 C335,120 350,92 370,85 C385,81 405,80 420,79 C440,64 455,40 470,22 L470,190 L50,190 Z" fill="#14B8A6"/>
+                        <path class="fanalyze-chart__line" d="M50,190 C80,190 100,188 140,186 C180,184 200,182 230,178 C260,170 280,158 310,140 C335,120 350,92 370,85 C385,81 405,80 420,79 C440,64 455,40 470,22" fill="none" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle class="fanalyze-chart__endpoint" cx="470" cy="22" r="2.4" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.5"/>
+                      </svg>
+                    </div>
+                    <!-- Feedback Submissions Table -->
+                    <div class="fanalyze-dashboard__submissions">
+                      <div class="fanalyze-submissions__header">
+                        <span class="fanalyze-submissions__title">Feedback Submissions</span>
+                        <span class="fanalyze-submissions__count">8</span>
+                      </div>
+                      <div class="fanalyze-submissions__table">
+                        <div class="fanalyze-submissions__head">
+                          <span>TITLE</span>
+                          <span>AUTHOR</span>
+                          <span>TIME</span>
+                          <span>URGENCY</span>
+                          <span>STATUS</span>
+                        </div>
+                        <div class="fanalyze-submissions__row">
+                          <span class="fanalyze-submissions__row-title"><span class="fanalyze-submissions__dot" style="background:#0EA5E9"></span>Testing Feedback submission</span>
+                          <span>Josh</span>
+                          <span>5d ago</span>
+                          <span><span class="fanalyze-submissions__urgency" style="background:#F59E0B"></span> Medium</span>
+                          <span><span class="fanalyze-submissions__urgency" style="background:#0EA5E9"></span> New</span>
+                        </div>
+                        <div class="fanalyze-submissions__row">
+                          <span class="fanalyze-submissions__row-title"><span class="fanalyze-submissions__dot" style="background:#10B981"></span>Team/Contributors not showing when adopted</span>
+                          <span>Josh</span>
+                          <span>18d ago</span>
+                          <span><span class="fanalyze-submissions__urgency" style="background:#94A3B8"></span> N/A</span>
+                          <span><span class="fanalyze-submissions__urgency" style="background:#10B981"></span> Roadmap</span>
+                        </div>
+                        <div class="fanalyze-submissions__row">
+                          <span class="fanalyze-submissions__row-title"><span class="fanalyze-submissions__dot" style="background:#EF4444"></span>Dashboard charts not loading on Firefox</span>
+                          <span>Sarah</span>
+                          <span>22d ago</span>
+                          <span><span class="fanalyze-submissions__urgency" style="background:#EF4444"></span> High</span>
+                          <span><span class="fanalyze-submissions__urgency" style="background:#F59E0B"></span> Open</span>
+                        </div>
+                        <div class="fanalyze-submissions__row" style="border-bottom:none">
+                          <span class="fanalyze-submissions__row-title"><span class="fanalyze-submissions__dot" style="background:#8B5CF6"></span>Add CSV export for task lists</span>
+                          <span>Jordan</span>
+                          <span>1mo ago</span>
+                          <span><span class="fanalyze-submissions__urgency" style="background:#F59E0B"></span> Medium</span>
+                          <span><span class="fanalyze-submissions__urgency" style="background:#10B981"></span> Roadmap</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Support Tickets -->
+                    <div class="fanalyze-dashboard__tickets">
+                      <div class="fanalyze-tickets__header">
+                        <span class="fanalyze-tickets__title">Support Tickets</span>
+                        <span class="fanalyze-tickets__count">6</span>
+                      </div>
+                      <div class="fanalyze-tickets__status-bar">
+                        <span class="fanalyze-tickets__bar-seg" style="background:#0EA5E9;flex:1"></span>
+                        <span class="fanalyze-tickets__bar-seg" style="background:#10B981;flex:2"></span>
+                        <span class="fanalyze-tickets__bar-seg" style="background:#F59E0B;flex:1"></span>
+                        <span class="fanalyze-tickets__bar-seg" style="background:#8B5CF6;flex:1"></span>
+                        <span class="fanalyze-tickets__bar-seg" style="background:#94A3B8;flex:1"></span>
+                      </div>
+                      <div class="fanalyze-tickets__legend">
+                        <span><span class="fanalyze-tickets__legend-dot" style="background:#0EA5E9"></span> New <strong>1</strong></span>
+                        <span><span class="fanalyze-tickets__legend-dot" style="background:#10B981"></span> Open <strong>2</strong></span>
+                        <span><span class="fanalyze-tickets__legend-dot" style="background:#F59E0B"></span> Pending <strong>1</strong></span>
+                        <span><span class="fanalyze-tickets__legend-dot" style="background:#8B5CF6"></span> Resolved <strong>1</strong></span>
+                        <span><span class="fanalyze-tickets__legend-dot" style="background:#94A3B8"></span> Closed <strong>1</strong></span>
+                      </div>
+                      <div class="fanalyze-tickets__table">
+                        <div class="fanalyze-tickets__head">
+                          <span>TICKET</span>
+                          <span>SUBMITTED BY</span>
+                          <span>CONTACT</span>
+                          <span></span>
+                        </div>
+                        <div class="fanalyze-tickets__row">
+                          <span class="fanalyze-tickets__id">TKT-000001</span>
+                          <span>Jordan Meltz</span>
+                          <span>jordan.guy@gmail.com</span>
+                          <span><span class="fanalyze-tickets__status-dot" style="background:#10B981"></span></span>
+                        </div>
+                        <div class="fanalyze-tickets__row" style="border-bottom:none">
+                          <span class="fanalyze-tickets__id">TKT-000002</span>
+                          <span>Sarah Chen</span>
+                          <span>sarah@example.com</span>
+                          <span><span class="fanalyze-tickets__status-dot" style="background:#10B981"></span></span>
+                        </div>
+                        <div class="fanalyze-tickets__row">
+                          <span class="fanalyze-tickets__id">TKT-000003</span>
+                          <span>Marcus Rivera</span>
+                          <span>marcus@designlabs.io</span>
+                          <span><span class="fanalyze-tickets__status-dot" style="background:#0EA5E9"></span></span>
+                        </div>
+                        <div class="fanalyze-tickets__row">
+                          <span class="fanalyze-tickets__id">TKT-000004</span>
+                          <span>Aisha Patel</span>
+                          <span>aisha@startupco.com</span>
+                          <span><span class="fanalyze-tickets__status-dot" style="background:#F59E0B"></span></span>
+                        </div>
+                        <div class="fanalyze-tickets__row">
+                          <span class="fanalyze-tickets__id">TKT-000005</span>
+                          <span>Jordan Lee</span>
+                          <span>jordan@buildfast.dev</span>
+                          <span><span class="fanalyze-tickets__status-dot" style="background:#8B5CF6"></span></span>
+                        </div>
+                        <div class="fanalyze-tickets__row">
+                          <span class="fanalyze-tickets__id">TKT-000006</span>
+                          <span>Maria Gonzalez</span>
+                          <span>maria@productpm.co</span>
+                          <span><span class="fanalyze-tickets__status-dot" style="background:#94A3B8"></span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Right column: Task Comments + Feature Comments -->
+                  <div class="fanalyze-dashboard__col-right">
+                    <!-- Task Comments -->
+                    <div class="fanalyze-dashboard__comments">
+                      <div class="fanalyze-comments__header">
+                        <span class="fanalyze-comments__title">Task Comments</span>
+                        <span class="fanalyze-comments__count">46</span>
+                      </div>
+                      <div class="fanalyze-comments__list">
+                        <div class="fanalyze-comments__item">
+                          <img class="fanalyze-comments__avatar" src="../images/jordan.jpg" alt="Jordan">
+                          <div class="fanalyze-comments__body">
+                            <div class="fanalyze-comments__meta"><strong>@Jordan</strong> <span>6d ago</span></div>
+                            <p>Holy wow... this update is next level! Congrats on the overhaul, this thing has really come into its own.</p>
+                            <span class="fanalyze-comments__task-link">on <em>Full UX/UI Overhaul</em></span>
+                          </div>
+                        </div>
+                        <div class="fanalyze-comments__item">
+                          <img class="fanalyze-comments__avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                          <div class="fanalyze-comments__body">
+                            <div class="fanalyze-comments__meta"><strong>@Sarah</strong> <span>2mo ago</span></div>
+                            <p>This is complete and ready to ship!</p>
+                            <span class="fanalyze-comments__task-link">on <em>Project Sorting</em></span>
+                          </div>
+                        </div>
+                        <div class="fanalyze-comments__item">
+                          <img class="fanalyze-comments__avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                          <div class="fanalyze-comments__body">
+                            <div class="fanalyze-comments__meta"><strong>@Sarah</strong> <span>3mo ago</span></div>
+                            <p>Complete with celebratory confetti, naturally.</p>
+                            <span class="fanalyze-comments__task-link">on <em>Mark all Tasks Complete</em></span>
+                          </div>
+                        </div>
+                        <div class="fanalyze-comments__item">
+                          <img class="fanalyze-comments__avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                          <div class="fanalyze-comments__body">
+                            <div class="fanalyze-comments__meta"><strong>@Sarah</strong> <span>3mo ago</span></div>
+                            <p>This feature is now live! Thanks to PathPro customer @mattsears for the original suggestion and feedback!</p>
+                            <span class="fanalyze-comments__task-link">on <em>Predefined Collection of Icons</em></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Feature Comments -->
+                    <div class="fanalyze-dashboard__comments">
+                      <div class="fanalyze-comments__header">
+                        <span class="fanalyze-comments__title">Feature Comments</span>
+                        <span class="fanalyze-comments__count">8</span>
+                      </div>
+                      <div class="fanalyze-comments__list">
+                        <div class="fanalyze-comments__item">
+                          <img class="fanalyze-comments__avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                          <div class="fanalyze-comments__body">
+                            <div class="fanalyze-comments__meta"><strong>@Sarah</strong> <span>6h ago</span></div>
+                            <p>This feature is now live! Huge thanks for all community members who pushed us to implement&hellip;</p>
+                            <span class="fanalyze-comments__task-link">on <em>Dark Mode</em></span>
+                          </div>
+                        </div>
+                        <div class="fanalyze-comments__item">
+                          <img class="fanalyze-comments__avatar" src="../images/marcus.jpg" alt="Marcus">
+                          <div class="fanalyze-comments__body">
+                            <div class="fanalyze-comments__meta"><strong>@Marcus</strong> <span>2d ago</span></div>
+                            <p>Just tested the new export &mdash; CSV formatting looks clean. Great work on this one.</p>
+                            <span class="fanalyze-comments__task-link">on <em>CSV Export</em></span>
+                          </div>
+                        </div>
+                        <div class="fanalyze-comments__item">
+                          <img class="fanalyze-comments__avatar" src="../images/aisha.jpg" alt="Aisha">
+                          <div class="fanalyze-comments__body">
+                            <div class="fanalyze-comments__meta"><strong>@Aisha</strong> <span>5d ago</span></div>
+                            <p>Can we add dark mode to the voting page too? Would love to see it across the whole app.</p>
+                            <span class="fanalyze-comments__task-link">on <em>Dark Mode</em></span>
+                          </div>
+                        </div>
+                        <div class="fanalyze-comments__item">
+                          <img class="fanalyze-comments__avatar" src="../images/maria.jpg.jpg" alt="Maria">
+                          <div class="fanalyze-comments__body">
+                            <div class="fanalyze-comments__meta"><strong>@Maria</strong> <span>1w ago</span></div>
+                            <p>+1 on the keyboard shortcuts idea. Would save so much time for power users.</p>
+                            <span class="fanalyze-comments__task-link">on <em>Keyboard Shortcuts</em></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 01: Product Growth Dashboard -->
+    <section class="fanalyze-section">
+      <div class="container">
+        <div class="fanalyze-section__grid">
+          <div class="fanalyze-section__content animate-on-scroll">
+            <h2 class="fanalyze-section__title">Your product&rsquo;s pulse, at a glance.</h2>
+            <p class="fanalyze-section__desc">Your product&rsquo;s unified dashboard gives your team a real-time snapshot of everything that matters &mdash; open tasks, new submissions, community growth, and release velocity. Stop switching between tools to understand where your product stands.</p>
+            <ul class="fanalyze-section__bullets">
+              <li><strong>Community growth tracking</strong> &mdash; watch your user base grow over time with interactive charts and date range filters</li>
+              <li><strong>KPI cards that update in real time</strong> &mdash; see open tasks, submissions, support tickets, and releases at a glance</li>
+              <li><strong>Activity feeds</strong> &mdash; view recent task comments, feedback submissions, and support tickets in a single view</li>
+              <li><strong>Release velocity</strong> &mdash; track how often you ship and identify patterns in your delivery cadence</li>
+            </ul>
+          </div>
+          <div class="fanalyze-section__visual animate-on-scroll">
+            <div class="fanalyze-placeholder">
+              <div class="fanalyze-placeholder__header">
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--red"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--yellow"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--green"></span>
+                <span class="fanalyze-placeholder__title">Growth Dashboard</span>
+              </div>
+              <div class="fanalyze-placeholder__body">
+                <div class="fanalyze-mini-kpis">
+                  <div class="fanalyze-mini-kpis__cards">
+                    <div class="fanalyze-mini-kpi">
+                      <span class="fanalyze-mini-kpi__label">Tasks</span>
+                      <span class="fanalyze-mini-kpi__value" data-count="32">0</span>
+                      <span class="fanalyze-mini-kpi__spark">+12 this week</span>
+                    </div>
+                    <div class="fanalyze-mini-kpi">
+                      <span class="fanalyze-mini-kpi__label">Community Members</span>
+                      <span class="fanalyze-mini-kpi__value" data-count="156">0</span>
+                      <span class="fanalyze-mini-kpi__spark">+8 this month</span>
+                    </div>
+                    <div class="fanalyze-mini-kpi">
+                      <span class="fanalyze-mini-kpi__label">Releases</span>
+                      <span class="fanalyze-mini-kpi__value" data-count="31">0</span>
+                      <span class="fanalyze-mini-kpi__spark">3 this month</span>
+                    </div>
+                  </div>
+                  <div class="fanalyze-mini-kpis__chart">
+                    <span class="fanalyze-mini-kpis__chart-title">Growth Trend</span>
+                    <svg viewBox="0 0 340 120" style="width:100%;height:auto">
+                      <!-- Y-axis labels -->
+                      <text x="12" y="14" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">160</text>
+                      <text x="12" y="37" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">120</text>
+                      <text x="16" y="60" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">80</text>
+                      <text x="16" y="83" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">40</text>
+                      <text x="22" y="106" fill="#94A3B8" font-size="8" font-family="Inter,sans-serif">0</text>
+                      <!-- Grid lines -->
+                      <line x1="36" y1="10" x2="325" y2="10" stroke="#F1F5F9" stroke-width="0.5"/>
+                      <line x1="36" y1="33" x2="325" y2="33" stroke="#F1F5F9" stroke-width="0.5"/>
+                      <line x1="36" y1="56" x2="325" y2="56" stroke="#F1F5F9" stroke-width="0.5"/>
+                      <line x1="36" y1="79" x2="325" y2="79" stroke="#F1F5F9" stroke-width="0.5"/>
+                      <!-- X-axis labels -->
+                      <text x="55" y="116" fill="#94A3B8" font-size="7" font-family="Inter,sans-serif" text-anchor="middle">Jun 23</text>
+                      <text x="110" y="116" fill="#94A3B8" font-size="7" font-family="Inter,sans-serif" text-anchor="middle">Dec 23</text>
+                      <text x="165" y="116" fill="#94A3B8" font-size="7" font-family="Inter,sans-serif" text-anchor="middle">Jun 24</text>
+                      <text x="220" y="116" fill="#94A3B8" font-size="7" font-family="Inter,sans-serif" text-anchor="middle">Dec 24</text>
+                      <text x="275" y="116" fill="#94A3B8" font-size="7" font-family="Inter,sans-serif" text-anchor="middle">Jun 25</text>
+                      <text x="318" y="116" fill="#94A3B8" font-size="7" font-family="Inter,sans-serif" text-anchor="middle">Feb 26</text>
+                      <!-- Area fill -->
+                      <path class="fanalyze-mini-chart__area" d="M55,100 C75,98 95,95 120,88 C145,80 165,72 190,60 C215,48 235,38 260,30 C275,27 285,26 295,25 C305,18 315,12 320,8 L320,103 L55,103 Z" fill="#14B8A6"/>
+                      <!-- Line -->
+                      <path class="fanalyze-mini-chart__line" d="M55,100 C75,98 95,95 120,88 C145,80 165,72 190,60 C215,48 235,38 260,30 C275,27 285,26 295,25 C305,18 315,12 320,8" fill="none" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="round"/>
+                      <!-- Endpoint -->
+                      <circle class="fanalyze-mini-chart__endpoint" cx="320" cy="8" r="2.4" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.5"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Customer Feedback Analysis (reversed) -->
+    <section class="fanalyze-section fanalyze-section--reversed">
+      <div class="container">
+        <div class="fanalyze-section__grid">
+          <div class="fanalyze-section__content animate-on-scroll">
+            <h2 class="fanalyze-section__title">Turn raw feedback into clear priorities.</h2>
+            <p class="fanalyze-section__desc">Every submission, bug report, and feature request your community sends is automatically organized and surfaced. PathPro helps you cut through the noise and focus on what your users are actually telling you.</p>
+            <ul class="fanalyze-section__bullets">
+              <li><strong>Automatic categorization</strong> &mdash; feedback is sorted by type (feature request, bug, improvement) as it arrives</li>
+              <li><strong>Feedback-to-roadmap pipeline</strong> &mdash; promote validated feedback into roadmap items with a single click</li>
+              <li><strong>Trend detection</strong> &mdash; spot recurring themes across submissions before they become widespread complaints</li>
+            </ul>
+          </div>
+          <div class="fanalyze-section__visual animate-on-scroll">
+            <div class="fanalyze-placeholder">
+              <div class="fanalyze-placeholder__header">
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--red"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--yellow"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--green"></span>
+                <span class="fanalyze-placeholder__title">Feedback Submissions</span>
+              </div>
+              <div class="fanalyze-placeholder__body">
+                <div class="fanalyze-feedback-table">
+                  <div class="fanalyze-feedback-table__head">
+                    <span>Title</span>
+                    <span>Type</span>
+                    <span>Urgency</span>
+                    <span>Status</span>
+                  </div>
+                  <div class="fanalyze-feedback-table__row">
+                    <span class="fanalyze-feedback-table__title">Add dark mode support</span>
+                    <span><span class="fanalyze-feedback-table__badge fanalyze-feedback-table__badge--feature">Feature</span></span>
+                    <span><span class="fanalyze-feedback-table__dot fanalyze-feedback-table__dot--medium"></span></span>
+                    <span class="fanalyze-feedback-table__status fanalyze-feedback-table__status--open">Open</span>
+                  </div>
+                  <div class="fanalyze-feedback-table__row">
+                    <span class="fanalyze-feedback-table__title">Login page crashes on Safari</span>
+                    <span><span class="fanalyze-feedback-table__badge fanalyze-feedback-table__badge--bug">Bug</span></span>
+                    <span><span class="fanalyze-feedback-table__dot fanalyze-feedback-table__dot--high"></span></span>
+                    <span class="fanalyze-feedback-table__status fanalyze-feedback-table__status--new">New</span>
+                  </div>
+                  <div class="fanalyze-feedback-table__row">
+                    <span class="fanalyze-feedback-table__title">Improve onboarding flow</span>
+                    <span><span class="fanalyze-feedback-table__badge fanalyze-feedback-table__badge--improve">Improvement</span></span>
+                    <span><span class="fanalyze-feedback-table__dot fanalyze-feedback-table__dot--low"></span></span>
+                    <span class="fanalyze-feedback-table__status fanalyze-feedback-table__status--open">Open</span>
+                  </div>
+                  <div class="fanalyze-feedback-table__row">
+                    <span class="fanalyze-feedback-table__title">Billing page not loading</span>
+                    <span><span class="fanalyze-feedback-table__badge fanalyze-feedback-table__badge--support">Support</span></span>
+                    <span><span class="fanalyze-feedback-table__dot fanalyze-feedback-table__dot--high"></span></span>
+                    <span class="fanalyze-feedback-table__status fanalyze-feedback-table__status--closed">Closed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Customer Sentiment & Satisfaction -->
+    <section class="fanalyze-section">
+      <div class="container">
+        <div class="fanalyze-section__grid">
+          <div class="fanalyze-section__content animate-on-scroll">
+            <h2 class="fanalyze-section__title">Know what your users actually want.</h2>
+            <p class="fanalyze-section__desc">Feature requests pile up fast. PathPro analyzes comments, upvotes, submission frequency, and community engagement to generate a demand score for every potential feature &mdash; so you build what matters most, not just what&rsquo;s loudest.</p>
+            <ul class="fanalyze-section__bullets">
+              <li><strong>Demand scoring</strong> &mdash; every feature is scored based on upvotes, comment volume, and community engagement signals</li>
+              <li><strong>Priority ranking</strong> &mdash; automatically surface the highest-demand features so your roadmap reflects real user needs</li>
+              <li><strong>Signal vs. noise</strong> &mdash; cut through one-off requests and focus on features with broad, sustained community interest</li>
+              <li><strong>AI analysis</strong> &mdash; PathFox<sup style="font-size:0.5em">AI</sup> can analyze every potential feature to tell you exactly what your users want next</li>
+            </ul>
+          </div>
+          <div class="fanalyze-section__visual animate-on-scroll">
+            <div class="fanalyze-placeholder">
+              <div class="fanalyze-placeholder__header">
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--red"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--yellow"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--green"></span>
+                <span class="fanalyze-placeholder__title">Feature Analysis</span>
+              </div>
+              <div class="fanalyze-placeholder__body">
+                <div class="fanalyze-sentiment">
+                  <span class="fanalyze-sentiment__label">Overall Demand</span>
+                  <div class="fanalyze-sentiment__gauge">
+                    <svg width="140" height="140" class="fanalyze-sentiment__gauge-circle">
+                      <circle class="fanalyze-sentiment__gauge-bg" cx="70" cy="70" r="60"/>
+                      <circle class="fanalyze-sentiment__gauge-fill" cx="70" cy="70" r="60"/>
+                    </svg>
+                    <div class="fanalyze-sentiment__gauge-value">
+                      <span class="fanalyze-sentiment__gauge-pct">0</span>%
+                      <span class="fanalyze-sentiment__gauge-label">HIGH</span>
+                    </div>
+                  </div>
+                  <div class="fanalyze-sentiment__bars">
+                    <div class="fanalyze-sentiment__bar">
+                      <span class="fanalyze-sentiment__bar-label">Positive</span>
+                      <div class="fanalyze-sentiment__bar-track"><div class="fanalyze-sentiment__bar-fill fanalyze-sentiment__bar-fill--positive"></div></div>
+                      <span class="fanalyze-sentiment__bar-pct">78%</span>
+                    </div>
+                    <div class="fanalyze-sentiment__bar">
+                      <span class="fanalyze-sentiment__bar-label">Neutral</span>
+                      <div class="fanalyze-sentiment__bar-track"><div class="fanalyze-sentiment__bar-fill fanalyze-sentiment__bar-fill--neutral"></div></div>
+                      <span class="fanalyze-sentiment__bar-pct">16%</span>
+                    </div>
+                    <div class="fanalyze-sentiment__bar">
+                      <span class="fanalyze-sentiment__bar-label">Negative</span>
+                      <div class="fanalyze-sentiment__bar-track"><div class="fanalyze-sentiment__bar-fill fanalyze-sentiment__bar-fill--negative"></div></div>
+                      <span class="fanalyze-sentiment__bar-pct">6%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Team Sentiment & Task Completion (reversed) -->
+    <section class="fanalyze-section fanalyze-section--reversed">
+      <div class="container">
+        <div class="fanalyze-section__grid">
+          <div class="fanalyze-section__content animate-on-scroll">
+            <h2 class="fanalyze-section__title">Healthy teams ship better products.</h2>
+            <p class="fanalyze-section__desc">Your product is only as strong as the team behind it. PathPro tracks task completion rates, sprint health, and team engagement so you can spot bottlenecks, celebrate momentum, and keep your team moving in the right direction.</p>
+            <ul class="fanalyze-section__bullets">
+              <li><strong>Task completion rates</strong> &mdash; see what percentage of tasks move from backlog to done each sprint</li>
+              <li><strong>Team activity tracking</strong> &mdash; who&rsquo;s contributing, commenting, and shipping the most</li>
+              <li><strong>Bottleneck detection</strong> &mdash; identify tasks stuck in progress and team members who may be overloaded</li>
+            </ul>
+          </div>
+          <div class="fanalyze-section__visual animate-on-scroll">
+            <div class="fanalyze-placeholder">
+              <div class="fanalyze-placeholder__header">
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--red"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--yellow"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--green"></span>
+                <span class="fanalyze-placeholder__title">Team Performance</span>
+              </div>
+              <div class="fanalyze-placeholder__body">
+                <div class="fanalyze-team-perf">
+                  <span class="fanalyze-team-perf__title">Sprint Completion</span>
+                  <div class="fanalyze-team-perf__row">
+                    <img class="fanalyze-team-perf__avatar" src="../images/josh_avatar.jpg" alt="Josh">
+                    <span class="fanalyze-team-perf__name">Josh</span>
+                    <div class="fanalyze-team-perf__bar-wrap">
+                      <div class="fanalyze-team-perf__bar-track"><div class="fanalyze-team-perf__bar-fill fanalyze-team-perf__bar-fill--green" data-width="92"></div></div>
+                      <span class="fanalyze-team-perf__pct">92%</span>
+                    </div>
+                    <span class="fanalyze-team-perf__status fanalyze-team-perf__status--green"></span>
+                  </div>
+                  <div class="fanalyze-team-perf__row">
+                    <img class="fanalyze-team-perf__avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                    <span class="fanalyze-team-perf__name">Sarah</span>
+                    <div class="fanalyze-team-perf__bar-wrap">
+                      <div class="fanalyze-team-perf__bar-track"><div class="fanalyze-team-perf__bar-fill fanalyze-team-perf__bar-fill--green" data-width="78"></div></div>
+                      <span class="fanalyze-team-perf__pct">78%</span>
+                    </div>
+                    <span class="fanalyze-team-perf__status fanalyze-team-perf__status--green"></span>
+                  </div>
+                  <div class="fanalyze-team-perf__row">
+                    <img class="fanalyze-team-perf__avatar" src="../images/marcus.jpg" alt="Marcus">
+                    <span class="fanalyze-team-perf__name">Marcus</span>
+                    <div class="fanalyze-team-perf__bar-wrap">
+                      <div class="fanalyze-team-perf__bar-track"><div class="fanalyze-team-perf__bar-fill fanalyze-team-perf__bar-fill--yellow" data-width="45"></div></div>
+                      <span class="fanalyze-team-perf__pct">45%</span>
+                    </div>
+                    <span class="fanalyze-team-perf__status fanalyze-team-perf__status--yellow"></span>
+                  </div>
+                  <span class="fanalyze-team-perf__title" style="margin-top:12px;margin-bottom:0">PathFox<sup style="font-size:0.5em">AI</sup> Task Analysis</span>
+                  <div class="fanalyze-pathfox-wrap">
+                    <div class="fanalyze-pathfox-loading">
+                      <img class="fanalyze-pathfox-bubble__avatar" src="../images/pathfox_icon.png" alt="PathFox" width="20" height="20">
+                      <span class="fanalyze-pathfox-loading__text">Analyzing task...</span>
+                    </div>
+                    <div class="fanalyze-pathfox-bubble">
+                      <img class="fanalyze-pathfox-bubble__avatar" src="../images/pathfox_icon.png" alt="PathFox" width="20" height="20">
+                      <div class="fanalyze-pathfox-bubble__text">Overall this task is on track, with deadlines being met, and a mostly friendly engagement from team members. Team member &ldquo;Josh&rdquo; has contributed the most activity to this task, with the last update being posted yesterday at 3:30pm.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 05: Reporting & Exports -->
+    <section class="fanalyze-section">
+      <div class="container">
+        <div class="fanalyze-section__grid">
+          <div class="fanalyze-section__content animate-on-scroll">
+            <h2 class="fanalyze-section__title">Share insights that drive decisions.</h2>
+            <p class="fanalyze-section__desc">Data is only valuable when it reaches the right people. PathPro lets you generate polished reports, export raw data, and share dashboard views with stakeholders &mdash; so everyone stays aligned on what&rsquo;s working and what needs attention.</p>
+            <ul class="fanalyze-section__bullets">
+              <li><strong>Exportable reports</strong> &mdash; generate PDF or CSV reports of growth, feedback, and sentiment data</li>
+              <li><strong>One-click task summaries</strong> &mdash; analyze a task and generate a report for completion patterns, bottlenecks, and more</li>
+              <li><strong>Custom date ranges</strong> &mdash; filter any report or chart by custom time periods for focused analysis</li>
+            </ul>
+          </div>
+          <div class="fanalyze-section__visual animate-on-scroll">
+            <div class="fanalyze-placeholder">
+              <div class="fanalyze-placeholder__header">
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--red"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--yellow"></span>
+                <span class="fanalyze-placeholder__dot fanalyze-placeholder__dot--green"></span>
+                <span class="fanalyze-placeholder__title">Reports</span>
+              </div>
+              <div class="fanalyze-placeholder__body">
+                <div class="fanalyze-report-card">
+                  <div class="fanalyze-report-card__icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  </div>
+                  <div class="fanalyze-report-card__title">Monthly Growth Report</div>
+                  <div class="fanalyze-report-card__lines">
+                    <div class="fanalyze-report-card__line">
+                      <span class="fanalyze-report-card__line-label">Community Members</span>
+                      <span class="fanalyze-report-card__line-value fanalyze-report-card__line-value--green">+23%</span>
+                    </div>
+                    <div class="fanalyze-report-card__line">
+                      <span class="fanalyze-report-card__line-label">Tasks Completed</span>
+                      <span class="fanalyze-report-card__line-value">184</span>
+                    </div>
+                    <div class="fanalyze-report-card__line">
+                      <span class="fanalyze-report-card__line-label">Support Tickets Closed</span>
+                      <span class="fanalyze-report-card__line-value">12</span>
+                    </div>
+                    <div class="fanalyze-report-card__line">
+                      <span class="fanalyze-report-card__line-label">Feedback Submissions</span>
+                      <span class="fanalyze-report-card__line-value">16</span>
+                    </div>
+                    <div class="fanalyze-report-card__line">
+                      <span class="fanalyze-report-card__line-label">Bug Reports</span>
+                      <span class="fanalyze-report-card__line-value">3</span>
+                    </div>
+                  </div>
+                  <span class="fanalyze-report-card__btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Export PDF
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PathFox Predictive Analytics -->
+    <section class="fanalyze-pathfox">
+      <div class="container">
+        <div class="fanalyze-pathfox__grid">
+          <div class="fanalyze-pathfox__content animate-on-scroll">
+            <span class="fanalyze-pathfox__badge">PathFox Predictive Analytics<sup>&trade;</sup></span>
+            <h2 class="fanalyze-pathfox__title">What if your dashboard could predict what&rsquo;s next?</h2>
+            <p class="fanalyze-pathfox__desc">PathFox<sup style="font-size:0.5em">AI</sup> doesn&rsquo;t just report what happened &mdash; it forecasts what&rsquo;s coming. By analyzing growth trajectories, sentiment trends, and engagement patterns, PathFox surfaces predictions and recommendations so you can act before problems appear.</p>
+            <div class="fanalyze-pathfox__pills">
+              <span class="fanalyze-pathfox__pill">Forecast growth trends</span>
+              <span class="fanalyze-pathfox__pill">Predict churn signals</span>
+              <span class="fanalyze-pathfox__pill">Detect sentiment shifts</span>
+              <span class="fanalyze-pathfox__pill">Surface anomalies</span>
+              <span class="fanalyze-pathfox__pill">Recommend next actions</span>
+              <span class="fanalyze-pathfox__pill">Generate insight summaries</span>
+            </div>
+            <a href="../pathfox.html" class="btn-primary btn-sm"><span>Learn More About PathFox<sup style="font-size:0.5em;vertical-align:super;font-weight:700">AI</sup></span></a>
+          </div>
+          <div class="fanalyze-pathfox__visual animate-on-scroll">
+            <img class="fanalyze-pathfox__img" src="../images/pathfox-thumbs.png" alt="PathFox AI assistant" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq__header">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq__grid">
+          <div class="faq__item">
+            <h3>What does the Overview dashboard show?</h3>
+            <p>The Overview dashboard gives you a real-time snapshot of your product: open tasks, community submissions, member growth, support tickets, and release history &mdash; all in one view.</p>
+          </div>
+          <div class="faq__item">
+            <h3>How is customer sentiment analyzed?</h3>
+            <p>PathPro&rsquo;s AI analyzes the tone of every comment, submission, and conversation to score sentiment as positive, neutral, or negative. Results are aggregated into trends you can track over time.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Can I track team performance and sprint health?</h3>
+            <p>Yes. PathPro tracks task completion rates, team activity, and sprint velocity. Color-coded health indicators help you spot bottlenecks and keep delivery on track.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Can I export analytics data?</h3>
+            <p>Absolutely. You can export reports as PDF or CSV, share read-only dashboard links, and schedule recurring reports to stakeholders.</p>
+          </div>
+          <div class="faq__item">
+            <h3>How does PathFox predict trends?</h3>
+            <p>PathFox analyzes historical patterns in growth, feedback, and engagement data to forecast future trends, detect anomalies, and surface actionable recommendations.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Is the analytics dashboard included in the free plan?</h3>
+            <p>Yes. The Overview dashboard, growth tracking, and basic analytics are included in the free plan. Advanced AI-powered insights are available on paid plans.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="fanalyze-cta">
+      <div class="fanalyze-cta__glow" aria-hidden="true"></div>
+      <div class="container">
+        <h2 class="fanalyze-cta__title">Ready to turn data into your product&rsquo;s <span class="gradient-text">advantage?</span></h2>
+        <p class="fanalyze-cta__subtitle">Free forever plan. No credit card required.</p>
+        <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-lg">Get Started Free</a>
+        <p class="fanalyze-cta__note">Join product teams making smarter decisions with PathPro.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../images/logo-footer.png" alt="PathPro" class="footer__logo-img">
+          <p class="footer__tagline">The Community-Driven Product Development OS for modern teams.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Product</h4>
+          <ul class="footer__list">
+            <li><a href="../index.html#features">Features</a></li>
+            <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+            <li><a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener">Knowledge Base</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../pathpro-official-roadmap.html">Our Roadmap</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Other</h4>
+          <ul class="footer__list">
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 PathPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/home.js"></script>
+  <script>
+    (function() {
+      // Helper: count up animation
+      function countUp(el, target, duration) {
+        var start = 0;
+        var startTime = null;
+        function step(timestamp) {
+          if (!startTime) startTime = timestamp;
+          var progress = Math.min((timestamp - startTime) / duration, 1);
+          // Ease-out quadratic
+          var eased = 1 - (1 - progress) * (1 - progress);
+          var current = Math.round(eased * target);
+          el.textContent = current;
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+
+      // Hero KPI count-up
+      var heroVisual = document.querySelector('.fanalyze-hero__visual');
+      if (heroVisual) {
+        var heroCountStarted = false;
+        var heroObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !heroCountStarted) {
+              heroCountStarted = true;
+              var stats = heroVisual.querySelectorAll('.fanalyze-stat__value[data-count]');
+              stats.forEach(function(stat, i) {
+                var target = parseInt(stat.getAttribute('data-count'), 10);
+                // Stagger: start counting after each card's appear animation
+                setTimeout(function() {
+                  countUp(stat, target, 1500);
+                }, 800 + i * 150);
+              });
+            }
+          });
+        }, { threshold: 0.2 });
+        heroObs.observe(heroVisual);
+      }
+
+      // Section 01: Mini KPI count-up
+      var miniKpis = document.querySelector('.fanalyze-mini-kpis');
+      if (miniKpis) {
+        var miniStarted = false;
+        var miniObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !miniStarted) {
+              miniStarted = true;
+              var vals = miniKpis.querySelectorAll('.fanalyze-mini-kpi__value[data-count]');
+              vals.forEach(function(v, i) {
+                var target = parseInt(v.getAttribute('data-count'), 10);
+                setTimeout(function() { countUp(v, target, 1200); }, i * 200);
+              });
+            }
+          });
+        }, { threshold: 0.3 });
+        miniObs.observe(miniKpis);
+      }
+
+      // Section 02: Feedback table row slide-in
+      var feedbackTable = document.querySelector('.fanalyze-feedback-table');
+      if (feedbackTable) {
+        var feedbackStarted = false;
+        var feedbackObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !feedbackStarted) {
+              feedbackStarted = true;
+              feedbackTable.classList.add('fanalyze-feedback-table--active');
+            }
+          });
+        }, { threshold: 0.3 });
+        feedbackObs.observe(feedbackTable);
+      }
+
+      // Section 03: Sentiment gauge fill + count
+      var sentiment = document.querySelector('.fanalyze-sentiment');
+      if (sentiment) {
+        var sentimentStarted = false;
+        var sentimentObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !sentimentStarted) {
+              sentimentStarted = true;
+              sentiment.classList.add('fanalyze-sentiment--active');
+              // Count up the gauge percentage
+              var pctEl = sentiment.querySelector('.fanalyze-sentiment__gauge-pct');
+              if (pctEl) countUp(pctEl, 78, 1500);
+            }
+          });
+        }, { threshold: 0.3 });
+        sentimentObs.observe(sentiment);
+      }
+
+      // Section 04: Team performance bars
+      var teamPerf = document.querySelector('.fanalyze-team-perf');
+      if (teamPerf) {
+        var teamStarted = false;
+        var teamObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !teamStarted) {
+              teamStarted = true;
+              teamPerf.classList.add('fanalyze-team-perf--active');
+              var bars = teamPerf.querySelectorAll('.fanalyze-team-perf__bar-fill[data-width]');
+              bars.forEach(function(bar) {
+                bar.style.width = bar.getAttribute('data-width') + '%';
+              });
+            }
+          });
+        }, { threshold: 0.3 });
+        teamObs.observe(teamPerf);
+      }
+
+      // Section 05: Report card print animation
+      var reportCard = document.querySelector('.fanalyze-report-card');
+      if (reportCard) {
+        var reportStarted = false;
+        var reportObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !reportStarted) {
+              reportStarted = true;
+              reportCard.classList.add('fanalyze-report-card--active');
+            }
+          });
+        }, { threshold: 0.3 });
+        reportObs.observe(reportCard);
+      }
+    })();
+  </script>
+</body>
+</html>

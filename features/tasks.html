@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management for Product Teams &mdash; PathPro</title>
+  <meta name="description" content="Organize work with kanban boards, subtasks, team assignments, threaded conversations, and PathFox AI &mdash; all in one platform.">
+  <meta name="keywords" content="task management software, kanban board, product team task tool, project management, subtasks, team collaboration, AI task management">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pathpro.app/features/tasks">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Task Management for Product Teams &mdash; PathPro">
+  <meta property="og:description" content="Organize work with kanban boards, subtasks, team assignments, threaded conversations, and PathFox AI &mdash; all in one platform.">
+  <meta property="og:url" content="https://pathpro.app/features/tasks">
+  <meta property="og:site_name" content="PathPro">
+  <meta property="og:image" content="https://pathpro.app/images/feature_taskmanagement.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Task Management for Product Teams &mdash; PathPro">
+  <meta name="twitter:description" content="Organize work with kanban boards, subtasks, team assignments, threaded conversations, and PathFox AI &mdash; all in one platform.">
+  <meta name="twitter:image" content="https://pathpro.app/images/feature_taskmanagement.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/features-tasks.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PathPro Task Management",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Task management for product teams. Kanban boards, subtasks, team assignments, threaded conversations, file attachments, and PathFox AI intelligence.",
+    "url": "https://pathpro.app/features/tasks",
+    "featureList": [
+      "Kanban board views",
+      "List views",
+      "Subtasks and checklists",
+      "Team member assignments",
+      "Role-based permissions",
+      "Threaded conversations",
+      "Comment upvoting",
+      "File attachments",
+      "PathFox AI intelligence"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free plan available. No credit card required."
+    }
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav nav--light-dropdowns" id="nav" role="banner">
+    <nav class="nav__container" aria-label="Main navigation">
+      <a href="../index.html" class="nav__logo" aria-label="PathPro home">
+        <img src="../images/logo_header.png" alt="PathPro" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Features
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="feature-voting.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></span>
+                <span><span class="nav__dropdown-title">Validate</span><span class="nav__dropdown-desc">Let your users tell you what they want.</span></span>
+              </a>
+              <a href="../features/tasks.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M10 4v16"/></svg></span>
+                <span><span class="nav__dropdown-title">Build</span><span class="nav__dropdown-desc">AI-driven task management tools.</span></span>
+              </a>
+              <a href="public-roadmaps.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <span><span class="nav__dropdown-title">Inform</span><span class="nav__dropdown-desc">Roadmaps, public and internal.</span></span>
+              </a>
+              <a href="public-release-notes.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+                <span><span class="nav__dropdown-title">Ship</span><span class="nav__dropdown-desc">Announce each win, celebrate together.</span></span>
+              </a>
+              <a href="provide-support.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/><path d="M18 17a4 4 0 0 1-4 4h-2a1 1 0 0 1 0-2h2a2 2 0 0 0 2-2"/></svg></span>
+                <span><span class="nav__dropdown-title">Provide Support</span><span class="nav__dropdown-desc">Boost customer tech support.</span></span>
+              </a>
+              <a href="analyze-feedback.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+                <span><span class="nav__dropdown-title">Analyze</span><span class="nav__dropdown-desc">Track growth, sentiment, and team performance.</span></span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Resources
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel nav__dropdown-panel--compact" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="../about.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span><span class="nav__dropdown-title">About</span><span class="nav__dropdown-desc">Meet our team.</span></span></a>
+              <a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span><span class="nav__dropdown-title">Docs</span><span class="nav__dropdown-desc">Learn how to use PathPro.</span></span></a>
+              <a href="../blog.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span><span><span class="nav__dropdown-title">Blog</span><span class="nav__dropdown-desc">Let&rsquo;s talk product development.</span></span></a>
+              <a href="#" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span><span><span class="nav__dropdown-title">Get Support</span><span class="nav__dropdown-desc">Submit a support ticket.</span></span></a>
+              <a href="../contact.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span><span class="nav__dropdown-title">Contact</span><span class="nav__dropdown-desc">Talk to our team.</span></span></a>
+              <a href="../pathpro-official-roadmap.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></span><span><span class="nav__dropdown-title">Our Roadmap</span><span class="nav__dropdown-desc">See what&rsquo;s coming next.</span></span></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      </ul>
+      <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-sm nav__cta">Get Started Free</a>
+      <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><span class="mobile-menu__product-label">Product</span></li>
+      <li><a href="feature-voting.html" class="mobile-menu__product-item">Validate</a></li>
+      <li><a href="../features/tasks.html" class="mobile-menu__product-item">Build</a></li>
+      <li><a href="public-roadmaps.html" class="mobile-menu__product-item">Inform</a></li>
+      <li><a href="public-release-notes.html" class="mobile-menu__product-item">Ship</a></li>
+      <li><a href="provide-support.html" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="analyze-feedback.html" class="mobile-menu__product-item">Analyze</a></li>
+      <li><a href="../pathfox.html">Meet PathFox</a></li>
+      <li><span class="mobile-menu__product-label">Resources</span></li>
+      <li><a href="../about.html" class="mobile-menu__product-item">About</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Docs</a></li>
+      <li><a href="../blog.html" class="mobile-menu__product-item">Blog</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      <li><a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary">Get Started Free</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="ftasks-hero">
+      <div class="container">
+        <div class="ftasks-hero__content">
+          <span class="ftasks-hero__badge">Task Management</span>
+          <h1 class="ftasks-hero__title">Ship faster with our advanced task management tools.</h1>
+          <div class="ftasks-hero__pills">
+            <span class="ftasks-hero__pill">Invite Your Team</span>
+            <span class="ftasks-hero__pill">Assign Tasks</span>
+            <span class="ftasks-hero__pill">Kanban Boards</span>
+            <span class="ftasks-hero__pill">Task Priority</span>
+            <span class="ftasks-hero__pill">File Attachments</span>
+            <span class="ftasks-hero__pill">AI Powered</span>
+          </div>
+        </div>
+        <div class="ftasks-hero__visual animate-on-scroll">
+          <div class="ftasks-platform">
+            <div class="ftasks-platform__chrome">
+              <span class="ftasks-platform__chrome-dot" style="background:#EF4444"></span>
+              <span class="ftasks-platform__chrome-dot" style="background:#F59E0B"></span>
+              <span class="ftasks-platform__chrome-dot" style="background:#10B981"></span>
+              <span class="ftasks-platform__chrome-url">yourproduct.pathpro.co</span>
+            </div>
+            <div class="ftasks-platform__topnav">
+              <div class="ftasks-platform__topnav-overview">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                Overview
+              </div>
+              <div class="ftasks-platform__topnav-project">
+                <span class="ftasks-platform__project-dot"></span>
+                <span>Development Board</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+              <nav class="ftasks-platform__tabs">
+                <span class="ftasks-platform__tab">Feature Voting</span>
+                <span class="ftasks-platform__tab ftasks-platform__tab--active">Roadmap</span>
+                <span class="ftasks-platform__tab">Release Notes</span>
+                <span class="ftasks-platform__tab">Project News</span>
+              </nav>
+              <div class="ftasks-platform__topnav-actions">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <img class="ftasks-platform__topnav-avatar" src="../images/sarah_chen.jpg" alt="User avatar">
+              </div>
+            </div>
+            <div class="ftasks-platform__main">
+              <aside class="ftasks-platform__sidebar">
+                <div class="ftasks-platform__sidebar-group">
+                  <span class="ftasks-platform__sidebar-label">NAVIGATION</span>
+                  <div class="ftasks-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>Projects</div>
+                  <div class="ftasks-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>Submissions</div>
+                  <div class="ftasks-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/></svg>Support Tickets</div>
+                </div>
+                <div class="ftasks-platform__sidebar-group">
+                  <span class="ftasks-platform__sidebar-label">MEMBERS</span>
+                  <div class="ftasks-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Your Community</div>
+                  <div class="ftasks-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Your Team</div>
+                </div>
+                <div class="ftasks-platform__sidebar-foot">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                  Settings &amp; Design
+                </div>
+              </aside>
+              <div class="ftasks-platform__board">
+                <div class="ftasks-platform__col">
+                  <div class="ftasks-platform__col-head ftasks-platform__col-head--gray">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                    <span>Backlog</span>
+                    <span class="ftasks-platform__col-tools"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+                  </div>
+                  <div class="ftasks-platform__col-bar">
+                    <div class="ftasks-platform__bar-track"><div class="ftasks-platform__bar-fill"></div></div>
+                    <span class="ftasks-platform__bar-text">0% Complete</span>
+                  </div>
+                  <div class="ftasks-platform__col-cards">
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Inventory Management System</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--pipeline">In Pipeline</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Advanced Product Search with Filters</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--pipeline">In Pipeline</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Customer Wishlist Feature</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--pipeline">In Pipeline</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><img class="ftasks-platform__card-avatar" src="../images/maria.jpg.jpg" alt="Maria"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Multi-Currency Support</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--pipeline">In Pipeline</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Product Reviews and Ratings</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--pipeline">In Pipeline</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__add-entry"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Add Entry</div>
+                  </div>
+                </div>
+                <div class="ftasks-platform__col">
+                  <div class="ftasks-platform__col-head ftasks-platform__col-head--blue">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span>Selected for Sprint</span>
+                    <span class="ftasks-platform__col-tools"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+                  </div>
+                  <div class="ftasks-platform__col-bar">
+                    <div class="ftasks-platform__bar-track"><div class="ftasks-platform__bar-fill ftasks-platform__bar-fill--blue" style="width:25%"></div></div>
+                    <span class="ftasks-platform__bar-text ftasks-platform__bar-text--blue">25% Complete</span>
+                  </div>
+                  <div class="ftasks-platform__col-cards">
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Abandoned Cart Email Automation</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--confirmed">Confirmed</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Dark Mode</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--complete">Complete</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--medium"></span>Medium</span></div><div class="ftasks-platform__card-icons"><img class="ftasks-platform__card-avatar" src="../images/marcus.jpg" alt="Marcus"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="ftasks-platform__card-count">1</span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="ftasks-platform__card-count">1</span></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Coupon and Discount Code System</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--confirmed">Confirmed</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--high"></span>High</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Product Size Guide Modal</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--confirmed">Confirmed</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__add-entry"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Add Entry</div>
+                  </div>
+                </div>
+                <div class="ftasks-platform__col">
+                  <div class="ftasks-platform__col-head ftasks-platform__col-head--amber">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <span>In Progress</span>
+                    <span class="ftasks-platform__col-tools"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+                  </div>
+                  <div class="ftasks-platform__col-bar">
+                    <div class="ftasks-platform__bar-track"><div class="ftasks-platform__bar-fill ftasks-platform__bar-fill--amber" style="width:20%"></div></div>
+                    <span class="ftasks-platform__bar-text ftasks-platform__bar-text--amber">20% Complete</span>
+                  </div>
+                  <div class="ftasks-platform__col-cards">
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Stripe Payment Integration</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--complete">Complete</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><img class="ftasks-platform__card-avatar" src="../images/jordan.jpg" alt="Jordan"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="ftasks-platform__card-count">1</span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Order Tracking and Shipping Updates</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--dev">In Development</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><img class="ftasks-platform__card-avatar" src="../images/aisha.jpg" alt="Aisha"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Mobile-Responsive Product Pages</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--dev">In Development</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Fix Checkout Loading Time Issue</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--dev">In Development</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Homepage Performance Optimization</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--dev">In Development</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__add-entry"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Add Entry</div>
+                  </div>
+                </div>
+                <div class="ftasks-platform__col">
+                  <div class="ftasks-platform__col-head ftasks-platform__col-head--green">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>Done</span>
+                    <span class="ftasks-platform__col-tools"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+                  </div>
+                  <div class="ftasks-platform__col-bar">
+                    <div class="ftasks-platform__bar-track"><div class="ftasks-platform__bar-fill ftasks-platform__bar-fill--green" style="width:100%"></div></div>
+                    <span class="ftasks-platform__bar-text ftasks-platform__bar-text--green">100% Complete</span>
+                  </div>
+                  <div class="ftasks-platform__col-cards">
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Shopping Cart Functionality</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--complete">Complete</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">User Registration and Login</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--complete">Complete</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Product Catalog with Categories</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--complete">Complete</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Basic Search Functionality</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--complete">Complete</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Order Confirmation Emails</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--complete">Complete</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                    <div class="ftasks-platform__card"><span class="ftasks-platform__card-name">Admin Dashboard</span><div class="ftasks-platform__card-row"><span class="ftasks-platform__tag ftasks-platform__tag--complete">Complete</span><span class="ftasks-platform__pri"><span class="ftasks-platform__pri-dot ftasks-platform__pri-dot--low"></span>Low</span></div><div class="ftasks-platform__card-icons"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 01: Kanban & List Views -->
+    <section class="ftasks-section">
+      <div class="container">
+        <div class="ftasks-section__grid">
+          <div class="ftasks-section__content animate-on-scroll">
+            <h2 class="ftasks-section__title">Work visually.</h2>
+            <p class="ftasks-section__desc">Assign tasks to your team in cozy Kanban boards that adapt to your needs. Organize tasks into groups, track progress at a glance, and move forward with drag-and-drop simplicity.</p>
+            <ul class="ftasks-section__bullets">
+              <li><strong>Drag-and-drop kanban boards</strong> &mdash; move tasks between columns as work progresses</li>
+              <li><strong>Structured list views</strong> &mdash; see everything in a sortable, filterable table</li>
+              <li><strong>Task groups</strong> &mdash; organize work into logical milestones or sprints</li>
+              <li><strong>Progress tracking</strong> &mdash; visual indicators show how each group is trending</li>
+            </ul>
+          </div>
+          <div class="ftasks-section__visual animate-on-scroll">
+            <div class="ftasks-placeholder">
+              <div class="ftasks-placeholder__header">
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--red"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--yellow"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--green"></span>
+                <span class="ftasks-placeholder__title">Development Tasks</span>
+              </div>
+              <div class="ftasks-placeholder__body ftasks-placeholder__body--mock">
+                <div class="ftasks-kanban">
+                  <!-- In Progress Column -->
+                  <div class="ftasks-kanban__col">
+                    <div class="ftasks-kanban__col-head ftasks-kanban__col-head--amber">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      In Progress
+                    </div>
+                    <div class="ftasks-kanban__bar">
+                      <div class="ftasks-kanban__bar-track"><div class="ftasks-kanban__bar-fill ftasks-kanban__bar-fill--amber"></div></div>
+                      <span class="ftasks-kanban__bar-label ftasks-kanban__bar-label--amber">17% Complete</span>
+                    </div>
+                    <div class="ftasks-kanban__card">
+                      <span class="ftasks-kanban__card-title">Dark Mode</span>
+                      <div class="ftasks-kanban__card-tags">
+                        <span class="ftasks-kanban__tag ftasks-kanban__tag--complete">Complete</span>
+                        <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--medium"></span> Medium</span>
+                      </div>
+                      <div class="ftasks-kanban__card-footer">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="ftasks-kanban__card-count">1</span>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="ftasks-kanban__card-count">1</span>
+                      </div>
+                    </div>
+                    <div class="ftasks-kanban__card">
+                      <span class="ftasks-kanban__card-title">Stripe Payment Integration</span>
+                      <div class="ftasks-kanban__card-tags">
+                        <span class="ftasks-kanban__tag ftasks-kanban__tag--dev">In Development</span>
+                        <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--low"></span> Low</span>
+                      </div>
+                      <div class="ftasks-kanban__card-footer">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                      </div>
+                    </div>
+                    <div class="ftasks-kanban__card ftasks-kanban__card--drag">
+                      <span class="ftasks-kanban__card-title">Mobile-Responsive Product Pages</span>
+                      <div class="ftasks-kanban__card-tags">
+                        <span class="ftasks-kanban__tag ftasks-kanban__tag--dev ftasks-kanban__drag-tag"><span class="ftasks-kanban__drag-status">In Development</span></span>
+                        <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--low"></span> Low</span>
+                      </div>
+                      <div class="ftasks-kanban__card-footer">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Done Column -->
+                  <div class="ftasks-kanban__col">
+                    <div class="ftasks-kanban__col-head ftasks-kanban__col-head--green">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      Done
+                    </div>
+                    <div class="ftasks-kanban__bar">
+                      <div class="ftasks-kanban__bar-track"><div class="ftasks-kanban__bar-fill ftasks-kanban__bar-fill--green ftasks-kanban__done-fill"></div></div>
+                      <span class="ftasks-kanban__bar-label ftasks-kanban__bar-label--green ftasks-kanban__done-label">80% Complete</span>
+                    </div>
+                    <div class="ftasks-kanban__card">
+                      <span class="ftasks-kanban__card-title">Shopping Cart Functionality</span>
+                      <div class="ftasks-kanban__card-tags">
+                        <span class="ftasks-kanban__tag ftasks-kanban__tag--complete">Complete</span>
+                        <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--low"></span> Low</span>
+                      </div>
+                      <div class="ftasks-kanban__card-footer">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                      </div>
+                    </div>
+                    <div class="ftasks-kanban__card">
+                      <span class="ftasks-kanban__card-title">User Registration and Login</span>
+                      <div class="ftasks-kanban__card-tags">
+                        <span class="ftasks-kanban__tag ftasks-kanban__tag--complete">Complete</span>
+                        <span class="ftasks-kanban__tag-dot"><span class="ftasks-kanban__dot ftasks-kanban__dot--low"></span> Low</span>
+                      </div>
+                      <div class="ftasks-kanban__card-footer">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Team Management (reversed) -->
+    <section class="ftasks-section ftasks-section--reversed">
+      <div class="container">
+        <div class="ftasks-section__grid">
+          <div class="ftasks-section__content animate-on-scroll">
+            <h2 class="ftasks-section__title">Built for modern, flexible teams.</h2>
+            <p class="ftasks-section__desc">Invite your team, assign work, and control who sees what. PathPro&rsquo;s role-based system keeps your internal work private while your community stays connected.</p>
+            <ul class="ftasks-section__bullets">
+              <li><strong>Invite team members</strong> &mdash; add teammates and assign them to tasks instantly</li>
+              <li><strong>Task assignment</strong> &mdash; every task has a clear owner so nothing falls through the cracks</li>
+              <li><strong>Role-based permissions</strong> &mdash; admins, team members, and community members each see what they need</li>
+              <li><strong>Activity visibility</strong> &mdash; see who&rsquo;s working on what across every project</li>
+            </ul>
+          </div>
+          <div class="ftasks-section__visual animate-on-scroll">
+            <div class="ftasks-placeholder">
+              <div class="ftasks-placeholder__header">
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--red"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--yellow"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--green"></span>
+                <span class="ftasks-placeholder__title">Team Management</span>
+              </div>
+              <div class="ftasks-placeholder__body ftasks-placeholder__body--mock">
+                <div class="ftasks-member">
+                  <div class="ftasks-member__profile">
+                    <img class="ftasks-member__avatar" src="../images/sarah_chen.jpg" alt="Sarah Chen">
+                    <div class="ftasks-member__info">
+                      <span class="ftasks-member__name">Sarah Chen</span>
+                      <span class="ftasks-member__role">Team Member</span>
+                    </div>
+                  </div>
+                  <p class="ftasks-member__bio">Head of Product. Oversees roadmap planning, feature prioritization, and team coordination across all active projects.</p>
+                  <div class="ftasks-member__section">
+                    <span class="ftasks-member__section-title">Assigned Tasks</span>
+                    <div class="ftasks-member__tasks">
+                      <div class="ftasks-member__task">
+                        <span class="ftasks-member__task-priority ftasks-member__task-priority--high"></span>
+                        <span class="ftasks-member__task-title">Auth refactor</span>
+                        <span class="ftasks-member__task-status ftasks-member__task-status--progress">In Progress</span>
+                      </div>
+                      <div class="ftasks-member__task">
+                        <span class="ftasks-member__task-priority ftasks-member__task-priority--medium"></span>
+                        <span class="ftasks-member__task-title">Design settings page</span>
+                        <span class="ftasks-member__task-status ftasks-member__task-status--todo">To Do</span>
+                      </div>
+                      <div class="ftasks-member__task">
+                        <span class="ftasks-member__task-priority ftasks-member__task-priority--medium"></span>
+                        <span class="ftasks-member__task-title">Notification system</span>
+                        <span class="ftasks-member__task-status ftasks-member__task-status--progress">In Progress</span>
+                      </div>
+                      <div class="ftasks-member__task">
+                        <span class="ftasks-member__task-priority ftasks-member__task-priority--low"></span>
+                        <span class="ftasks-member__task-title">Write API docs</span>
+                        <span class="ftasks-member__task-status ftasks-member__task-status--todo">To Do</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Task Details -->
+    <section class="ftasks-section">
+      <div class="container">
+        <div class="ftasks-section__grid">
+          <div class="ftasks-section__content animate-on-scroll">
+            <h2 class="ftasks-section__title">Track. Build. Ship.</h2>
+            <p class="ftasks-section__desc">Every task in PathPro holds the full picture &mdash; subtasks for breaking work down, priority levels for focus, due dates for accountability, and checklists for the details.</p>
+            <ul class="ftasks-section__bullets">
+              <li><strong>Subtasks</strong> &mdash; break complex work into smaller, trackable pieces</li>
+              <li><strong>Priority levels</strong> &mdash; flag what&rsquo;s urgent so your team knows where to focus</li>
+              <li><strong>Due dates</strong> &mdash; set deadlines and stay accountable without external reminders</li>
+              <li><strong>File attachments</strong> &mdash; share project files on each task and comment</li>
+            </ul>
+          </div>
+          <div class="ftasks-section__visual animate-on-scroll">
+            <div class="ftasks-placeholder">
+              <div class="ftasks-placeholder__header">
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--red"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--yellow"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--green"></span>
+                <span class="ftasks-placeholder__title">Task Detail</span>
+              </div>
+              <div class="ftasks-scroll-viewport">
+                <div class="ftasks-scroll-viewport__inner">
+                  <img class="ftasks-scroll-img" src="../images/features_settings.jpg" alt="PathPro task detail settings showing subtasks, priorities, and due dates" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Conversations (reversed) -->
+    <section class="ftasks-section ftasks-section--reversed">
+      <div class="container">
+        <div class="ftasks-section__grid">
+          <div class="ftasks-section__content animate-on-scroll">
+            <h2 class="ftasks-section__title">Keep every decision in context.</h2>
+            <p class="ftasks-section__desc">Discussions happen where the work lives. Threaded conversations on every task mean decisions, context, and history are never lost in a chat app or email thread.</p>
+            <ul class="ftasks-section__bullets">
+              <li><strong>Threaded discussions</strong> &mdash; every task has its own conversation thread</li>
+              <li><strong>Comment upvoting</strong> &mdash; surface the most useful replies automatically</li>
+              <li><strong>Highlight comments</strong> &mdash; tag comments for later reference or to emphasize their importance</li>
+              <li><strong>AI analysis</strong> &mdash; PathFox<sup class="nav__sup">AI</sup> can analyze every conversation to determine sentiment, pain points, and next steps</li>
+            </ul>
+          </div>
+          <div class="ftasks-section__visual animate-on-scroll">
+            <div class="ftasks-placeholder">
+              <div class="ftasks-placeholder__header">
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--red"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--yellow"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--green"></span>
+                <span class="ftasks-placeholder__title">Conversations</span>
+              </div>
+              <div class="ftasks-placeholder__body ftasks-placeholder__body--mock">
+                <div class="ftasks-convo">
+                  <!-- Pinned comment -->
+                  <div class="ftasks-convo__comment ftasks-convo__comment--pinned">
+                    <div class="ftasks-convo__pin-label">Pinned</div>
+                    <div class="ftasks-convo__header">
+                      <img class="ftasks-convo__avatar" src="../images/sarah_chen.jpg" alt="Sarah Chen">
+                      <span class="ftasks-convo__author">@sarah</span>
+                      <span class="ftasks-convo__time">Feb 24 at 2:15pm</span>
+                    </div>
+                    <p class="ftasks-convo__body">Dark mode is now live on staging. Tested across all major views &mdash; looking good so far. Let me know if anything looks off before we push to production.</p>
+                    <div class="ftasks-convo__actions">
+                      <span class="ftasks-convo__action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Link</span>
+                      <span class="ftasks-convo__action ftasks-convo__action--upvoted"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Upvotes (3)</span>
+                      <span class="ftasks-convo__action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 10 20 15 15 20"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg> Reply</span>
+                      <span class="ftasks-convo__highlight"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg> <span class="ftasks-convo__highlight-label">Highlighted</span></span>
+                    </div>
+                    <!-- Threaded reply -->
+                    <div class="ftasks-convo__thread">
+                      <span class="ftasks-convo__thread-toggle">1 reply</span>
+                      <div class="ftasks-convo__reply">
+                        <div class="ftasks-convo__header">
+                          <img class="ftasks-convo__avatar ftasks-convo__avatar--sm" src="../images/marcus.jpg" alt="Marcus">
+                          <span class="ftasks-convo__author">@marcus</span>
+                          <span class="ftasks-convo__time">Feb 24 at 3:02pm</span>
+                        </div>
+                        <p class="ftasks-convo__body">Just tested the dashboard and settings views &mdash; everything looks great. Ship it!</p>
+                      </div>
+                    </div>
+                    <!-- Animated cursor -->
+                    <svg class="ftasks-convo__cursor" width="18" height="22" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L1 15L4.5 11.5L8 18L10 16.5L6.5 10.5L11 10.5Z" fill="#1e293b" stroke="white" stroke-width="0.8" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+
+                  <!-- Second comment -->
+                  <div class="ftasks-convo__comment">
+                    <div class="ftasks-convo__header">
+                      <img class="ftasks-convo__avatar" src="../images/aisha.jpg" alt="Aisha">
+                      <span class="ftasks-convo__author">@aisha</span>
+                      <span class="ftasks-convo__time">Feb 24 at 4:30pm</span>
+                    </div>
+                    <p class="ftasks-convo__body">Confirmed on mobile too. Moving this to Done &mdash; nice work team.</p>
+                    <div class="ftasks-convo__actions">
+                      <span class="ftasks-convo__action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Link</span>
+                      <span class="ftasks-convo__action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Upvotes</span>
+                      <span class="ftasks-convo__action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 10 20 15 15 20"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg> Reply</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 05: File Attachments -->
+    <section class="ftasks-section">
+      <div class="container">
+        <div class="ftasks-section__grid">
+          <div class="ftasks-section__content animate-on-scroll">
+            <h2 class="ftasks-section__title">Engage with your community.</h2>
+            <p class="ftasks-section__desc">If you choose to make any tasks public in your roadmap, community members can engage directly with your team on a per-task basis &mdash; turning passive users into active collaborators.</p>
+            <ul class="ftasks-section__bullets">
+              <li><strong>Ongoing suggestions</strong> &mdash; users can offer feedback and ideas as features are actively being built</li>
+              <li><strong>Direct access</strong> &mdash; community members can speak directly to your development team within each task</li>
+              <li><strong>Suggestion upvoting</strong> &mdash; users can upvote suggestions and comments to ensure your team takes notice</li>
+            </ul>
+          </div>
+          <div class="ftasks-section__visual animate-on-scroll">
+            <div class="ftasks-placeholder">
+              <div class="ftasks-placeholder__header">
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--red"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--yellow"></span>
+                <span class="ftasks-placeholder__dot ftasks-placeholder__dot--green"></span>
+                <span class="ftasks-placeholder__title">Community Involvement</span>
+              </div>
+              <div class="ftasks-placeholder__body ftasks-placeholder__body--mock">
+                <div class="ftasks-convo ftasks-convo--engage">
+                  <!-- Community member suggestion -->
+                  <div class="ftasks-convo__comment">
+                    <div class="ftasks-convo__header">
+                      <img class="ftasks-convo__avatar" src="../images/jordan.jpg" alt="Jordan">
+                      <span class="ftasks-convo__author">@jordan</span>
+                      <span class="ftasks-convo__badge-role ftasks-convo__badge-role--community">Community Member</span>
+                      <span class="ftasks-convo__time">Feb 25 at 10:42am</span>
+                    </div>
+                    <p class="ftasks-convo__body">Have you considered adding keyboard shortcuts for moving tasks between columns? I use the kanban board daily and it would save a ton of time for power users.</p>
+                    <div class="ftasks-convo__actions">
+                      <span class="ftasks-convo__action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Link</span>
+                      <span class="ftasks-convo__action ftasks-convo__action--upvote-engage"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> <span class="ftasks-convo__upvote-label">Upvotes</span></span>
+                      <span class="ftasks-convo__action"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 10 20 15 15 20"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg> Reply</span>
+                    </div>
+                    <!-- Threaded reply from Maria -->
+                    <div class="ftasks-convo__thread ftasks-convo__thread--engage">
+                      <span class="ftasks-convo__thread-toggle">1 reply</span>
+                      <div class="ftasks-convo__reply">
+                        <div class="ftasks-convo__header">
+                          <img class="ftasks-convo__avatar ftasks-convo__avatar--sm" src="../images/maria.jpg.jpg" alt="Maria">
+                          <span class="ftasks-convo__author">@maria</span>
+                          <span class="ftasks-convo__badge-role ftasks-convo__badge-role--community">Community Member</span>
+                          <span class="ftasks-convo__time">Feb 25 at 10:58am</span>
+                        </div>
+                        <p class="ftasks-convo__body">This is exactly what I was thinking too. Upvoted!</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Team member comment -->
+                  <div class="ftasks-convo__comment ftasks-convo__comment--sarah-engage">
+                    <div class="ftasks-convo__header">
+                      <img class="ftasks-convo__avatar" src="../images/sarah_chen.jpg" alt="Sarah Chen">
+                      <span class="ftasks-convo__author">@sarah</span>
+                      <span class="ftasks-convo__badge-role ftasks-convo__badge-role--team">Team</span>
+                      <span class="ftasks-convo__time">Feb 25 at 11:05am</span>
+                    </div>
+                    <p class="ftasks-convo__body">Wow, such great feedback and we&rsquo;ll definitely be working these ideas into the feature! Thanks everyone!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PathFox AI Intelligence -->
+    <section class="ftasks-pathfox">
+      <div class="container">
+        <div class="ftasks-pathfox__grid">
+          <div class="ftasks-pathfox__content animate-on-scroll">
+            <span class="ftasks-pathfox__badge">PathFox Product Intelligence<sup>&trade;</sup></span>
+            <h2 class="ftasks-pathfox__title">What if your task board could think?</h2>
+            <p class="ftasks-pathfox__desc">PathFox<sup style="font-size:0.5em">AI</sup> analyzes your team&rsquo;s work patterns, monitors task health, and surfaces insights you&rsquo;d otherwise miss &mdash; so you spend less time managing and more time shipping.</p>
+            <div class="ftasks-pathfox__pills">
+              <span class="ftasks-pathfox__pill">Analyze team sentiment</span>
+              <span class="ftasks-pathfox__pill">Detect progress-hindering patterns</span>
+              <span class="ftasks-pathfox__pill">Automate task creation</span>
+              <span class="ftasks-pathfox__pill">Surface priority insights</span>
+              <span class="ftasks-pathfox__pill">Summarize discussions</span>
+              <span class="ftasks-pathfox__pill">Monitor milestone health</span>
+            </div>
+            <a href="../pathfox.html" class="btn-primary btn-sm"><span>Learn More About PathFox<sup style="font-size:0.5em;vertical-align:super;font-weight:700">AI</sup></span></a>
+          </div>
+          <div class="ftasks-pathfox__visual animate-on-scroll">
+            <img class="ftasks-pathfox__img" src="../images/pathfox-thumbs.png" alt="PathFox AI assistant" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq__header">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq__grid">
+          <div class="faq__item">
+            <h3>What views are available for tasks?</h3>
+            <p>PathPro supports kanban board and list views. Organize tasks into groups, drag them between columns, and switch views depending on how your team prefers to work.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Can I create subtasks?</h3>
+            <p>Yes. Any task can have subtasks for breaking down complex work. Subtasks have their own assignees, statuses, and due dates while rolling up progress to the parent task.</p>
+          </div>
+          <div class="faq__item">
+            <h3>How does team assignment work?</h3>
+            <p>Assign any team member to a task or subtask. Team members see their assignments across all projects, and admins can view workload distribution at a glance.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Can community members see internal tasks?</h3>
+            <p>No. Tasks are private to your team by default. Community members interact through feature voting and your public roadmap &mdash; they never see your internal task boards.</p>
+          </div>
+          <div class="faq__item">
+            <h3>What is PathFox and how does it help with tasks?</h3>
+            <p>PathFox is PathPro&rsquo;s AI assistant. It analyzes your team&rsquo;s work patterns, surfaces priority insights, summarizes discussions, and can even automate task creation based on community feedback.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Is task management included in the free plan?</h3>
+            <p>PathPro&rsquo;s free plan includes basic task management, but does not include advanced features such as file upload or team management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="ftasks-cta">
+      <div class="ftasks-cta__glow" aria-hidden="true"></div>
+      <div class="container">
+        <h2 class="ftasks-cta__title">Ready to build products your users <span class="gradient-text">love?</span></h2>
+        <p class="ftasks-cta__subtitle">Free forever plan. No credit card required.</p>
+        <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-lg">Get Started Free</a>
+        <p class="ftasks-cta__note">Join product teams shipping faster with PathPro.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../images/logo-footer.png" alt="PathPro" class="footer__logo-img">
+          <p class="footer__tagline">The Community-Driven Product Development OS for modern teams.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Product</h4>
+          <ul class="footer__list">
+            <li><a href="../index.html#features">Features</a></li>
+            <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+            <li><a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener">Knowledge Base</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../pathpro-official-roadmap.html">Our Roadmap</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Other</h4>
+          <ul class="footer__list">
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 PathPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/home.js"></script>
+  <script>
+    (function() {
+      // Kanban drag animation
+      var kanban = document.querySelector('.ftasks-kanban');
+      if (kanban) {
+        var kanbanStarted = false;
+        var kanbanObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !kanbanStarted) {
+              kanbanStarted = true;
+              kanban.classList.add('ftasks-kanban--active');
+              // Change status pill after drag completes (2s delay + 3.5s anim)
+              // Confetti burst when card lands
+              setTimeout(function() {
+                var container = document.createElement('div');
+                container.className = 'ftasks-kanban__confetti';
+                kanban.appendChild(container);
+                var colors = ['#10B981', '#F59E0B', '#8B5CF6', '#EC4899', '#3B82F6', '#EF4444'];
+                for (var i = 0; i < 30; i++) {
+                  var piece = document.createElement('div');
+                  piece.className = 'ftasks-kanban__confetti-piece' + (Math.random() > 0.5 ? ' ftasks-kanban__confetti-piece--circle' : '');
+                  piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+                  // Spawn from right side where card lands (~75% from left, ~60% from top)
+                  piece.style.left = (70 + Math.random() * 15) + '%';
+                  piece.style.top = (45 + Math.random() * 20) + '%';
+                  piece.style.setProperty('--tx', (Math.random() * 80 - 40) + 'px');
+                  piece.style.setProperty('--ty', (Math.random() * 60 - 40) + 'px');
+                  piece.style.setProperty('--rot', (Math.random() * 360) + 'deg');
+                  piece.style.setProperty('--duration', (0.6 + Math.random() * 0.6) + 's');
+                  container.appendChild(piece);
+                  // Stagger slightly
+                  (function(el, delay) {
+                    setTimeout(function() { el.classList.add('is-active'); }, delay);
+                  })(piece, Math.random() * 150);
+                }
+                // Clean up after animations finish
+                setTimeout(function() { container.remove(); }, 2000);
+              }, 4800);
+
+              var dragStatus = kanban.querySelector('.ftasks-kanban__drag-status');
+              var dragTag = kanban.querySelector('.ftasks-kanban__drag-tag');
+              var doneFill = kanban.querySelector('.ftasks-kanban__done-fill');
+              var doneLabel = kanban.querySelector('.ftasks-kanban__done-label');
+              setTimeout(function() {
+                if (dragStatus) dragStatus.textContent = 'Complete';
+                if (dragTag) {
+                  dragTag.classList.remove('ftasks-kanban__tag--dev');
+                  dragTag.classList.add('ftasks-kanban__tag--complete');
+                }
+                // Animate progress bar from 80% to 100%
+                if (doneFill) doneFill.style.width = '100%';
+                // Count up the label 80 → 100
+                if (doneLabel) {
+                  var pct = 80;
+                  var countInterval = setInterval(function() {
+                    pct++;
+                    doneLabel.textContent = pct + '% Complete';
+                    if (pct >= 100) clearInterval(countInterval);
+                  }, 40);
+                }
+              }, 5000);
+            }
+          });
+        }, { threshold: 0.3 });
+        kanbanObs.observe(kanban);
+      }
+
+      // Scroll-pan animation for Task Details
+      var viewport = document.querySelector('.ftasks-scroll-viewport');
+      if (viewport) {
+        var scrollStarted = false;
+        var scrollObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !scrollStarted) {
+              scrollStarted = true;
+              viewport.classList.add('is-scrolling');
+            }
+          });
+        }, { threshold: 0.3 });
+        scrollObs.observe(viewport);
+      }
+
+      // Team member stagger animation
+      var member = document.querySelector('.ftasks-member');
+      if (member) {
+        member.classList.add('ftasks-member--ready');
+        var memberStarted = false;
+        var memberObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !memberStarted) {
+              memberStarted = true;
+              member.classList.remove('ftasks-member--ready');
+              member.classList.add('ftasks-member--active');
+            }
+          });
+        }, { threshold: 0.3 });
+        memberObs.observe(member);
+      }
+
+      // Cursor animation for Conversations
+      var convo = document.querySelector('.ftasks-convo');
+      if (convo) {
+        var highlightLabel = convo.querySelector('.ftasks-convo__highlight-label');
+        convo.classList.add('ftasks-convo--ready');
+        if (highlightLabel) highlightLabel.textContent = 'Highlight';
+        var cursorStarted = false;
+        var cursorObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !cursorStarted) {
+              cursorStarted = true;
+              convo.classList.remove('ftasks-convo--ready');
+              convo.classList.add('ftasks-convo--active');
+              // Swap text at the moment the cursor "clicks"
+              // Click happens at ~57% of 5s + 0.4s delay = 3.25s
+              if (highlightLabel) {
+                setTimeout(function() {
+                  highlightLabel.textContent = 'Highlighted';
+                }, 3250);
+              }
+            }
+          });
+        }, { threshold: 0.4 });
+        cursorObs.observe(convo);
+      }
+      // Community Engagement animation
+      var engageConvo = document.querySelector('.ftasks-convo--engage');
+      if (engageConvo) {
+        var upvoteBtn = engageConvo.querySelector('.ftasks-convo__action--upvote-engage');
+        var upvoteLabel = engageConvo.querySelector('.ftasks-convo__upvote-label');
+        var engageStarted = false;
+        var engageObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !engageStarted) {
+              engageStarted = true;
+              engageConvo.classList.add('ftasks-convo--active');
+              // After Maria's reply fades in, start upvote count
+              setTimeout(function() {
+                if (upvoteBtn) upvoteBtn.classList.add('is-active');
+                var count = 0;
+                var target = 21;
+                function tick() {
+                  count++;
+                  if (upvoteLabel) upvoteLabel.textContent = 'Upvotes (' + count + ')';
+                  if (upvoteBtn) {
+                    upvoteBtn.classList.remove('is-pulsing');
+                    void upvoteBtn.offsetWidth;
+                    upvoteBtn.classList.add('is-pulsing');
+                  }
+                  if (count < target) {
+                    // Accelerate: start at 250ms, end at ~40ms
+                    var progress = count / target;
+                    var delay = 250 - (210 * progress * progress);
+                    setTimeout(tick, delay);
+                  }
+                }
+                tick();
+              }, 2100);
+            }
+          });
+        }, { threshold: 0.4 });
+        engageObs.observe(engageConvo);
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support Tickets for Product Teams &mdash; PathPro</title>
+  <meta name="description" content="Built-in support ticket system with threaded conversations, email notifications, team assignment, and AI-powered insights &mdash; all inside your product.">
+  <meta name="keywords" content="customer support software, support tickets, help desk, ticket management, threaded conversations, team support tool, AI support">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pathpro.app/features/provide-support">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Customer Support Tickets for Product Teams &mdash; PathPro">
+  <meta property="og:description" content="Built-in support ticket system with threaded conversations, email notifications, team assignment, and AI-powered insights &mdash; all inside your product.">
+  <meta property="og:url" content="https://pathpro.app/features/provide-support">
+  <meta property="og:site_name" content="PathPro">
+  <meta property="og:image" content="https://pathpro.app/images/features_support.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Customer Support Tickets for Product Teams &mdash; PathPro">
+  <meta name="twitter:description" content="Built-in support ticket system with threaded conversations, email notifications, team assignment, and AI-powered insights &mdash; all inside your product.">
+  <meta name="twitter:image" content="https://pathpro.app/images/features_support.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/features-support.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PathPro Support Tickets",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Built-in customer support ticket system for product teams. Threaded conversations, email notifications, team assignment, status tracking, and PathFox AI intelligence.",
+    "url": "https://pathpro.app/features/provide-support",
+    "featureList": [
+      "Ticket management",
+      "Threaded conversations",
+      "Email notifications",
+      "Status tracking",
+      "Team assignment",
+      "Priority levels",
+      "PathFox AI intelligence"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free plan available. No credit card required."
+    }
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav nav--light-dropdowns" id="nav" role="banner">
+    <nav class="nav__container" aria-label="Main navigation">
+      <a href="../index.html" class="nav__logo" aria-label="PathPro home">
+        <img src="../images/logo_header.png" alt="PathPro" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Features
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="feature-voting.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></span>
+                <span><span class="nav__dropdown-title">Validate</span><span class="nav__dropdown-desc">Let your users tell you what they want.</span></span>
+              </a>
+              <a href="tasks.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M10 4v16"/></svg></span>
+                <span><span class="nav__dropdown-title">Build</span><span class="nav__dropdown-desc">AI-driven task management tools.</span></span>
+              </a>
+              <a href="public-roadmaps.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <span><span class="nav__dropdown-title">Inform</span><span class="nav__dropdown-desc">Roadmaps, public and internal.</span></span>
+              </a>
+              <a href="public-release-notes.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+                <span><span class="nav__dropdown-title">Ship</span><span class="nav__dropdown-desc">Announce each win, celebrate together.</span></span>
+              </a>
+              <a href="provide-support.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/><path d="M18 17a4 4 0 0 1-4 4h-2a1 1 0 0 1 0-2h2a2 2 0 0 0 2-2"/></svg></span>
+                <span><span class="nav__dropdown-title">Provide Support</span><span class="nav__dropdown-desc">Boost customer tech support.</span></span>
+              </a>
+              <a href="analyze-feedback.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+                <span><span class="nav__dropdown-title">Analyze</span><span class="nav__dropdown-desc">Track growth, sentiment, and team performance.</span></span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Resources
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel nav__dropdown-panel--compact" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="../about.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span><span class="nav__dropdown-title">About</span><span class="nav__dropdown-desc">Meet our team.</span></span></a>
+              <a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span><span class="nav__dropdown-title">Docs</span><span class="nav__dropdown-desc">Learn how to use PathPro.</span></span></a>
+              <a href="../blog.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span><span><span class="nav__dropdown-title">Blog</span><span class="nav__dropdown-desc">Let&rsquo;s talk product development.</span></span></a>
+              <a href="#" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span><span><span class="nav__dropdown-title">Get Support</span><span class="nav__dropdown-desc">Submit a support ticket.</span></span></a>
+              <a href="../contact.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span><span class="nav__dropdown-title">Contact</span><span class="nav__dropdown-desc">Talk to our team.</span></span></a>
+              <a href="../pathpro-official-roadmap.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></span><span><span class="nav__dropdown-title">Our Roadmap</span><span class="nav__dropdown-desc">See what&rsquo;s coming next.</span></span></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      </ul>
+      <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-sm nav__cta">Get Started Free</a>
+      <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><span class="mobile-menu__product-label">Product</span></li>
+      <li><a href="feature-voting.html" class="mobile-menu__product-item">Validate</a></li>
+      <li><a href="tasks.html" class="mobile-menu__product-item">Build</a></li>
+      <li><a href="public-roadmaps.html" class="mobile-menu__product-item">Inform</a></li>
+      <li><a href="public-release-notes.html" class="mobile-menu__product-item">Ship</a></li>
+      <li><a href="provide-support.html" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="analyze-feedback.html" class="mobile-menu__product-item">Analyze</a></li>
+      <li><a href="../pathfox.html">Meet PathFox</a></li>
+      <li><span class="mobile-menu__product-label">Resources</span></li>
+      <li><a href="../about.html" class="mobile-menu__product-item">About</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Docs</a></li>
+      <li><a href="../blog.html" class="mobile-menu__product-item">Blog</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      <li><a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary">Get Started Free</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="fsupport-hero">
+      <div class="container">
+        <div class="fsupport-hero__content">
+          <span class="fsupport-hero__badge">Support Tickets</span>
+          <h1 class="fsupport-hero__title">Turn every support request into a chance to shine.</h1>
+          <div class="fsupport-hero__pills">
+            <span class="fsupport-hero__pill">Ticket Management</span>
+            <span class="fsupport-hero__pill">Email Notifications</span>
+            <span class="fsupport-hero__pill">Threaded Conversations</span>
+            <span class="fsupport-hero__pill">Status Tracking</span>
+            <span class="fsupport-hero__pill">AI Powered</span>
+          </div>
+        </div>
+        <div class="fsupport-hero__visual animate-on-scroll">
+          <div class="fsupport-platform">
+            <div class="fsupport-platform__chrome">
+              <span class="fsupport-platform__chrome-dot" style="background:#EF4444"></span>
+              <span class="fsupport-platform__chrome-dot" style="background:#F59E0B"></span>
+              <span class="fsupport-platform__chrome-dot" style="background:#10B981"></span>
+              <span class="fsupport-platform__chrome-url">mapsamurai.pathpro.co</span>
+            </div>
+            <div class="fsupport-platform__topnav">
+              <div class="fsupport-platform__topnav-overview">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                Overview
+              </div>
+              <div class="fsupport-platform__topnav-project">
+                <span class="fsupport-platform__project-dot"></span>
+                <span>MapSamurai</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+              <nav class="fsupport-platform__tabs">
+                <span class="fsupport-platform__tab">Feature Voting</span>
+                <span class="fsupport-platform__tab">Roadmap</span>
+                <span class="fsupport-platform__tab">Release Notes</span>
+                <span class="fsupport-platform__tab">Project News</span>
+              </nav>
+              <div class="fsupport-platform__topnav-actions">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <img class="fsupport-platform__topnav-avatar" src="../images/sarah_chen.jpg" alt="User avatar">
+              </div>
+            </div>
+            <div class="fsupport-platform__main">
+              <aside class="fsupport-platform__sidebar">
+                <div class="fsupport-platform__sidebar-group">
+                  <span class="fsupport-platform__sidebar-label">NAVIGATION</span>
+                  <div class="fsupport-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>Projects</div>
+                  <div class="fsupport-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>Submissions</div>
+                  <div class="fsupport-platform__sidebar-item fsupport-platform__sidebar-item--active"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/></svg>Support Tickets</div>
+                </div>
+                <div class="fsupport-platform__sidebar-group">
+                  <span class="fsupport-platform__sidebar-label">MEMBERS</span>
+                  <div class="fsupport-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Your Community</div>
+                  <div class="fsupport-platform__sidebar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Your Team</div>
+                </div>
+                <div class="fsupport-platform__sidebar-foot">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                  Settings &amp; Design
+                </div>
+              </aside>
+              <div style="flex:1;display:flex;flex-direction:column;overflow:hidden">
+                <div class="fsupport-platform__breadcrumb">
+                  <span class="fsupport-platform__breadcrumb-back">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                    Back to Tickets
+                  </span>
+                  <span class="fsupport-platform__breadcrumb-id">TKT-001</span>
+                  <span class="fsupport-platform__breadcrumb-status" id="breadcrumb-status">
+                    <span class="fsupport-platform__breadcrumb-status-dot" id="status-dot"></span>
+                    <span id="status-label">Open</span>
+                    <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                  <!-- Cursor -->
+                  <svg class="fsupport-cursor" id="fsupport-cursor" width="18" height="22" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L1 15L4.5 11.5L8 18L10 16.5L6.5 10.5L11 10.5Z" fill="#1e293b" stroke="white" stroke-width="0.8" stroke-linejoin="round"/>
+                  </svg>
+                  <!-- Dropdown -->
+                  <div class="fsupport-status-dropdown" id="status-dropdown">
+                    <div class="fsupport-status-dropdown__item">
+                      <span class="fsupport-status-dropdown__dot fsupport-status-dropdown__dot--open"></span>Open
+                    </div>
+                    <div class="fsupport-status-dropdown__item">
+                      <span class="fsupport-status-dropdown__dot fsupport-status-dropdown__dot--progress"></span>In Progress
+                    </div>
+                    <div class="fsupport-status-dropdown__item fsupport-status-dropdown__item--target" id="resolved-option">
+                      <span class="fsupport-status-dropdown__dot fsupport-status-dropdown__dot--resolved"></span>Resolved
+                    </div>
+                  </div>
+                </div>
+                <div class="fsupport-platform__content">
+                  <div class="fsupport-platform__ticket">
+                    <div class="fsupport-platform__ticket-card">
+                      <div class="fsupport-platform__ticket-header">
+                        <span class="fsupport-platform__ticket-subject"><strong>Subject:</strong> Issues with geolocation</span>
+                        <span class="fsupport-platform__ticket-badge">Open</span>
+                      </div>
+                      <div class="fsupport-platform__ticket-meta">
+                        <div class="fsupport-platform__ticket-meta-row">
+                          <span class="fsupport-platform__ticket-meta-label">Name:</span>
+                          <span class="fsupport-platform__ticket-meta-value">Jordan Brooks</span>
+                        </div>
+                        <div class="fsupport-platform__ticket-meta-row">
+                          <span class="fsupport-platform__ticket-meta-label">Email:</span>
+                          <span class="fsupport-platform__ticket-meta-value">jordan@email.com</span>
+                        </div>
+                        <div class="fsupport-platform__ticket-meta-row">
+                          <span class="fsupport-platform__ticket-meta-label">Submitted:</span>
+                          <span class="fsupport-platform__ticket-meta-value">2-18-2026 at 12:28pm</span>
+                        </div>
+                      </div>
+                      <div class="fsupport-platform__messages">
+                        <!-- Message 1: Jordan -->
+                        <div class="fsupport-ticket-msg fsupport-ticket-msg--customer">
+                          <div class="fsupport-ticket-msg__header">
+                            <img class="fsupport-ticket-msg__avatar" src="../images/jordan.jpg" alt="Jordan">
+                            <span class="fsupport-ticket-msg__name">Jordan</span>
+                            <span class="fsupport-ticket-msg__customer-badge">Customer</span>
+                            <span class="fsupport-ticket-msg__time">2-18-2026 at 12:28pm</span>
+                          </div>
+                          <p class="fsupport-ticket-msg__body">Hi, I&rsquo;m having trouble with the zip code search feature on my site. When I enter zip codes for my region (Northeast US), the search returns no results even though I&rsquo;ve added locations for those areas. Everything else seems to work fine.</p>
+                        </div>
+                        <!-- Message 2: Sarah (Team) -->
+                        <div class="fsupport-ticket-msg fsupport-ticket-msg--team">
+                          <div class="fsupport-ticket-msg__header">
+                            <img class="fsupport-ticket-msg__avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                            <span class="fsupport-ticket-msg__name">Sarah</span>
+                            <span class="fsupport-ticket-msg__team-badge">Team</span>
+                            <span class="fsupport-ticket-msg__time">2-18-2026 at 12:41pm</span>
+                          </div>
+                          <p class="fsupport-ticket-msg__body">Hey Jordan, thanks for reaching out! I have access to your wp-admin so I&rsquo;ll take a look at this right now. I suspect it might be related to the regional mapping data in your current version. Sit tight!</p>
+                        </div>
+                        <!-- Message 3: Sarah (Team) -->
+                        <div class="fsupport-ticket-msg fsupport-ticket-msg--team">
+                          <div class="fsupport-ticket-msg__header">
+                            <img class="fsupport-ticket-msg__avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                            <span class="fsupport-ticket-msg__name">Sarah</span>
+                            <span class="fsupport-ticket-msg__team-badge">Team</span>
+                            <span class="fsupport-ticket-msg__time">2-18-2026 at 1:38pm</span>
+                          </div>
+                          <p class="fsupport-ticket-msg__body">Found it! Your installation was running MapSamurai v2.3.1, which had a known issue with Northeast US zip code mapping. I&rsquo;ve updated you to v2.4.0 which includes the fix. The zip code search should be working correctly now &mdash; give it a try!</p>
+                        </div>
+                        <!-- Message 4: Jordan -->
+                        <div class="fsupport-ticket-msg fsupport-ticket-msg--customer">
+                          <div class="fsupport-ticket-msg__header">
+                            <img class="fsupport-ticket-msg__avatar" src="../images/jordan.jpg" alt="Jordan">
+                            <span class="fsupport-ticket-msg__name">Jordan</span>
+                            <span class="fsupport-ticket-msg__customer-badge">Customer</span>
+                            <span class="fsupport-ticket-msg__time">2-18-2026 at 1:52pm</span>
+                          </div>
+                          <p class="fsupport-ticket-msg__body">Wow, that was incredibly fast! Just tested it and everything is working perfectly now. Didn&rsquo;t expect such a quick turnaround &mdash; you guys are amazing. Thank you!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fsupport-platform__reply">
+                    <div class="fsupport-platform__reply-card">
+                      <div class="fsupport-platform__reply-title">Send a Reply</div>
+                      <div class="fsupport-platform__reply-textarea">Type your reply...</div>
+                      <span class="fsupport-platform__reply-btn">Send Reply</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 01: Easy Integration -->
+    <section class="fsupport-section">
+      <div class="container">
+        <div class="fsupport-section__grid">
+          <div class="fsupport-section__content animate-on-scroll">
+            <h2 class="fsupport-section__title">Support, built right into your product.</h2>
+            <p class="fsupport-section__desc">Customers submit tickets from inside your product&rsquo;s subdomain &mdash; no external help desk, no context switching. Your team sees everything in one place alongside feature requests, tasks, and roadmaps.</p>
+            <ul class="fsupport-section__bullets">
+              <li><strong>Embedded support portal</strong> &mdash; customers access support from your product&rsquo;s own subdomain</li>
+              <li><strong>No third-party tools</strong> &mdash; everything lives inside PathPro, alongside your existing workflow</li>
+              <li><strong>Automatic ticket IDs</strong> &mdash; every request gets a unique identifier for easy tracking</li>
+              <li><strong>Email notifications</strong> &mdash; customers receive updates when your team replies</li>
+            </ul>
+          </div>
+          <div class="fsupport-section__visual animate-on-scroll">
+            <div class="fsupport-placeholder">
+              <div class="fsupport-placeholder__header">
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--red"></span>
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--yellow"></span>
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--green"></span>
+                <span class="fsupport-placeholder__title">Submit a Support Ticket</span>
+              </div>
+              <div class="fsupport-placeholder__body">
+                <div class="fsupport-form">
+                  <div class="fsupport-form__group">
+                    <label class="fsupport-form__label">Name</label>
+                    <div class="fsupport-form__input">Jordan Brooks</div>
+                  </div>
+                  <div class="fsupport-form__group">
+                    <label class="fsupport-form__label">Email</label>
+                    <div class="fsupport-form__input">jordan@email.com</div>
+                  </div>
+                  <div class="fsupport-form__group">
+                    <label class="fsupport-form__label">Subject</label>
+                    <div class="fsupport-form__input">Zip code search not returning results</div>
+                  </div>
+                  <div class="fsupport-form__group">
+                    <label class="fsupport-form__label">Description</label>
+                    <div class="fsupport-form__textarea">When I enter zip codes for my region (Northeast US), the search returns no results even though I've added locations...</div>
+                  </div>
+                  <span class="fsupport-form__btn">Submit Ticket</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Ticket Statuses & Workflow (reversed) -->
+    <section class="fsupport-section fsupport-section--reversed">
+      <div class="container">
+        <div class="fsupport-section__grid">
+          <div class="fsupport-section__content animate-on-scroll">
+            <h2 class="fsupport-section__title">Track every ticket from open to resolved.</h2>
+            <p class="fsupport-section__desc">Manage the full lifecycle of support requests with clear status indicators. Your team always knows what needs attention, what&rsquo;s being worked on, and what&rsquo;s been resolved.</p>
+            <ul class="fsupport-section__bullets">
+              <li><strong>Status pipeline</strong> &mdash; Open &rarr; In Progress &rarr; Resolved, with clear visual indicators</li>
+              <li><strong>Team assignment</strong> &mdash; assign tickets to specific team members for accountability</li>
+              <li><strong>Priority levels</strong> &mdash; flag urgent issues so your team knows where to focus first</li>
+              <li><strong>Create a task</strong> &mdash; create a task related to a support ticket with a click of a button, adding it directly to your roadmap</li>
+            </ul>
+          </div>
+          <div class="fsupport-section__visual animate-on-scroll">
+            <div class="fsupport-placeholder">
+              <div class="fsupport-placeholder__header">
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--red"></span>
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--yellow"></span>
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--green"></span>
+                <span class="fsupport-placeholder__title">Support Tickets</span>
+              </div>
+              <div class="fsupport-placeholder__body">
+                <div class="fsupport-list">
+                  <div class="fsupport-list__header">
+                    <span>Ticket</span>
+                    <span>Subject</span>
+                    <span>Status</span>
+                    <span>Priority</span>
+                    <span>Date</span>
+                  </div>
+                  <div class="fsupport-list__row">
+                    <span class="fsupport-list__ticket-id">TKT-001</span>
+                    <span class="fsupport-list__subject">Zip code search not returning results</span>
+                    <span class="fsupport-list__status fsupport-list__status--open">Open</span>
+                    <span class="fsupport-list__priority"><span class="fsupport-list__priority-dot fsupport-list__priority-dot--high"></span>High</span>
+                    <span class="fsupport-list__date">Feb 18</span>
+                  </div>
+                  <div class="fsupport-list__row">
+                    <span class="fsupport-list__ticket-id">TKT-002</span>
+                    <span class="fsupport-list__subject">Can&rsquo;t export map data to CSV</span>
+                    <span class="fsupport-list__status fsupport-list__status--progress">In Progress</span>
+                    <span class="fsupport-list__priority"><span class="fsupport-list__priority-dot fsupport-list__priority-dot--medium"></span>Medium</span>
+                    <span class="fsupport-list__date">Feb 17</span>
+                  </div>
+                  <div class="fsupport-list__row">
+                    <span class="fsupport-list__ticket-id">TKT-003</span>
+                    <span class="fsupport-list__subject">Custom pin icons not displaying</span>
+                    <span class="fsupport-list__status fsupport-list__status--open">Open</span>
+                    <span class="fsupport-list__priority"><span class="fsupport-list__priority-dot fsupport-list__priority-dot--medium"></span>Medium</span>
+                    <span class="fsupport-list__date">Feb 16</span>
+                  </div>
+                  <div class="fsupport-list__row">
+                    <span class="fsupport-list__ticket-id">TKT-004</span>
+                    <span class="fsupport-list__subject">How to set up multi-region maps?</span>
+                    <span class="fsupport-list__status fsupport-list__status--resolved">Resolved</span>
+                    <span class="fsupport-list__priority"><span class="fsupport-list__priority-dot fsupport-list__priority-dot--low"></span>Low</span>
+                    <span class="fsupport-list__date">Feb 15</span>
+                  </div>
+                  <div class="fsupport-list__row">
+                    <span class="fsupport-list__ticket-id">TKT-005</span>
+                    <span class="fsupport-list__subject">Map loading slowly on mobile</span>
+                    <span class="fsupport-list__status fsupport-list__status--progress">In Progress</span>
+                    <span class="fsupport-list__priority"><span class="fsupport-list__priority-dot fsupport-list__priority-dot--high"></span>High</span>
+                    <span class="fsupport-list__date">Feb 14</span>
+                  </div>
+                  <div class="fsupport-list__row">
+                    <span class="fsupport-list__ticket-id">TKT-006</span>
+                    <span class="fsupport-list__subject">API key authentication failing</span>
+                    <span class="fsupport-list__status fsupport-list__status--resolved">Resolved</span>
+                    <span class="fsupport-list__priority"><span class="fsupport-list__priority-dot fsupport-list__priority-dot--low"></span>Low</span>
+                    <span class="fsupport-list__date">Feb 13</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Threaded Conversations & Notifications -->
+    <section class="fsupport-section">
+      <div class="container">
+        <div class="fsupport-section__grid">
+          <div class="fsupport-section__content animate-on-scroll">
+            <h2 class="fsupport-section__title">Keep every conversation in one place.</h2>
+            <p class="fsupport-section__desc">Reply to customers directly within each ticket. Threaded conversations keep the full history intact &mdash; no lost emails, no scattered chat logs. Customers get notified automatically.</p>
+            <ul class="fsupport-section__bullets">
+              <li><strong>Threaded replies</strong> &mdash; every ticket has its own conversation thread with full history</li>
+              <li><strong>Team badges</strong> &mdash; customers can see who on your team is helping them</li>
+              <li><strong>Email notifications</strong> &mdash; customers receive email updates whenever your team replies</li>
+              <li><strong>Internal notes</strong> &mdash; leave private notes for your team that customers never see</li>
+            </ul>
+          </div>
+          <div class="fsupport-section__visual animate-on-scroll">
+            <div class="fsupport-placeholder">
+              <div class="fsupport-placeholder__header">
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--red"></span>
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--yellow"></span>
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--green"></span>
+                <span class="fsupport-placeholder__title">Conversation Thread</span>
+              </div>
+              <div class="fsupport-placeholder__body">
+                <div class="fsupport-thread">
+                  <!-- Jordan message -->
+                  <div class="fsupport-thread__msg">
+                    <div class="fsupport-thread__header">
+                      <img class="fsupport-thread__avatar" src="../images/jordan.jpg" alt="Jordan">
+                      <span class="fsupport-thread__name">Jordan</span>
+                      <span class="fsupport-thread__customer-badge">Customer</span>
+                      <span class="fsupport-thread__time">2-18-2026 at 12:28pm</span>
+                    </div>
+                    <p class="fsupport-thread__body">Hi, I&rsquo;m having trouble with the zip code search feature. It returns no results for Northeast US zip codes.</p>
+                  </div>
+                  <!-- Sarah team reply -->
+                  <div class="fsupport-thread__msg fsupport-thread__msg--team">
+                    <div class="fsupport-thread__header">
+                      <img class="fsupport-thread__avatar" src="../images/sarah_chen.jpg" alt="Sarah">
+                      <span class="fsupport-thread__name">Sarah</span>
+                      <span class="fsupport-thread__team-badge">Team</span>
+                      <span class="fsupport-thread__time">2-18-2026 at 1:38pm</span>
+                    </div>
+                    <p class="fsupport-thread__body">Found it! I&rsquo;ve updated your installation to v2.4.0 which fixes the Northeast US zip code mapping issue. Give it a try!</p>
+                  </div>
+                  <!-- Email notification indicator -->
+                  <div class="fsupport-thread__email">
+                    <div class="fsupport-thread__email-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div class="fsupport-thread__email-content">
+                      <div class="fsupport-thread__email-subject">New reply on TKT-001</div>
+                      <div class="fsupport-thread__email-preview">Sarah from MapSamurai replied to your support ticket&hellip;</div>
+                    </div>
+                    <span class="fsupport-thread__email-badge">Email Sent</span>
+                  </div>
+                  <!-- Jordan follow-up -->
+                  <div class="fsupport-thread__msg">
+                    <div class="fsupport-thread__header">
+                      <img class="fsupport-thread__avatar" src="../images/jordan.jpg" alt="Jordan">
+                      <span class="fsupport-thread__name">Jordan</span>
+                      <span class="fsupport-thread__customer-badge">Customer</span>
+                      <span class="fsupport-thread__time">2-18-2026 at 1:52pm</span>
+                    </div>
+                    <p class="fsupport-thread__body">That was incredibly fast! Everything is working perfectly now. Thank you!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Customer Satisfaction (reversed) -->
+    <section class="fsupport-section fsupport-section--reversed">
+      <div class="container">
+        <div class="fsupport-section__grid">
+          <div class="fsupport-section__content animate-on-scroll">
+            <h2 class="fsupport-section__title">Support that builds loyalty.</h2>
+            <p class="fsupport-section__desc">When customers feel heard and supported, they stick around. Fast resolution times, transparent communication, and a professional support experience turn one-time users into long-term advocates.</p>
+            <ul class="fsupport-section__bullets">
+              <li><strong>Faster resolution</strong> &mdash; centralized tickets mean no request gets lost or forgotten</li>
+              <li><strong>Transparent communication</strong> &mdash; customers see their ticket status and full conversation history</li>
+              <li><strong>Professional experience</strong> &mdash; branded support portal on your own subdomain builds trust</li>
+              <li><strong>Actionable insights</strong> &mdash; use support data to improve your product and reduce recurring issues</li>
+            </ul>
+          </div>
+          <div class="fsupport-section__visual animate-on-scroll">
+            <div class="fsupport-placeholder">
+              <div class="fsupport-placeholder__header">
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--red"></span>
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--yellow"></span>
+                <span class="fsupport-placeholder__dot fsupport-placeholder__dot--green"></span>
+                <span class="fsupport-placeholder__title">Support Overview</span>
+              </div>
+              <div class="fsupport-placeholder__body">
+                <div class="fsupport-stats">
+                  <div class="fsupport-stats__title">Support Performance</div>
+                  <div class="fsupport-stats__grid">
+                    <div class="fsupport-stats__card">
+                      <span class="fsupport-stats__card-value" data-target="2.4" data-suffix=" hrs" data-decimals="1">0</span>
+                      <span class="fsupport-stats__card-label">Avg. Resolution Time</span>
+                    </div>
+                    <div class="fsupport-stats__card fsupport-stats__card--highlight">
+                      <span class="fsupport-stats__card-value" data-target="96" data-suffix="%">0</span>
+                      <span class="fsupport-stats__card-label">Customer Satisfaction</span>
+                    </div>
+                    <div class="fsupport-stats__card">
+                      <span class="fsupport-stats__card-value" data-target="142">0</span>
+                      <span class="fsupport-stats__card-label">Tickets Resolved This Month</span>
+                    </div>
+                    <div class="fsupport-stats__card">
+                      <span class="fsupport-stats__card-value" data-target="18">0</span>
+                      <span class="fsupport-stats__card-label">Open Tickets</span>
+                    </div>
+                  </div>
+                  <div class="fsupport-stats__chart">
+                    <div class="fsupport-stats__bar" data-height="35"></div>
+                    <div class="fsupport-stats__bar" data-height="50"></div>
+                    <div class="fsupport-stats__bar" data-height="40"></div>
+                    <div class="fsupport-stats__bar" data-height="65"></div>
+                    <div class="fsupport-stats__bar" data-height="55"></div>
+                    <div class="fsupport-stats__bar fsupport-stats__bar--accent" data-height="80"></div>
+                    <div class="fsupport-stats__bar fsupport-stats__bar--accent" data-height="100"></div>
+                  </div>
+                  <div class="fsupport-stats__chart-label">
+                    <span>Oct</span>
+                    <span>Nov</span>
+                    <span>Dec</span>
+                    <span>Jan</span>
+                    <span>Feb</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PathFox AI Intelligence -->
+    <section class="fsupport-pathfox">
+      <div class="container">
+        <div class="fsupport-pathfox__grid">
+          <div class="fsupport-pathfox__content animate-on-scroll">
+            <span class="fsupport-pathfox__badge">PathFox Product Intelligence<sup>&trade;</sup></span>
+            <h2 class="fsupport-pathfox__title">What if your support desk could think?</h2>
+            <p class="fsupport-pathfox__desc">PathFox<sup style="font-size:0.5em">AI</sup> analyzes your support conversations, identifies patterns in customer issues, and surfaces insights that help you fix problems permanently &mdash; so the same ticket never gets filed twice.</p>
+            <div class="fsupport-pathfox__pills">
+              <span class="fsupport-pathfox__pill">Analyze support sentiment</span>
+              <span class="fsupport-pathfox__pill">Detect repeat issues</span>
+              <span class="fsupport-pathfox__pill">Suggest permanent fixes</span>
+              <span class="fsupport-pathfox__pill">Summarize ticket threads</span>
+              <span class="fsupport-pathfox__pill">Monitor resolution times</span>
+            </div>
+            <a href="../pathfox.html" class="btn-primary btn-sm"><span>Learn More About PathFox<sup style="font-size:0.5em;vertical-align:super;font-weight:700">AI</sup></span></a>
+          </div>
+          <div class="fsupport-pathfox__visual animate-on-scroll">
+            <img class="fsupport-pathfox__img" src="../images/pathfox-thumbs.png" alt="PathFox AI assistant" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq__header">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq__grid">
+          <div class="faq__item">
+            <h3>How do customers submit support tickets?</h3>
+            <p>Customers can submit tickets directly from your product&rsquo;s support page on your PathPro subdomain. They fill out a simple form with their name, email, and issue description.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Can I assign tickets to specific team members?</h3>
+            <p>Yes. Tickets can be assigned to any team member. Assignees see their tickets across all projects and receive notifications for new replies.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Do customers get notified when we reply?</h3>
+            <p>Yes. Customers receive email notifications whenever a team member posts a reply to their ticket, keeping them in the loop without needing to check back manually.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Can community members see support tickets from other users?</h3>
+            <p>No. Support tickets are private between the customer and your team. Other community members cannot see another user&rsquo;s tickets.</p>
+          </div>
+          <div class="faq__item">
+            <h3>What is PathFox and how does it help with support?</h3>
+            <p>PathFox is PathPro&rsquo;s AI assistant. It analyzes support conversations to detect sentiment, identify repeat issues, suggest permanent fixes, and auto-categorize tickets to help your team work more efficiently.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Is customer support included in the free plan?</h3>
+            <p>Support tickets are not included in the free plan. The support ticket system is available exclusively on paid plans, which include ticket management, threaded conversations, email notifications, team assignment, and PathFox AI analysis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="fsupport-cta">
+      <div class="fsupport-cta__glow" aria-hidden="true"></div>
+      <div class="container">
+        <h2 class="fsupport-cta__title">Ready to build products your users <span class="gradient-text">love?</span></h2>
+        <p class="fsupport-cta__subtitle">Free forever plan. No credit card required.</p>
+        <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-lg">Get Started Free</a>
+        <p class="fsupport-cta__note">Join product teams shipping faster with PathPro.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../images/logo-footer.png" alt="PathPro" class="footer__logo-img">
+          <p class="footer__tagline">The Community-Driven Product Development OS for modern teams.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Product</h4>
+          <ul class="footer__list">
+            <li><a href="../index.html#features">Features</a></li>
+            <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+            <li><a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener">Knowledge Base</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../pathpro-official-roadmap.html">Our Roadmap</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Other</h4>
+          <ul class="footer__list">
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 PathPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/home.js"></script>
+  <script>
+    (function() {
+      // Scroll-triggered fade-in for animate-on-scroll elements
+      var animElements = document.querySelectorAll('.animate-on-scroll');
+      if (animElements.length) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+        animElements.forEach(function(el) {
+          observer.observe(el);
+        });
+      }
+
+      // Cursor animation: after messages stagger in, cursor moves to dropdown and selects Resolved
+      var heroVisual = document.querySelector('.fsupport-hero__visual');
+      var cursor = document.getElementById('fsupport-cursor');
+      var dropdown = document.getElementById('status-dropdown');
+      var resolvedOption = document.getElementById('resolved-option');
+      var statusLabel = document.getElementById('status-label');
+      var statusDot = document.getElementById('status-dot');
+      var breadcrumbStatus = document.getElementById('breadcrumb-status');
+      var ticketBadge = document.querySelector('.fsupport-platform__ticket-badge');
+
+      if (heroVisual && cursor) {
+        var cursorStarted = false;
+        var cursorObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !cursorStarted) {
+              cursorStarted = true;
+              // Wait for all 4 messages to stagger in (last one at 2.8s + 0.8s duration)
+              var baseDelay = 4000;
+
+              // Step 1: Fade in cursor near bottom-right
+              setTimeout(function() {
+                cursor.style.transition = 'opacity 0.6s ease, right 1.2s cubic-bezier(0.22, 1, 0.36, 1), top 1.2s cubic-bezier(0.22, 1, 0.36, 1)';
+                cursor.style.opacity = '1';
+              }, baseDelay);
+
+              // Step 2: Move cursor to the Open dropdown button
+              setTimeout(function() {
+                cursor.style.right = '30px';
+                cursor.style.top = '10px';
+              }, baseDelay + 800);
+
+              // Step 3: Click — show dropdown
+              setTimeout(function() {
+                cursor.style.transform = 'scale(0.85)';
+                setTimeout(function() { cursor.style.transform = 'scale(1)'; }, 150);
+                dropdown.style.transition = 'opacity 0.2s, transform 0.2s';
+                dropdown.style.opacity = '1';
+                dropdown.style.transform = 'translateY(0)';
+              }, baseDelay + 2200);
+
+              // Step 4: Move cursor to "Resolved" option
+              setTimeout(function() {
+                cursor.style.transition = 'right 0.8s cubic-bezier(0.22, 1, 0.36, 1), top 0.8s cubic-bezier(0.22, 1, 0.36, 1)';
+                cursor.style.right = '40px';
+                cursor.style.top = '78px';
+              }, baseDelay + 2800);
+
+              // Step 5: Hover highlight on Resolved
+              setTimeout(function() {
+                if (resolvedOption) resolvedOption.classList.add('is-hovered');
+              }, baseDelay + 3400);
+
+              // Step 6: Click Resolved — update status, close dropdown, fade cursor
+              setTimeout(function() {
+                cursor.style.transform = 'scale(0.85)';
+                setTimeout(function() { cursor.style.transform = 'scale(1)'; }, 150);
+              }, baseDelay + 3800);
+
+              setTimeout(function() {
+                // Close dropdown
+                dropdown.style.opacity = '0';
+                dropdown.style.transform = 'translateY(-4px)';
+                // Update breadcrumb status
+                if (statusLabel) statusLabel.textContent = 'Resolved';
+                if (statusDot) statusDot.style.background = '#6366F1';
+                if (breadcrumbStatus) breadcrumbStatus.classList.add('is-resolved');
+                // Update ticket card badge
+                if (ticketBadge) {
+                  ticketBadge.textContent = 'Resolved';
+                  ticketBadge.style.color = '#6366F1';
+                  ticketBadge.style.background = 'rgba(99, 102, 241, 0.1)';
+                }
+              }, baseDelay + 4200);
+
+              // Step 7: Fade out cursor
+              setTimeout(function() {
+                cursor.style.transition = 'opacity 0.6s ease';
+                cursor.style.opacity = '0';
+              }, baseDelay + 4800);
+            }
+          });
+        }, { threshold: 0.15 });
+        cursorObs.observe(heroVisual);
+      }
+
+      // Stats section: count-up numbers and bar chart grow animation
+      var statsSection = document.querySelector('.fsupport-stats');
+      if (statsSection) {
+        var statsStarted = false;
+        var statsObs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !statsStarted) {
+              statsStarted = true;
+              statsObs.unobserve(entry.target);
+
+              // Count-up animation
+              var values = statsSection.querySelectorAll('.fsupport-stats__card-value[data-target]');
+              values.forEach(function(el) {
+                var target = parseFloat(el.getAttribute('data-target'));
+                var suffix = el.getAttribute('data-suffix') || '';
+                var decimals = parseInt(el.getAttribute('data-decimals')) || 0;
+                var duration = 1600;
+                var startTime = null;
+
+                function animate(timestamp) {
+                  if (!startTime) startTime = timestamp;
+                  var progress = Math.min((timestamp - startTime) / duration, 1);
+                  var eased = 1 - Math.pow(1 - progress, 3);
+                  var current = eased * target;
+                  el.textContent = current.toFixed(decimals) + suffix;
+                  if (progress < 1) {
+                    requestAnimationFrame(animate);
+                  }
+                }
+                requestAnimationFrame(animate);
+              });
+
+              // Bar chart grow animation
+              var bars = statsSection.querySelectorAll('.fsupport-stats__bar[data-height]');
+              bars.forEach(function(bar) {
+                var targetHeight = bar.getAttribute('data-height');
+                bar.style.height = targetHeight + '%';
+              });
+            }
+          });
+        }, { threshold: 0.3 });
+        statsObs.observe(statsSection);
+      }
+    })();
+  </script>
+</body>
+</html>

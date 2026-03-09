@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Built PathFox: A Custom Product Intelligence AI That Knows What Your Customers Want — PathPro</title>
+  <meta name="description" content="PathFox is a purpose-built product intelligence engine inside PathPro. It analyzes feedback, scores demand, detects patterns, and tells you exactly what your customers want next.">
+  <meta name="keywords" content="product intelligence AI, AI feedback analysis, how to know what customers want, AI product prioritization, custom AI product management, PathFox, demand scoring AI, product feedback AI tool">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pathpro.app/blog/how-pathfox-was-built">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How We Built PathFox: A Custom Product Intelligence AI That Knows What Your Customers Want">
+  <meta property="og:description" content="PathFox is a purpose-built product intelligence engine inside PathPro. It analyzes feedback, scores demand, and tells you exactly what your customers want next.">
+  <meta property="og:url" content="https://pathpro.app/blog/how-pathfox-was-built">
+  <meta property="og:site_name" content="PathPro">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How We Built PathFox: A Custom Product Intelligence AI That Knows What Your Customers Want">
+  <meta name="twitter:description" content="PathFox is a purpose-built product intelligence engine that analyzes feedback, scores demand, and tells you what your customers want next.">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How We Built PathFox: A Custom Product Intelligence AI That Knows What Your Customers Want",
+    "description": "PathFox is a purpose-built product intelligence engine inside PathPro. It analyzes feedback, scores demand, detects patterns, and tells you exactly what your customers want next.",
+    "author": {"@type": "Person", "name": "Josh Sears"},
+    "datePublished": "2026-02-26",
+    "publisher": {"@type": "Organization", "name": "PathPro", "url": "https://pathpro.app"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pathpro.app/blog/how-pathfox-was-built"}
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="nav" id="nav" role="banner">
+    <nav class="nav__container" aria-label="Main navigation">
+      <a href="../index.html" class="nav__logo" aria-label="PathPro home">
+        <img src="../images/logo_header.png" alt="PathPro" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" role="list">
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Features
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="../features/feature-voting.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></span><span><span class="nav__dropdown-title">Validate</span><span class="nav__dropdown-desc">Let your users tell you what they want.</span></span></a>
+              <a href="../features/tasks.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M10 4v16"/></svg></span><span><span class="nav__dropdown-title">Build</span><span class="nav__dropdown-desc">AI-driven task management tools.</span></span></a>
+              <a href="../features/public-roadmaps.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span><span><span class="nav__dropdown-title">Inform</span><span class="nav__dropdown-desc">Roadmaps, public and internal.</span></span></a>
+              <a href="../features/public-release-notes.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span><span><span class="nav__dropdown-title">Ship</span><span class="nav__dropdown-desc">Announce each win, celebrate together.</span></span></a>
+              <a href="../features/provide-support.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 16.016c1.245-1.238 2-2.966 2-4.516a7.5 7.5 0 0 0-15 0c0 1.55.755 3.278 2 4.516"/><path d="M3 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 3 15.5v-4z"/><path d="M17 11.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-4z"/><path d="M18 17a4 4 0 0 1-4 4h-2a1 1 0 0 1 0-2h2a2 2 0 0 0 2-2"/></svg></span><span><span class="nav__dropdown-title">Provide Support</span><span class="nav__dropdown-desc">Boost customer tech support.</span></span></a>
+              <a href="../features/analyze-feedback.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span><span><span class="nav__dropdown-title">Analyze</span><span class="nav__dropdown-desc">Track growth, sentiment, and team performance.</span></span></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav__dropdown">
+          <button class="nav__dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Resources
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__dropdown-panel nav__dropdown-panel--compact" aria-hidden="true">
+            <div class="nav__dropdown-grid">
+              <a href="../about.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span><span class="nav__dropdown-title">About</span><span class="nav__dropdown-desc">Meet our team.</span></span></a>
+              <a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span><span class="nav__dropdown-title">Docs</span><span class="nav__dropdown-desc">Learn how to use PathPro.</span></span></a>
+              <a href="../blog.html" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span><span><span class="nav__dropdown-title">Blog</span><span class="nav__dropdown-desc">Let&rsquo;s talk product development.</span></span></a>
+              <a href="#" class="nav__dropdown-item"><span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span><span><span class="nav__dropdown-title">Get Support</span><span class="nav__dropdown-desc">Submit a support ticket.</span></span></a>
+              <a href="../contact.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Contact</span>
+                  <span class="nav__dropdown-desc">Talk to our team.</span>
+                </span>
+              </a>
+              <a href="../pathpro-official-roadmap.html" class="nav__dropdown-item">
+                <span class="nav__dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg></span>
+                <span>
+                  <span class="nav__dropdown-title">Our Roadmap</span>
+                  <span class="nav__dropdown-desc">See what&rsquo;s coming next.</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      </ul>
+      <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-sm nav__cta">Get Started Free</a>
+      <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__links" role="list">
+      <li><span class="mobile-menu__product-label">Product</span></li>
+      <li><a href="../features/feature-voting.html" class="mobile-menu__product-item">Validate</a></li>
+      <li><a href="../features/tasks.html" class="mobile-menu__product-item">Build</a></li>
+      <li><a href="../features/public-roadmaps.html" class="mobile-menu__product-item">Inform</a></li>
+      <li><a href="../features/public-release-notes.html" class="mobile-menu__product-item">Ship</a></li>
+      <li><a href="../features/provide-support.html" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="../features/analyze-feedback.html" class="mobile-menu__product-item">Analyze</a></li>
+      <li><a href="../pathfox.html">Meet PathFox</a></li>
+      <li><span class="mobile-menu__product-label">Resources</span></li>
+      <li><a href="../about.html" class="mobile-menu__product-item">About</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Docs</a></li>
+      <li><a href="../blog.html" class="mobile-menu__product-item">Blog</a></li>
+      <li><a href="#" class="mobile-menu__product-item">Support</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="https://app.pathpro.co/login" target="_blank" rel="noopener">Log In</a></li>
+      <li><a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary">Get Started Free</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <article class="article">
+      <div class="container">
+        <a href="../blog.html" class="article__back">&larr; Back to Blog</a>
+        <header class="article__header">
+          <span class="article__category">AI</span>
+          <h1 class="article__title">How We Built PathFox: A Custom Product Intelligence AI That Knows What Your Customers Want</h1>
+          <div class="article__meta">
+            <time datetime="2026-02-26">Feb 26, 2026</time>
+            <span>&middot;</span>
+            <span>9 min read</span>
+          </div>
+          <div class="article__author">
+            <div class="article__author-avatar">JS</div>
+            <div class="article__author-info">
+              <div class="article__author-name">Josh Sears</div>
+              <div class="article__author-role">Founder, PathPro</div>
+            </div>
+          </div>
+        </header>
+
+        <div class="article__body">
+          <p><strong>PathFox is a purpose-built product intelligence engine inside PathPro. It is not a generic chatbot or an AI wrapper.</strong> It was designed from scratch to answer one question: what do your customers want next? It reads every submission, comment, upvote, and feature request in your project, then gives you a single, prioritized answer backed by real engagement data.</p>
+
+          <h2>What is PathFox?</h2>
+          <p>PathFox is an AI system embedded directly into PathPro&rsquo;s product development platform. It operates on your actual project data &mdash; submissions from your community, feature requests on your roadmap, tasks in your milestones, and comments across all of them.</p>
+          <p>It is not a separate tool. It does not require an API key, a third-party integration, or a data export. PathFox lives inside PathPro and has native access to everything your team and community have contributed. You open a chat panel, ask a question in plain English, and PathFox returns an answer drawn from your real data.</p>
+          <p>PathFox operates in two modes. <strong>Passive analysis</strong> runs automatically &mdash; theme detection, sentiment scoring, demand ranking, and duplicate identification happen in the background. <strong>Active interaction</strong> is the conversational layer where you ask questions, request summaries, create tasks, confirm features, and update statuses without leaving the chat.</p>
+
+          <h2>Why we built PathFox instead of using off-the-shelf AI</h2>
+          <p>Generic AI tools are trained on the internet. They can write a blog post or summarize a Wikipedia article, but they know nothing about your product, your users, or your backlog. We needed something that did.</p>
+          <p>The problem we kept running into was simple: product teams collect enormous amounts of feedback and have no efficient way to analyze it. Feedback arrives through submissions, comments, upvotes, and feature requests. It piles up. Teams scan it manually, develop gut feelings about what matters, and hope they are right.</p>
+          <p>Off-the-shelf AI cannot solve this because it lacks the data model. It does not understand the relationship between a submission and the feature it maps to. It does not know which users are paying subscribers versus free-tier visitors. It cannot distinguish between a feature that has 200 upvotes and zero comments versus one that has 15 upvotes and 40 detailed comments.</p>
+          <p>PathFox was built to understand all of that natively. Every analysis it runs is grounded in PathPro&rsquo;s data schema &mdash; projects, submissions, features, tasks, milestones, comments, upvotes, subscribers, and user roles.</p>
+
+          <h2>How PathFox analyzes what your customers want</h2>
+          <p>PathFox performs four types of automated analysis on your feedback data. These run passively and update as new data arrives.</p>
+
+          <h3>Theme detection</h3>
+          <p>PathFox scans every submission in your project and automatically groups them into recurring patterns. If 30 different users are all describing variations of the same problem &mdash; &ldquo;dark mode,&rdquo; &ldquo;night theme,&rdquo; &ldquo;reduce eye strain&rdquo; &mdash; PathFox identifies that as one theme. You see the pattern without having to read each submission individually.</p>
+          <p>This is not keyword matching. PathFox understands semantic meaning, so it catches requests that describe the same need using completely different language.</p>
+
+          <h3>Duplicate finder</h3>
+          <p>Duplicate submissions are inevitable in any active feedback community. PathFox surfaces submissions that describe the same request, even when the wording is different. This keeps your feedback board clean and ensures that the real volume of demand behind each request is accurately represented.</p>
+
+          <h3>Sentiment analysis</h3>
+          <p>Not all feedback carries the same emotional weight. PathFox evaluates the sentiment of each submission and comment, distinguishing between enthusiastic feature requests, frustrated complaints, and neutral observations. This gives you a read on how your users feel about their requests, not just what they are asking for.</p>
+
+          <h3>Quality scoring</h3>
+          <p>PathFox ranks feedback by engagement and detail. A well-written submission with a clear problem statement, use case, and active discussion thread scores higher than a one-sentence request with no engagement. Quality scoring helps you identify the feedback that deserves your attention first.</p>
+
+          <h2>How demand scoring works</h2>
+          <p><strong>Demand scoring is the core of PathFox&rsquo;s prioritization engine.</strong> It produces a single number that tells you what to build next.</p>
+          <p>The score is a weighted calculation across three dimensions:</p>
+          <ul>
+            <li><strong>Upvotes.</strong> The most direct signal of demand. More upvotes means more users explicitly want this feature.</li>
+            <li><strong>Subscriber count.</strong> Users who subscribe to a feature request are saying &ldquo;I care enough about this to be notified when it ships.&rdquo; Subscribers indicate deeper commitment than a casual upvote.</li>
+            <li><strong>Comment activity.</strong> Active discussion threads signal that a request is generating real conversation. A feature with 50 thoughtful comments carries more validated demand than one with 50 silent upvotes.</li>
+          </ul>
+          <p>PathFox combines these inputs into a single demand score for every feature and submission in your project. The result is a ranked list &mdash; your entire backlog sorted by real, measured demand from real users.</p>
+
+          <h3>Confirmed vs unconfirmed demand</h3>
+          <p>PathFox distinguishes between confirmed and unconfirmed features. A confirmed feature is one your team has validated and moved to the roadmap. An unconfirmed feature is still a community submission &mdash; it represents raw demand that has not yet been evaluated.</p>
+          <p>This distinction matters because it prevents you from conflating &ldquo;things users want&rdquo; with &ldquo;things we have committed to building.&rdquo; PathFox shows you both, clearly separated, so you always know what is validated and what is still speculation.</p>
+
+          <h3>Feature ranking</h3>
+          <p>The feature ranking view is the demand score in action. It displays your entire backlog &mdash; both confirmed features and unconfirmed submissions &mdash; sorted by the demand score. You can see at a glance which requests carry the most validated user demand. No spreadsheets. No guessing. One list, sorted by what your users actually want.</p>
+
+          <h2>How PathFox monitors your roadmap</h2>
+          <p>PathFox does not stop at feedback analysis. It also monitors the health and progress of your roadmap.</p>
+
+          <h3>Roadmap health checks</h3>
+          <p>PathFox provides an at-a-glance status of every milestone in your project. It evaluates task completion rates, open blockers, and remaining work to give you a clear picture of where each milestone stands. You do not need to open each milestone individually &mdash; PathFox summarizes the state of your entire roadmap in one view.</p>
+
+          <h3>Behind-schedule detection</h3>
+          <p>PathFox flags milestones that are slipping before deadlines hit. If a milestone has a target date approaching and the completion rate is lagging, PathFox alerts you. This gives you time to reassign resources, adjust scope, or reset expectations before the deadline passes.</p>
+
+          <h3>Comment analysis</h3>
+          <p>Discussions on tasks and features can reveal blockers that do not surface in status updates. PathFox analyzes comment threads to detect hostility, identify unresolved blockers, and flag unproductive conversations. If a task discussion has devolved into a circular argument or a user is expressing significant frustration, PathFox calls it out so you can intervene.</p>
+
+          <h2>What can you ask PathFox?</h2>
+          <p>PathFox supports natural language search across your entire project. You ask questions the way you think, and PathFox returns answers &mdash; not a list of links.</p>
+
+          <h3>Natural language search and instant summaries</h3>
+          <p>You can ask PathFox things like:</p>
+          <ul>
+            <li>&ldquo;What are the top 5 most requested features?&rdquo;</li>
+            <li>&ldquo;Are any milestones behind schedule?&rdquo;</li>
+            <li>&ldquo;Summarize what users are saying about the mobile experience.&rdquo;</li>
+            <li>&ldquo;Which submissions mention API integrations?&rdquo;</li>
+            <li>&ldquo;What is the sentiment around our latest release?&rdquo;</li>
+          </ul>
+          <p>PathFox does not return a list of search results. It returns a summary &mdash; a direct, synthesized answer pulled from your project data. If you ask what users are saying about mobile, you get a paragraph that explains the dominant themes, the sentiment, and the specific submissions driving the conversation.</p>
+
+          <h3>Cross-project search</h3>
+          <p>If you manage multiple projects in PathPro, PathFox can search across all of them. You can find information, compare feedback trends, or identify shared requests between different products &mdash; all from a single conversation.</p>
+
+          <h3>Context-aware interaction</h3>
+          <p>PathFox adapts its tools, prompts, and analysis based on the page you are viewing. If you open PathFox from the Submissions page, it prioritizes submission-related analysis &mdash; themes, duplicates, sentiment. If you open it from the Roadmap, it focuses on milestone health, behind-schedule detection, and feature ranking. From Release Notes, it shifts to sentiment around recent launches.</p>
+          <p>This is not a cosmetic change. PathFox restructures which tools and data queries it runs based on your context, so the information it surfaces is immediately relevant to what you are working on.</p>
+
+          <h2>What actions can PathFox take?</h2>
+          <p>PathFox is not read-only. It can modify your project data through conversation.</p>
+          <ul>
+            <li><strong>Create tasks and milestones.</strong> Tell PathFox to add a task to a specific milestone, and it creates it without you leaving the chat. Include a title, description, and assignee in your message and PathFox handles the rest.</li>
+            <li><strong>Confirm and migrate features.</strong> When a community submission is ready to become a roadmap item, ask PathFox to confirm it. It promotes the submission to a confirmed feature and migrates it to your roadmap.</li>
+            <li><strong>Update statuses.</strong> Change task progress, update assignees, or modify milestone details from the conversation. No context switching, no navigating through menus.</li>
+          </ul>
+          <p>This turns PathFox from an analysis tool into a product management interface. You can review feedback, make prioritization decisions, and execute on those decisions without leaving a single conversation.</p>
+
+          <h2>PathFox vs generic AI tools</h2>
+          <p>The difference between PathFox and a generic AI chatbot is the difference between a specialist and a generalist.</p>
+          <p><strong>Generic AI tools</strong> (ChatGPT, Claude, Gemini) are trained on public internet data. They can help you brainstorm feature ideas or write PRDs, but they know nothing about your specific product, your users, or the 300 submissions sitting in your feedback queue. You would need to copy-paste your data into the conversation, re-explain context every time, and still get answers that lack the nuance of your project&rsquo;s actual engagement data.</p>
+          <p><strong>PathFox</strong> operates directly on your project data inside PathPro. It does not need context fed to it &mdash; it already has it. It knows which features have the most upvotes, which milestones are behind schedule, which comment threads are getting heated, and which submissions are duplicates. And it can take action on that data: creating tasks, confirming features, and updating statuses.</p>
+          <p>Generic AI gives you general answers. PathFox gives you answers about your product, backed by your data, actionable within your workflow.</p>
+
+          <h2>What PathFox cannot do</h2>
+          <p>Honesty matters more than marketing. Here is what PathFox does not do.</p>
+          <p><strong>PathFox does not replace human judgment.</strong> It tells you what your users are asking for and how strongly they want it. It does not tell you whether to build it. Strategic decisions &mdash; market positioning, resource allocation, competitive timing &mdash; require human judgment that no AI can replicate.</p>
+          <p><strong>PathFox does not make strategic decisions.</strong> It will never say &ldquo;you should build feature X instead of feature Y.&rdquo; It provides the data. You make the call. Demand scoring, sentiment analysis, and theme detection are inputs to your decision &mdash; not the decision itself.</p>
+          <p><strong>PathFox does not interact with your customers directly.</strong> It analyzes what your users have already submitted. It does not send emails, respond to support tickets, or engage in conversations with end users. It is an internal intelligence tool for your team, not a customer-facing bot.</p>
+          <p><strong>PathFox does not fabricate data.</strong> Every answer PathFox provides is grounded in your project&rsquo;s actual data. If it does not have enough information to answer a question, it says so. It does not hallucinate engagement metrics or invent user sentiment.</p>
+
+          <h2>Bottom line</h2>
+          <p><strong>PathFox is product intelligence built for product teams &mdash; not a generic AI bolted onto a dashboard.</strong> It was designed from the ground up to read, analyze, and act on the feedback, features, tasks, and discussions that live inside PathPro.</p>
+          <p>It scores demand so you know what to build next. It detects themes so you see patterns you would miss. It monitors your roadmap so you catch problems early. It takes actions so you stay in flow. And it does all of this on your data, in your workspace, with full context awareness.</p>
+          <p>The goal was never to build another chatbot. The goal was to build an AI that actually knows what your customers want &mdash; and gives you the tools to act on it.</p>
+        </div>
+
+        <div class="article__cta">
+          <p class="article__cta-text">Try PathFox free &mdash; product intelligence that tells you what your customers want next.</p>
+          <a href="https://app.pathpro.co/stripe-purchase-product/free/register" class="btn-primary btn-lg">Get Started Free</a>
+          <p class="article__cta-note">Free forever. No credit card required.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="../images/logo-footer.png" alt="PathPro" class="footer__logo-img">
+          <p class="footer__tagline">The Community-Driven Product Development OS for modern teams.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Product</h4>
+          <ul class="footer__list">
+            <li><a href="../index.html#features">Features</a></li>
+            <li><a href="../pathfox.html">Meet PathFox<sup class="nav__sup">AI</sup></a></li>
+            <li><a href="https://pathpro.co/pathpro-knowledge-base/" target="_blank" rel="noopener">Knowledge Base</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../pathpro-official-roadmap.html">Our Roadmap</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Other</h4>
+          <ul class="footer__list">
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 PathPro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/home.js"></script>
+</body>
+</html>

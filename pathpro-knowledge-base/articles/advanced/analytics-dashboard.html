@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics &amp; Overview Dashboard — PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="../../index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Getting Started <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../getting-started/creating-your-first-project.html" class="sidebar__link">Creating Your First Project</a></li>
+            <li><a href="../getting-started/quick-start-guide.html" class="sidebar__link">Quick Start Guide</a></li>
+            <li><a href="../getting-started/roles-and-permissions.html" class="sidebar__link">Roles &amp; Permissions</a></li>
+            <li><a href="../getting-started/publish-your-project.html" class="sidebar__link">Publish Your Project</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Core Features <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../core-features/roadmap-and-tasks.html" class="sidebar__link">Roadmap &amp; Tasks</a></li>
+            <li><a href="../core-features/feature-voting.html" class="sidebar__link">Feature Voting</a></li>
+            <li><a href="../core-features/release-notes.html" class="sidebar__link">Release Notes</a></li>
+            <li><a href="../core-features/community-submissions.html" class="sidebar__link">Community Submissions</a></li>
+            <li><a href="../core-features/support-tickets.html" class="sidebar__link">Support Tickets</a></li>
+            <li><a href="../core-features/community-members.html" class="sidebar__link">Community Members</a></li>
+            <li><a href="../core-features/team-management.html" class="sidebar__link">Team Management</a></li>
+            <li><a href="../core-features/comments-and-discussions.html" class="sidebar__link">Comments &amp; Discussions</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Advanced <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="pathfox-ai.html" class="sidebar__link">PathFox Product Intelligence</a></li>
+            <li><a href="developer-api.html" class="sidebar__link">Developer API</a></li>
+            <li><a href="custom-domains.html" class="sidebar__link">Custom Domains &amp; Branding</a></li>
+            <li><a href="header-and-design.html" class="sidebar__link">Header &amp; Design</a></li>
+            <li><a href="analytics-dashboard.html" class="sidebar__link">Analytics Dashboard</a></li>
+            <li><a href="billing-and-plans.html" class="sidebar__link">Billing &amp; Plans</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Best Practices <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../best-practices/feature-voting-campaigns.html" class="sidebar__link">Feature Voting Campaigns</a></li>
+            <li><a href="../best-practices/public-roadmap.html" class="sidebar__link">Public Roadmap Strategy</a></li>
+            <li><a href="../best-practices/closing-the-feedback-loop.html" class="sidebar__link">Closing the Feedback Loop</a></li>
+            <li><a href="../best-practices/community-engagement.html" class="sidebar__link">Community Engagement</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="analytics-dashboard.html">Advanced</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Analytics &amp; Overview Dashboard</span>
+        </nav>
+
+        <article class="article">
+          <h1>Analytics &amp; Overview Dashboard</h1>
+          <p class="article__intro">The Overview dashboard is your command center. It surfaces key metrics across all your projects — open tasks, community growth, submission volume, and support ticket health — so you can spot trends and take action without digging through individual pages.</p>
+
+          <div class="toc"></div>
+
+          <h2 id="dashboard-kpis">Dashboard KPIs</h2>
+          <p>When you first land on the Overview page, you'll see a row of key performance indicator cards at the top. These give you an instant snapshot of your project's health:</p>
+          <ul>
+            <li><strong>Open Tasks</strong> — The total number of tasks across all task groups that are not yet marked as completed. This tells you how much work is outstanding.</li>
+            <li><strong>Completed Tasks</strong> — Tasks that have been resolved, giving you a sense of throughput and progress over time.</li>
+            <li><strong>Total Features</strong> — The number of feature requests in your system, both open and closed.</li>
+            <li><strong>Community Members</strong> — How many people have registered on your project portal.</li>
+          </ul>
+          <p>Each KPI card also displays a trend indicator — a percentage change compared to the previous period. A green upward arrow means growth (more completions, more members), while a red indicator signals a decline. These trends help you understand whether your project is gaining momentum or needs attention.</p>
+          <p>The KPIs update in real time as your team and community interact with the project. There's no need to refresh or wait for a nightly data sync — what you see is always current.</p>
+
+          <h2 id="community-growth-metrics">Community Growth Metrics</h2>
+          <p>Understanding how your community is growing is essential for gauging the success of your public-facing project. The community growth section of the dashboard shows you new member registrations over time, plotted as a daily or weekly trend line.</p>
+          <p>You can see when registration spikes occurred — often correlating with product launches, social media mentions, or feature voting campaigns that you've promoted externally. Identifying these spikes helps you understand what drives community engagement and lets you replicate successful strategies.</p>
+          <p>The growth chart also breaks down registration sources when available. If members are signing up through Google or Facebook social login versus email registration, you'll see that distribution here. This can inform decisions about which login methods to prioritize and where to focus your outreach efforts.</p>
+          <p>For projects with a large community, pay attention to the daily active members metric alongside raw registration numbers. A growing community that doesn't return to vote or comment may indicate that your portal needs more compelling content or more frequent updates to keep people engaged.</p>
+
+          <h2 id="recent-submissions-feed">Recent Submissions Feed</h2>
+          <p>The recent submissions feed gives you a live, chronological list of the latest feedback your community has submitted. Each entry shows the submission title, the member who submitted it, and when it was created.</p>
+          <p>This feed is designed for quick triage. When you start your day, scan through recent submissions to identify urgent bugs, popular requests, or items that need immediate attention. You can click any submission to jump directly to its detail page, where you can respond, assign it to a team member, or convert it into a task or feature.</p>
+          <p>The feed shows submissions across all of your projects if you manage more than one. Use the project filter dropdown (covered below) to narrow it down to a specific project when needed. For teams that receive high volumes of submissions, establishing a daily triage routine around this feed is one of the most effective ways to stay on top of community input.</p>
+
+          <h2 id="support-ticket-breakdown">Support Ticket Breakdown</h2>
+          <p>If you have support tickets enabled on your project, the dashboard includes a dedicated breakdown section. This shows your tickets organized by status: open, in progress, and resolved.</p>
+          <p>The ticket breakdown also surfaces key operational metrics. Average response time tells you how quickly your team is acknowledging new tickets. Resolution time measures how long it takes from ticket creation to closure. Both of these metrics are critical if you're committed to providing timely support through PathPro.</p>
+          <p>Volume trends are displayed as a simple chart showing ticket creation over the past 30 days. A sudden spike in ticket volume after a release might indicate a regression or a confusing new feature. Conversely, a steady decline in tickets over time could mean your product is stabilizing or your documentation is improving.</p>
+          <p>For teams using PathPro as their primary support channel, this section replaces the need for a separate support analytics tool. Everything you need to assess your support performance is available at a glance.</p>
+
+          <h2 id="task-and-feature-analytics">Task and Feature Analytics</h2>
+          <p>Beyond the top-level KPIs, the dashboard provides deeper analytics on tasks and features. This section reveals patterns in how your team works and how your community engages.</p>
+          <p>Comment activity shows you which tasks and features are generating the most discussion. High-comment items often represent either contentious decisions or highly anticipated features — both worth paying attention to. You can use comment volume as a signal for prioritization, surfacing items that your community cares most about.</p>
+          <p>Voting trends display how voting activity has changed over time. You'll see total votes cast per day or week, along with the top-voted features for the current period. If voting activity drops, it might be time to promote your feature voting page again or add new features for the community to weigh in on.</p>
+          <p>Task completion rates are broken down by task group, giving you visibility into which areas of your roadmap are progressing and which are stalled. If a particular task group has been at 20% completion for weeks, it might need more resources or a scope adjustment.</p>
+
+          <figure class="image-placeholder" style="border:none; background:none; padding:0; margin:24px 0;">
+            <img src="../../doc_images/analytics-overview.png" alt="Overview dashboard showing KPI cards, community growth chart, recent submissions feed, and support ticket breakdown" style="width:100%; border-radius:8px; border:1px solid #e5e7eb;">
+            <figcaption class="image-placeholder__caption">Overview dashboard showing KPI cards, community growth chart, recent submissions feed, and support ticket breakdown</figcaption>
+          </figure>
+
+          <h2 id="project-filtering">Project Filtering</h2>
+          <p>If you manage multiple projects in PathPro, the dashboard aggregates data across all of them by default. The project filter dropdown at the top of the page lets you switch between an all-projects view and a single-project view.</p>
+          <p>When you select a specific project, every section on the dashboard — KPIs, community growth, submissions, tickets, and analytics — updates to show data only for that project. This is essential for teams managing several products or brands, each with its own community and roadmap.</p>
+          <p>The filter selection persists during your session, so you can navigate away and come back without losing your context. If you always work on a single project, the filter remembers your last choice and defaults to it on your next visit.</p>
+          <p>For account owners with many projects, the dropdown also includes a search field to quickly find the project you're looking for without scrolling through a long list.</p>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Use Case Shout-Out</div>
+              <div class="callout__text">Check your Overview dashboard every Monday morning to spot trends — a spike in submissions might mean a new release introduced bugs.</div>
+            </div>
+          </div>
+
+          <nav class="article__nav">
+            <a href="header-and-design.html" class="article__nav-link article__nav-link--prev">
+              <span class="article__nav-label">← Previous</span>
+              <span class="article__nav-title">Header &amp; Design Settings</span>
+            </a>
+            <a href="billing-and-plans.html" class="article__nav-link article__nav-link--next">
+              <span class="article__nav-label">Next →</span>
+              <span class="article__nav-title">Billing &amp; Plans</span>
+            </a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../../js/sidebar.js"></script>
+  <script src="../../js/toc.js"></script>
+  <script src="../../js/search.js"></script>
+</body>
+</html>

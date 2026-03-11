@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roles &amp; Permissions — PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="../../index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Getting Started <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="creating-your-first-project.html" class="sidebar__link">Creating Your First Project</a></li>
+            <li><a href="quick-start-guide.html" class="sidebar__link">Quick Start Guide</a></li>
+            <li><a href="roles-and-permissions.html" class="sidebar__link">Roles &amp; Permissions</a></li>
+            <li><a href="publish-your-project.html" class="sidebar__link">Publish Your Project</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Core Features <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../core-features/roadmap-and-tasks.html" class="sidebar__link">Roadmap &amp; Tasks</a></li>
+            <li><a href="../core-features/feature-voting.html" class="sidebar__link">Feature Voting</a></li>
+            <li><a href="../core-features/release-notes.html" class="sidebar__link">Release Notes</a></li>
+            <li><a href="../core-features/community-submissions.html" class="sidebar__link">Community Submissions</a></li>
+            <li><a href="../core-features/support-tickets.html" class="sidebar__link">Support Tickets</a></li>
+            <li><a href="../core-features/community-members.html" class="sidebar__link">Community Members</a></li>
+            <li><a href="../core-features/team-management.html" class="sidebar__link">Team Management</a></li>
+            <li><a href="../core-features/comments-and-discussions.html" class="sidebar__link">Comments &amp; Discussions</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Advanced <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../advanced/pathfox-ai.html" class="sidebar__link">PathFox Product Intelligence</a></li>
+            <li><a href="../advanced/developer-api.html" class="sidebar__link">Developer API</a></li>
+            <li><a href="../advanced/custom-domains.html" class="sidebar__link">Custom Domains &amp; Branding</a></li>
+            <li><a href="../advanced/header-and-design.html" class="sidebar__link">Header &amp; Design</a></li>
+            <li><a href="../advanced/analytics-dashboard.html" class="sidebar__link">Analytics Dashboard</a></li>
+            <li><a href="../advanced/billing-and-plans.html" class="sidebar__link">Billing &amp; Plans</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Best Practices <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../best-practices/feature-voting-campaigns.html" class="sidebar__link">Feature Voting Campaigns</a></li>
+            <li><a href="../best-practices/public-roadmap.html" class="sidebar__link">Public Roadmap Strategy</a></li>
+            <li><a href="../best-practices/closing-the-feedback-loop.html" class="sidebar__link">Closing the Feedback Loop</a></li>
+            <li><a href="../best-practices/community-engagement.html" class="sidebar__link">Community Engagement</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="creating-your-first-project.html">Getting Started</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Roles &amp; Permissions</span>
+        </nav>
+
+        <article class="article">
+          <h1>Roles &amp; Permissions</h1>
+          <p class="article__intro">PathPro uses three role types to control what each person can do inside a project. Roles are assigned per project, so the same user can have different levels of access across your various projects.</p>
+
+          <div class="toc"></div>
+
+          <h2 id="role-types">Role Types</h2>
+          <p>Every user who accesses a PathPro project is assigned one of three roles. Each role comes with a distinct set of capabilities designed to match the level of trust and responsibility that person has within the project.</p>
+          <ul>
+            <li><strong>Admin</strong> — Full control over the project. Admins can create and manage tasks, task groups, features, and release notes. They can invite and remove team members, configure project settings, manage billing, and access analytics. This role is intended for project owners and core team leads.</li>
+            <li><strong>Team Member</strong> — A contributor role with access to most content management capabilities. Team members can create and edit tasks, add features to the voting page, publish release notes, and respond to community feedback. They cannot change project settings, manage billing, or remove other team members.</li>
+            <li><strong>Community Member</strong> — The public-facing role for your users and customers. Community members can view the roadmap, vote on features, submit feedback and feature requests, leave comments, and create support tickets. They cannot create or modify any project content directly.</li>
+          </ul>
+
+          <h2 id="permission-matrix">Permission Matrix</h2>
+          <p>The table below shows exactly which capabilities are available to each role. Use this as a quick reference when deciding which role to assign.</p>
+
+          <table class="permission-table">
+            <thead>
+              <tr>
+                <th>Capability</th>
+                <th>Admin</th>
+                <th>Team Member</th>
+                <th>Community Member</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>View roadmap</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+              </tr>
+              <tr>
+                <td>Vote on features</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+              </tr>
+              <tr>
+                <td>Comment on tasks &amp; features</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+              </tr>
+              <tr>
+                <td>Submit feedback</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+              </tr>
+              <tr>
+                <td>Create support tickets</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+              </tr>
+              <tr>
+                <td>Create tasks</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Edit tasks</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Delete tasks</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Create &amp; edit features</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Publish release notes</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Manage task groups</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Respond to support tickets</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Manage team members</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Access project settings</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Configure custom domain</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>Manage billing</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+              <tr>
+                <td>View analytics</td>
+                <td><span class="check">&#10003;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+                <td><span class="cross">&mdash;</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="per-project-roles">Per-Project Roles</h2>
+          <p>A critical concept in PathPro is that roles are assigned <strong>per project</strong>, not globally across your account. This means the same person can hold different roles on different projects.</p>
+          <p>For example, a designer on your team might be an <strong>Admin</strong> on your marketing website project (where they own the roadmap and manage feedback) but a <strong>Team Member</strong> on your internal tools project (where they contribute tasks but don't need administrative control).</p>
+          <p>To assign or change a user's role, navigate to your project's <strong>Team</strong> page. Find the user in the list and select their new role from the dropdown. The change takes effect immediately -- no page reload or re-login required.</p>
+          <p>This per-project model keeps permissions precise and avoids the common problem of over-granting access. Each project can have its own hierarchy that matches the real-world responsibilities of the people involved.</p>
+
+          <h2 id="super-admin">Super Admin</h2>
+          <p>The account owner -- the person who originally created the PathPro account -- has <strong>Super Admin</strong> capabilities that go beyond the project-level Admin role. Super Admin access includes:</p>
+          <ul>
+            <li><strong>Cross-project management</strong> — Create new projects, archive or delete existing projects, and access settings across every project on the account.</li>
+            <li><strong>Account-level billing</strong> — Manage the subscription plan, payment methods, and invoices for the entire account.</li>
+            <li><strong>Team oversight</strong> — View and manage all team members across all projects from a single dashboard.</li>
+            <li><strong>Plan upgrades</strong> — Upgrade or downgrade the account plan, which affects limits and features available to all projects.</li>
+          </ul>
+          <p>Super Admin is not a role you assign -- it's inherent to the account owner. If you need to transfer Super Admin access to a different person, contact PathPro support.</p>
+
+          <h2 id="free-plan-limitations">Free Plan Limitations</h2>
+          <p>The free plan is a great way to get started, but it comes with some restrictions compared to paid plans:</p>
+          <ul>
+            <li><strong>No team member support</strong> — Team Members and additional Admins are only available on paid plans. On the free plan, only the account owner (Super Admin) can manage the project.</li>
+            <li><strong>Limited community members</strong> — There is a cap on how many community members can register on your project.</li>
+            <li><strong>No Support Tickets</strong> — The support ticket system is excluded from the free plan.</li>
+            <li><strong>No CRM / Community Export</strong> — Exporting community member data is a paid feature.</li>
+          </ul>
+          <p>If you hit the community member limit, need team member support, or wish to enjoy advanced features like PathFox Product Intelligence, you'll need to upgrade your plan. See <a href="../advanced/billing-and-plans.html">Billing &amp; Plans</a> for a full comparison of what each tier includes.</p>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Flexible by Design</div>
+              <div class="callout__text">Assign different roles per project -- your designer can be an Admin on the marketing site project but a Team Member on the internal tools project. This keeps permissions precise without requiring separate accounts.</div>
+            </div>
+          </div>
+
+          <nav class="article__nav">
+            <a href="quick-start-guide.html" class="article__nav-link article__nav-link--prev">
+              <span class="article__nav-label">← Previous</span>
+              <span class="article__nav-title">Quick Start Guide</span>
+            </a>
+            <a href="publish-your-project.html" class="article__nav-link article__nav-link--next">
+              <span class="article__nav-label">Next →</span>
+              <span class="article__nav-title">Publish Your Project</span>
+            </a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../../js/sidebar.js"></script>
+  <script src="../../js/toc.js"></script>
+  <script src="../../js/search.js"></script>
+</body>
+</html>

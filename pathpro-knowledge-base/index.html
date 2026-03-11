@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Mobile hamburger -->
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">
+            Getting Started
+            <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <ul class="sidebar__section-links">
+            <li><a href="articles/getting-started/creating-your-first-project.html" class="sidebar__link">Creating Your First Project</a></li>
+            <li><a href="articles/getting-started/quick-start-guide.html" class="sidebar__link">Quick Start Guide</a></li>
+            <li><a href="articles/getting-started/roles-and-permissions.html" class="sidebar__link">Roles &amp; Permissions</a></li>
+            <li><a href="articles/getting-started/publish-your-project.html" class="sidebar__link">Publish Your Project</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">
+            Core Features
+            <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <ul class="sidebar__section-links">
+            <li><a href="articles/core-features/roadmap-and-tasks.html" class="sidebar__link">Roadmap &amp; Tasks</a></li>
+            <li><a href="articles/core-features/feature-voting.html" class="sidebar__link">Feature Voting</a></li>
+            <li><a href="articles/core-features/release-notes.html" class="sidebar__link">Release Notes</a></li>
+            <li><a href="articles/core-features/community-submissions.html" class="sidebar__link">Community Submissions</a></li>
+            <li><a href="articles/core-features/support-tickets.html" class="sidebar__link">Support Tickets</a></li>
+            <li><a href="articles/core-features/community-members.html" class="sidebar__link">Community Members</a></li>
+            <li><a href="articles/core-features/team-management.html" class="sidebar__link">Team Management</a></li>
+            <li><a href="articles/core-features/comments-and-discussions.html" class="sidebar__link">Comments &amp; Discussions</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">
+            Advanced
+            <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <ul class="sidebar__section-links">
+            <li><a href="articles/advanced/pathfox-ai.html" class="sidebar__link">PathFox Product Intelligence</a></li>
+            <li><a href="articles/advanced/developer-api.html" class="sidebar__link">Developer API</a></li>
+            <li><a href="articles/advanced/custom-domains.html" class="sidebar__link">Custom Domains &amp; Branding</a></li>
+            <li><a href="articles/advanced/header-and-design.html" class="sidebar__link">Header &amp; Design</a></li>
+            <li><a href="articles/advanced/analytics-dashboard.html" class="sidebar__link">Analytics Dashboard</a></li>
+            <li><a href="articles/advanced/billing-and-plans.html" class="sidebar__link">Billing &amp; Plans</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">
+            Best Practices
+            <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <ul class="sidebar__section-links">
+            <li><a href="articles/best-practices/feature-voting-campaigns.html" class="sidebar__link">Feature Voting Campaigns</a></li>
+            <li><a href="articles/best-practices/public-roadmap.html" class="sidebar__link">Public Roadmap Strategy</a></li>
+            <li><a href="articles/best-practices/closing-the-feedback-loop.html" class="sidebar__link">Closing the Feedback Loop</a></li>
+            <li><a href="articles/best-practices/community-engagement.html" class="sidebar__link">Community Engagement</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <div class="content__inner">
+
+        <div class="landing-hero">
+          <h1>Welcome to the PathPro Knowledge Base</h1>
+          <p>Learn how to use PathPro — the product development operating system that unifies feature voting, roadmaps, release notes, and community feedback in one workspace.</p>
+        </div>
+
+        <div class="landing-cards">
+          <a href="articles/getting-started/quick-start-guide.html" class="landing-card">
+            <div class="landing-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="landing-card__title">Getting Started</div>
+            <div class="landing-card__desc">Create your first project, set up your team, and start collecting feedback in minutes.</div>
+          </a>
+
+          <a href="articles/core-features/roadmap-and-tasks.html" class="landing-card">
+            <div class="landing-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </div>
+            <div class="landing-card__title">Core Features</div>
+            <div class="landing-card__desc">Roadmaps, feature voting, release notes, submissions, support tickets, and more.</div>
+          </a>
+
+          <a href="articles/advanced/pathfox-ai.html" class="landing-card">
+            <div class="landing-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="landing-card__title">Advanced Features</div>
+            <div class="landing-card__desc">AI assistant, developer API, custom domains, analytics, and billing.</div>
+          </a>
+
+          <a href="articles/best-practices/feature-voting-campaigns.html" class="landing-card">
+            <div class="landing-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <div class="landing-card__title">Best Practices</div>
+            <div class="landing-card__desc">Proven strategies for voting campaigns, public roadmaps, and community engagement.</div>
+          </a>
+        </div>
+
+        <article class="article">
+          <h2 id="what-is-pathpro">What is PathPro?</h2>
+          <p>PathPro is a product development operating system designed for product teams, indie makers, and SaaS founders. It replaces the scattered collection of tools you use today — voting boards, project trackers, changelog generators, and feedback forms — with a single, unified workspace.</p>
+          <p>With PathPro, your community can vote on features, submit feedback, report bugs, and create support tickets. Your team can manage roadmaps, track tasks, and publish release notes — all from one platform that lives on your own subdomain or custom domain.</p>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Use Case Shout-Out</div>
+              <div class="callout__text">SaaS founders use PathPro to replace 4+ separate tools — one workspace for voting, roadmaps, changelogs, and support.</div>
+            </div>
+          </div>
+
+          <h2 id="how-it-works">How It Works</h2>
+          <p>PathPro follows a core workflow loop that keeps your community engaged and your product moving forward:</p>
+          <ol>
+            <li><strong>Community votes</strong> — Your users propose and upvote the features they want most.</li>
+            <li><strong>You prioritize</strong> — Use voting data, AI-powered demand scoring, and community submissions to decide what to build next.</li>
+            <li><strong>Team builds</strong> — Manage your roadmap with task groups, tasks, subtasks, and assignments.</li>
+            <li><strong>Release notes close the loop</strong> — Publish what you shipped and notify the people who asked for it.</li>
+          </ol>
+          <p>This cycle repeats continuously, creating a transparent relationship between you and your community that builds trust, reduces churn, and ensures you're always building the right thing.</p>
+
+          <h2 id="who-is-it-for">Who Is It For?</h2>
+          <ul>
+            <li><strong>SaaS product teams</strong> who want to centralize feedback and roadmap planning.</li>
+            <li><strong>Indie makers</strong> who need a lightweight way to track community requests.</li>
+            <li><strong>Open-source maintainers</strong> looking for a public voting and roadmap tool.</li>
+            <li><strong>Agency teams</strong> managing multiple client projects with separate communities.</li>
+          </ul>
+
+          <h2 id="explore-the-knowledge-base">Explore the Knowledge Base</h2>
+          <p>Use the sidebar to navigate through all the documentation. Here are some recommended starting points:</p>
+          <ul>
+            <li><a href="articles/getting-started/quick-start-guide.html">Quick Start Guide</a> — Get up and running in 15 minutes.</li>
+            <li><a href="articles/core-features/feature-voting.html">Feature Voting</a> — Learn how community-driven prioritization works.</li>
+            <li><a href="articles/core-features/roadmap-and-tasks.html">Roadmap & Tasks</a> — Manage your product roadmap.</li>
+            <li><a href="articles/advanced/pathfox-ai.html">PathFox AI</a> — Discover AI-powered product intelligence.</li>
+            <li><a href="articles/best-practices/closing-the-feedback-loop.html">Closing the Feedback Loop</a> — The full submission-to-release cycle.</li>
+          </ul>
+        </article>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="js/sidebar.js"></script>
+  <script src="js/toc.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

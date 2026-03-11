@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Tickets — PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="../../index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Getting Started <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../getting-started/creating-your-first-project.html" class="sidebar__link">Creating Your First Project</a></li>
+            <li><a href="../getting-started/quick-start-guide.html" class="sidebar__link">Quick Start Guide</a></li>
+            <li><a href="../getting-started/roles-and-permissions.html" class="sidebar__link">Roles &amp; Permissions</a></li>
+            <li><a href="../getting-started/publish-your-project.html" class="sidebar__link">Publish Your Project</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Core Features <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="roadmap-and-tasks.html" class="sidebar__link">Roadmap &amp; Tasks</a></li>
+            <li><a href="feature-voting.html" class="sidebar__link">Feature Voting</a></li>
+            <li><a href="release-notes.html" class="sidebar__link">Release Notes</a></li>
+            <li><a href="community-submissions.html" class="sidebar__link">Community Submissions</a></li>
+            <li><a href="support-tickets.html" class="sidebar__link">Support Tickets</a></li>
+            <li><a href="community-members.html" class="sidebar__link">Community Members</a></li>
+            <li><a href="team-management.html" class="sidebar__link">Team Management</a></li>
+            <li><a href="comments-and-discussions.html" class="sidebar__link">Comments &amp; Discussions</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Advanced <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../advanced/pathfox-ai.html" class="sidebar__link">PathFox Product Intelligence</a></li>
+            <li><a href="../advanced/developer-api.html" class="sidebar__link">Developer API</a></li>
+            <li><a href="../advanced/custom-domains.html" class="sidebar__link">Custom Domains &amp; Branding</a></li>
+            <li><a href="../advanced/header-and-design.html" class="sidebar__link">Header &amp; Design</a></li>
+            <li><a href="../advanced/analytics-dashboard.html" class="sidebar__link">Analytics Dashboard</a></li>
+            <li><a href="../advanced/billing-and-plans.html" class="sidebar__link">Billing &amp; Plans</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Best Practices <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../best-practices/feature-voting-campaigns.html" class="sidebar__link">Feature Voting Campaigns</a></li>
+            <li><a href="../best-practices/public-roadmap.html" class="sidebar__link">Public Roadmap Strategy</a></li>
+            <li><a href="../best-practices/closing-the-feedback-loop.html" class="sidebar__link">Closing the Feedback Loop</a></li>
+            <li><a href="../best-practices/community-engagement.html" class="sidebar__link">Community Engagement</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="roadmap-and-tasks.html">Core Features</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Support Tickets</span>
+        </nav>
+
+        <article class="article">
+          <h1>Support Tickets</h1>
+          <p class="article__intro">PathPro's built-in support ticket system lets your community report issues and ask questions without leaving your project. Every conversation stays connected to the same ecosystem where your roadmap and feature voting live, so nothing falls through the cracks.</p>
+
+          <div class="toc"></div>
+
+          <h2 id="enabling-support-tickets">Enabling Support Tickets</h2>
+          <p>Support tickets are an optional feature that you can enable on a per-project basis. To turn them on, navigate to your project's <strong>Settings</strong> page and look for the <strong>"Support Tickets"</strong> toggle under the Features section.</p>
+          <p>Once enabled, a new <strong>"Support"</strong> tab appears in your project's public navigation. Community members who are logged in will see a button to create a new support ticket. You can disable tickets at any time without losing existing ticket data — the tab simply hides from public view, and all historical tickets remain accessible to admins through the admin dashboard.</p>
+          <p>If you're running a public roadmap but don't need a support channel yet, you can leave tickets disabled and turn them on later when your community grows. There's no setup beyond flipping the toggle — the system is ready to use immediately.</p>
+
+          <h2 id="how-community-members-create-tickets">How Community Members Create Tickets</h2>
+          <p>When a logged-in community member visits your project's Support page, they'll see a clear <strong>"New Ticket"</strong> button. Clicking it opens a straightforward form with two fields: a <strong>subject line</strong> and a <strong>description</strong>.</p>
+          <p>The subject line should briefly summarize the issue or question. The description field supports longer text where the community member can explain the problem in detail, include steps to reproduce a bug, or describe what they expected to happen. Encourage your community to be specific — the more context they provide upfront, the faster your team can resolve the issue.</p>
+          <p>After submitting, the community member is taken to their ticket's detail page where they can see the ticket status and continue the conversation with your team through threaded replies. They'll also be able to view all of their open and past tickets from the Support page.</p>
+
+          <figure class="image-placeholder" style="border:none; background:none; padding:0; margin:24px 0;">
+            <svg width="100%" viewBox="0 0 780 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+              <!-- Outer card -->
+              <rect x="0.5" y="0.5" width="779" height="379" rx="8" fill="#fff" stroke="#e5e7eb"/>
+
+              <!-- Header bar -->
+              <rect x="1" y="1" width="778" height="52" rx="8" fill="#f9fafb"/>
+              <rect x="1" y="45" width="778" height="8" fill="#f9fafb"/>
+              <line x1="1" y1="53" x2="779" y2="53" stroke="#e5e7eb"/>
+              <text x="32" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#1f2937">Create Support Ticket</text>
+
+              <!-- Ticket number preview -->
+              <rect x="620" y="14" width="130" height="26" rx="13" fill="#f3f4f6"/>
+              <text x="685" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">TKT-000042</text>
+
+              <!-- Subject label -->
+              <text x="32" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#374151">Subject</text>
+              <!-- Subject input -->
+              <rect x="32" y="96" width="716" height="40" rx="6" fill="#fff" stroke="#d1d5db"/>
+              <text x="44" y="121" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#9ca3af">Login page returns 500 error</text>
+
+              <!-- Description label -->
+              <text x="32" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#374151">Description</text>
+              <!-- Description textarea -->
+              <rect x="32" y="172" width="716" height="100" rx="6" fill="#fff" stroke="#d1d5db"/>
+              <!-- Placeholder lines in textarea -->
+              <rect x="44" y="190" width="380" height="8" rx="4" fill="#e5e7eb"/>
+              <rect x="44" y="208" width="320" height="8" rx="4" fill="#e5e7eb"/>
+              <rect x="44" y="226" width="280" height="8" rx="4" fill="#e5e7eb"/>
+              <rect x="44" y="244" width="200" height="8" rx="4" fill="#e5e7eb"/>
+
+              <!-- Category label -->
+              <text x="32" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#374151">Category</text>
+              <!-- Category dropdown -->
+              <rect x="32" y="308" width="240" height="40" rx="6" fill="#fff" stroke="#d1d5db"/>
+              <text x="44" y="333" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#1f2937">Bug Report</text>
+              <!-- Dropdown chevron -->
+              <polyline points="244,323 252,331 260,323" stroke="#9ca3af" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- Submit button -->
+              <rect x="588" y="308" width="160" height="40" rx="6" fill="#3376A3"/>
+              <text x="668" y="333" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#fff" text-anchor="middle">Submit Ticket</text>
+            </svg>
+            <figcaption class="image-placeholder__caption">Support ticket creation form from the community member's perspective</figcaption>
+          </figure>
+
+          <h2 id="ticket-numbering">Ticket Numbering</h2>
+          <p>Every support ticket is automatically assigned a unique, sequential ticket number in the format <strong>TKT-000001</strong>. This numbering is scoped to your project, so the first ticket in any project always starts at TKT-000001 regardless of how many other projects you manage.</p>
+          <p>Ticket numbers are permanent and never reused. If a ticket is deleted, its number is retired — the next ticket will still receive the next number in sequence. This ensures that references to ticket numbers in conversations, emails, or external tools always point to the correct ticket.</p>
+          <p>The ticket number is displayed prominently on the ticket detail page and in the admin dashboard's ticket list. You can reference ticket numbers when communicating with your team or community members to quickly identify specific issues.</p>
+
+          <h2 id="ticket-status-workflow">Ticket Status Workflow</h2>
+          <p>Support tickets move through a defined set of statuses that help both your team and your community understand where things stand. The available statuses are:</p>
+          <ul>
+            <li><strong>Open</strong> — The ticket has been submitted and is awaiting attention from your team. This is the default status for all new tickets.</li>
+            <li><strong>In Progress</strong> — A team member has acknowledged the ticket and is actively working on a resolution. Setting this status signals to the community member that their issue is being looked at.</li>
+            <li><strong>Pending</strong> — The ticket is waiting on additional information from the community member, or the fix is in progress but not yet complete. Use this status when the ball is in the reporter's court.</li>
+            <li><strong>Resolved</strong> — The issue has been addressed. The community member can review the resolution and reopen the ticket if needed.</li>
+            <li><strong>Closed</strong> — The ticket is fully resolved and no further action is expected. Closed tickets are archived but remain searchable in the admin dashboard.</li>
+          </ul>
+          <p>Admins and team members can change a ticket's status at any time from the ticket detail page. Status changes are visible to the community member who created the ticket, creating a transparent workflow that builds trust with your user base.</p>
+
+          <h2 id="reply-threading">Reply Threading</h2>
+          <p>Each support ticket has its own threaded conversation where both the community member and your team can exchange messages. Replies appear in chronological order, creating a clear record of the entire support interaction.</p>
+          <p>When a team member replies, their response is visually distinguished from community member messages so it's easy to tell who said what. Team members can post internal notes that are only visible to other team members if they need to coordinate before responding publicly.</p>
+          <p>Reply notifications keep everyone in the loop. When a team member responds to a ticket, the community member who created it receives a notification. Similarly, when the community member adds a follow-up message, the assigned team member is notified. This back-and-forth flow ensures that conversations stay active and tickets don't stall out because someone missed a reply.</p>
+
+          <figure class="image-placeholder" style="border:none; background:none; padding:0; margin:24px 0;">
+            <svg width="100%" viewBox="0 0 780 400" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+              <!-- Outer card -->
+              <rect x="0.5" y="0.5" width="779" height="399" rx="8" fill="#fff" stroke="#e5e7eb"/>
+
+              <!-- Header bar -->
+              <rect x="1" y="1" width="778" height="56" rx="8" fill="#f9fafb"/>
+              <rect x="1" y="49" width="778" height="8" fill="#f9fafb"/>
+              <line x1="1" y1="57" x2="779" y2="57" stroke="#e5e7eb"/>
+              <text x="32" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#9ca3af" font-weight="500">TKT-000042</text>
+              <text x="32" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#1f2937">Login page returns 500 error</text>
+              <!-- Status badge -->
+              <rect x="660" y="22" width="90" height="24" rx="12" fill="#d6e8f3"/>
+              <text x="705" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#3376A3" text-anchor="middle">In Progress</text>
+
+              <!-- Message 1: Community member (left aligned) -->
+              <circle cx="52" cy="90" r="16" fill="#e5e7eb"/>
+              <text x="52" y="95" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#6b7280" text-anchor="middle">AK</text>
+              <text x="76" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#374151">Alex K.</text>
+              <text x="124" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#9ca3af">Feb 16, 2:34 PM</text>
+              <rect x="76" y="90" width="380" height="52" rx="6" fill="#f3f4f6"/>
+              <text x="88" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#374151">I'm getting a 500 error when trying to log in.</text>
+              <text x="88" y="128" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#374151">Started happening about an hour ago.</text>
+
+              <!-- Message 2: Admin reply (right aligned) -->
+              <text x="696" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#374151" text-anchor="end">Sarah</text>
+              <rect x="700" y="163" width="44" height="18" rx="9" fill="#d6e8f3"/>
+              <text x="722" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#3376A3" text-anchor="middle">Admin</text>
+              <circle cx="760" y="180" r="16" fill="#d6e8f3"/>
+              <text x="760" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#3376A3" text-anchor="middle">SM</text>
+              <text x="620" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#9ca3af">Feb 16, 2:41 PM</text>
+              <rect x="340" y="192" width="400" height="52" rx="6" fill="#d6e8f3"/>
+              <text x="352" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#1f2937">Thanks for reporting this, Alex. We've identified</text>
+              <text x="352" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#1f2937">the issue and are deploying a fix now.</text>
+
+              <!-- Message 3: Community member follow-up (left aligned) -->
+              <circle cx="52" cy="280" r="16" fill="#e5e7eb"/>
+              <text x="52" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#6b7280" text-anchor="middle">AK</text>
+              <text x="76" y="272" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#374151">Alex K.</text>
+              <text x="124" y="272" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#9ca3af">Feb 16, 3:05 PM</text>
+              <rect x="76" y="280" width="340" height="38" rx="6" fill="#f3f4f6"/>
+              <text x="88" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#374151">It's working now. Thanks for the quick fix!</text>
+
+              <!-- Reply input bar -->
+              <rect x="32" y="345" width="636" height="36" rx="6" fill="#fff" stroke="#d1d5db"/>
+              <text x="44" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#9ca3af">Write a reply...</text>
+              <rect x="680" y="345" width="68" height="36" rx="6" fill="#3376A3"/>
+              <text x="714" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">Reply</text>
+            </svg>
+            <figcaption class="image-placeholder__caption">Reply thread showing a conversation between a community member and a team admin</figcaption>
+          </figure>
+
+          <h2 id="admin-dashboard">Admin Dashboard</h2>
+          <p>The admin dashboard gives your team a centralized view of all support tickets across your project. From here, you can see every ticket at a glance, including its subject, status, creator, and when it was last updated.</p>
+          <p>Use the built-in <strong>filters</strong> to narrow down the ticket list by status, date range, or search keywords. This is especially useful as your ticket volume grows — you can quickly surface all "Open" tickets that need attention or find a specific ticket by its number or subject line.</p>
+          <p>The dashboard also helps you <strong>prioritize</strong> your team's workload. Sort tickets by creation date to handle the oldest issues first, or sort by last activity to focus on tickets with recent replies. As your support process matures, these tools help ensure that no ticket sits unaddressed for too long.</p>
+          <p>Admins can update ticket statuses, post replies, and close tickets directly from the dashboard without navigating away. This streamlined workflow means your team can triage and respond to multiple tickets efficiently in a single session.</p>
+
+          <figure class="image-placeholder" style="border:none; background:none; padding:0; margin:24px 0;">
+            <svg width="100%" viewBox="0 0 780 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+              <!-- Outer card -->
+              <rect x="0.5" y="0.5" width="779" height="379" rx="8" fill="#fff" stroke="#e5e7eb"/>
+
+              <!-- Header -->
+              <rect x="1" y="1" width="778" height="48" rx="8" fill="#f9fafb"/>
+              <rect x="1" y="41" width="778" height="8" fill="#f9fafb"/>
+              <line x1="1" y1="49" x2="779" y2="49" stroke="#e5e7eb"/>
+              <text x="32" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#1f2937">Support Tickets</text>
+
+              <!-- Stats bar -->
+              <rect x="32" y="62" width="100" height="30" rx="6" fill="#d6e8f3"/>
+              <text x="82" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#3376A3" text-anchor="middle">12 Open</text>
+
+              <rect x="144" y="62" width="116" height="30" rx="6" fill="#fef3c7"/>
+              <text x="202" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#92400e" text-anchor="middle">5 In Progress</text>
+
+              <rect x="272" y="62" width="104" height="30" rx="6" fill="#ffedd5"/>
+              <text x="324" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#9a3412" text-anchor="middle">3 Pending</text>
+
+              <rect x="388" y="62" width="110" height="30" rx="6" fill="#dcfce7"/>
+              <text x="443" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#166534" text-anchor="middle">8 Resolved</text>
+
+              <!-- Table header -->
+              <rect x="32" y="106" width="716" height="32" rx="0" fill="#f9fafb"/>
+              <text x="48" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#6b7280">TICKET #</text>
+              <text x="168" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#6b7280">SUBJECT</text>
+              <text x="460" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#6b7280">STATUS</text>
+              <text x="576" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#6b7280">SUBMITTED BY</text>
+              <text x="700" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#6b7280">DATE</text>
+
+              <!-- Row 1 -->
+              <line x1="32" y1="138" x2="748" y2="138" stroke="#f3f4f6"/>
+              <text x="48" y="161" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#3376A3" font-weight="500">TKT-000042</text>
+              <text x="168" y="161" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#1f2937">Login page returns 500 error</text>
+              <rect x="460" y="148" width="80" height="20" rx="10" fill="#d6e8f3"/>
+              <text x="500" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#3376A3" text-anchor="middle">In Progress</text>
+              <text x="576" y="161" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#374151">Alex K.</text>
+              <text x="700" y="161" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#6b7280">Feb 16</text>
+
+              <!-- Row 2 -->
+              <line x1="32" y1="178" x2="748" y2="178" stroke="#f3f4f6"/>
+              <text x="48" y="201" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#3376A3" font-weight="500">TKT-000041</text>
+              <text x="168" y="201" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#1f2937">CSV export missing columns</text>
+              <rect x="460" y="188" width="56" height="20" rx="10" fill="#d6e8f3"/>
+              <text x="488" y="202" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#3376A3" text-anchor="middle">Open</text>
+              <text x="576" y="201" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#374151">Maria J.</text>
+              <text x="700" y="201" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#6b7280">Feb 15</text>
+
+              <!-- Row 3 -->
+              <line x1="32" y1="218" x2="748" y2="218" stroke="#f3f4f6"/>
+              <text x="48" y="241" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#3376A3" font-weight="500">TKT-000040</text>
+              <text x="168" y="241" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#1f2937">Can't upload images over 5MB</text>
+              <rect x="460" y="228" width="66" height="20" rx="10" fill="#ffedd5"/>
+              <text x="493" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#9a3412" text-anchor="middle">Pending</text>
+              <text x="576" y="241" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#374151">DevTeam22</text>
+              <text x="700" y="241" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#6b7280">Feb 14</text>
+
+              <!-- Row 4 -->
+              <line x1="32" y1="258" x2="748" y2="258" stroke="#f3f4f6"/>
+              <text x="48" y="281" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#3376A3" font-weight="500">TKT-000039</text>
+              <text x="168" y="281" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#1f2937">Feature voting page not loading</text>
+              <rect x="460" y="268" width="72" height="20" rx="10" fill="#dcfce7"/>
+              <text x="496" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#166534" text-anchor="middle">Resolved</text>
+              <text x="576" y="281" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#374151">Sam W.</text>
+              <text x="700" y="281" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#6b7280">Feb 13</text>
+
+              <!-- Row 5 -->
+              <line x1="32" y1="298" x2="748" y2="298" stroke="#f3f4f6"/>
+              <text x="48" y="321" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#3376A3" font-weight="500">TKT-000038</text>
+              <text x="168" y="321" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#1f2937">How do I reset my password?</text>
+              <rect x="460" y="308" width="72" height="20" rx="10" fill="#dcfce7"/>
+              <text x="496" y="322" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#166534" text-anchor="middle">Resolved</text>
+              <text x="576" y="321" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#374151">Chris L.</text>
+              <text x="700" y="321" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#6b7280">Feb 12</text>
+
+              <!-- Bottom border -->
+              <line x1="32" y1="338" x2="748" y2="338" stroke="#f3f4f6"/>
+
+              <!-- Pagination -->
+              <text x="390" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">Showing 1-5 of 28 tickets</text>
+            </svg>
+            <figcaption class="image-placeholder__caption">Admin ticket dashboard with filtering and status management</figcaption>
+          </figure>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Use Case Shout-Out</div>
+              <div class="callout__text">Keep support in the same ecosystem as your roadmap. When a support ticket reveals a bug, adopt it directly onto your roadmap.</div>
+            </div>
+          </div>
+
+          <nav class="article__nav">
+            <a href="community-submissions.html" class="article__nav-link article__nav-link--prev">
+              <span class="article__nav-label">← Previous</span>
+              <span class="article__nav-title">Community Submissions</span>
+            </a>
+            <a href="community-members.html" class="article__nav-link article__nav-link--next">
+              <span class="article__nav-label">Next →</span>
+              <span class="article__nav-title">Community Members</span>
+            </a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../../js/sidebar.js"></script>
+  <script src="../../js/toc.js"></script>
+  <script src="../../js/search.js"></script>
+</body>
+</html>

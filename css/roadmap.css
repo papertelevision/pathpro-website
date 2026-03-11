@@ -3,7 +3,7 @@
    ============================================ */
 
 .nav {
-  border-bottom: .5px solid #d1d5db;
+  border-bottom: none;
 }
 
 .roadmap-embed {
@@ -16,3 +16,13 @@
   height: calc(100vh - 72px);
   border: none;
 }
+
+/* When a hero precedes the embed, the nav is already cleared */
+.demo-detail-hero + .roadmap-embed {
+  padding-top: 0;
+}
+
+.demo-detail-hero + .roadmap-embed .roadmap-embed__iframe {
+  height: 100vh;
+}
+

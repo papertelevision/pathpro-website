@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Management — PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="../../index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Getting Started <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../getting-started/creating-your-first-project.html" class="sidebar__link">Creating Your First Project</a></li>
+            <li><a href="../getting-started/quick-start-guide.html" class="sidebar__link">Quick Start Guide</a></li>
+            <li><a href="../getting-started/roles-and-permissions.html" class="sidebar__link">Roles &amp; Permissions</a></li>
+            <li><a href="../getting-started/publish-your-project.html" class="sidebar__link">Publish Your Project</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Core Features <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="roadmap-and-tasks.html" class="sidebar__link">Roadmap &amp; Tasks</a></li>
+            <li><a href="feature-voting.html" class="sidebar__link">Feature Voting</a></li>
+            <li><a href="release-notes.html" class="sidebar__link">Release Notes</a></li>
+            <li><a href="community-submissions.html" class="sidebar__link">Community Submissions</a></li>
+            <li><a href="support-tickets.html" class="sidebar__link">Support Tickets</a></li>
+            <li><a href="community-members.html" class="sidebar__link">Community Members</a></li>
+            <li><a href="team-management.html" class="sidebar__link">Team Management</a></li>
+            <li><a href="comments-and-discussions.html" class="sidebar__link">Comments &amp; Discussions</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Advanced <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../advanced/pathfox-ai.html" class="sidebar__link">PathFox Product Intelligence</a></li>
+            <li><a href="../advanced/developer-api.html" class="sidebar__link">Developer API</a></li>
+            <li><a href="../advanced/custom-domains.html" class="sidebar__link">Custom Domains &amp; Branding</a></li>
+            <li><a href="../advanced/header-and-design.html" class="sidebar__link">Header &amp; Design</a></li>
+            <li><a href="../advanced/analytics-dashboard.html" class="sidebar__link">Analytics Dashboard</a></li>
+            <li><a href="../advanced/billing-and-plans.html" class="sidebar__link">Billing &amp; Plans</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Best Practices <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../best-practices/feature-voting-campaigns.html" class="sidebar__link">Feature Voting Campaigns</a></li>
+            <li><a href="../best-practices/public-roadmap.html" class="sidebar__link">Public Roadmap Strategy</a></li>
+            <li><a href="../best-practices/closing-the-feedback-loop.html" class="sidebar__link">Closing the Feedback Loop</a></li>
+            <li><a href="../best-practices/community-engagement.html" class="sidebar__link">Community Engagement</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="roadmap-and-tasks.html">Core Features</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Team Management</span>
+        </nav>
+
+        <article class="article">
+          <h1>Team Management</h1>
+          <p class="article__intro">Your team members are the people who build, manage, and support your project behind the scenes. PathPro's team management system lets you invite collaborators, assign roles with specific permissions, and control who can do what across your project.</p>
+
+          <div class="toc"></div>
+
+          <h2 id="inviting-team-members">Inviting Team Members</h2>
+          <p>To add someone to your team, navigate to your project's <strong>Settings</strong> page and open the <strong>Team</strong> section. You'll find an invitation form where you enter the person's email address and select the role you want to assign them.</p>
+          <p>PathPro sends an email invitation to the address you provide. The email contains a unique invitation link that takes the recipient to your project where they can accept the invite. You can send multiple invitations at once — there's no need to wait for one person to accept before inviting the next.</p>
+          <p>Pending invitations are displayed in the team section so you can track who has been invited and who hasn't accepted yet. If an invitation goes unanswered, you can resend it or revoke it and invite someone else.</p>
+
+          <h2 id="invitation-flow">Invitation Flow</h2>
+          <p>When a team member clicks the invitation link in their email, the flow depends on whether they already have a PathPro account:</p>
+          <ul>
+            <li><strong>Existing PathPro user</strong> — If the invitee already has a PathPro account (perhaps they're a community member on another project), they're prompted to log in. After logging in, the invitation is automatically accepted and they're added to your project with their assigned role.</li>
+            <li><strong>New user</strong> — If the invitee doesn't have a PathPro account, they're taken to a registration page pre-filled with their email address. After creating an account, the invitation is accepted and they immediately have access to your project.</li>
+          </ul>
+          <p>Each invitation link contains a unique, secure token that expires after a set period. This ensures that invitation links can't be reused or shared with unintended recipients. If a link expires before the invitee accepts, simply resend the invitation to generate a fresh token.</p>
+          <p>The token-based approach also means that invitations are tied to the specific email address — the invitee must register or log in with the email that received the invitation. This prevents someone from forwarding an invite link and having another person accept it.</p>
+
+          <figure class="image-placeholder" style="border:none; background:none; padding:0; margin:24px 0;">
+            <svg width="100%" viewBox="0 0 780 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+              <!-- Outer card -->
+              <rect x="0.5" y="0.5" width="779" height="299" rx="8" fill="#fff" stroke="#e5e7eb"/>
+
+              <!-- Step labels at top -->
+              <text x="130" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#3376A3" text-anchor="middle" letter-spacing="0.5">STEP 1</text>
+              <text x="390" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#3376A3" text-anchor="middle" letter-spacing="0.5">STEP 2</text>
+              <text x="650" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#3376A3" text-anchor="middle" letter-spacing="0.5">STEP 3</text>
+
+              <!-- Step 1: Send Invite -->
+              <rect x="24" y="52" width="212" height="210" rx="6" fill="#f9fafb" stroke="#e5e7eb"/>
+              <text x="130" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1f2937" text-anchor="middle">Send Invite</text>
+
+              <!-- Email input -->
+              <text x="40" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#6b7280">Email address</text>
+              <rect x="40" y="110" width="180" height="30" rx="4" fill="#fff" stroke="#d1d5db"/>
+              <text x="50" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#374151">designer@company.com</text>
+
+              <!-- Role dropdown -->
+              <text x="40" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#6b7280">Role</text>
+              <rect x="40" y="166" width="180" height="30" rx="4" fill="#fff" stroke="#d1d5db"/>
+              <text x="50" y="186" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#374151">Team Member</text>
+              <polyline points="200,177 206,183 212,177" stroke="#9ca3af" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- Send button -->
+              <rect x="40" y="210" width="180" height="32" rx="6" fill="#3376A3"/>
+              <text x="130" y="231" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">Send Invitation</text>
+
+              <!-- Arrow 1 -->
+              <line x1="248" y1="155" x2="272" y2="155" stroke="#3376A3" stroke-width="2" stroke-linecap="round"/>
+              <polygon points="272,150 284,155 272,160" fill="#3376A3"/>
+
+              <!-- Step 2: Email Received -->
+              <rect x="284" y="52" width="212" height="210" rx="6" fill="#f9fafb" stroke="#e5e7eb"/>
+              <text x="390" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1f2937" text-anchor="middle">Email Received</text>
+
+              <!-- Envelope icon -->
+              <rect x="355" y="100" width="70" height="48" rx="4" fill="#d6e8f3" stroke="#3376A3" stroke-width="1.5"/>
+              <polyline points="355,100 390,130 425,100" stroke="#3376A3" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+              <!-- Envelope flap detail -->
+              <line x1="355" y1="148" x2="375" y2="128" stroke="#3376A3" stroke-width="1" opacity="0.4"/>
+              <line x1="425" y1="148" x2="405" y2="128" stroke="#3376A3" stroke-width="1" opacity="0.4"/>
+
+              <!-- Email text -->
+              <text x="390" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#374151" text-anchor="middle" font-weight="500">You're invited to join</text>
+              <text x="390" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#3376A3" text-anchor="middle" font-weight="600">Acme SaaS</text>
+              <text x="390" y="204" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#374151" text-anchor="middle" font-weight="500">on PathPro</text>
+
+              <!-- Accept button in email -->
+              <rect x="350" y="216" width="80" height="26" rx="4" fill="#3376A3"/>
+              <text x="390" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#fff" text-anchor="middle">Accept</text>
+
+              <!-- Arrow 2 -->
+              <line x1="508" y1="155" x2="532" y2="155" stroke="#3376A3" stroke-width="2" stroke-linecap="round"/>
+              <polygon points="532,150 544,155 532,160" fill="#3376A3"/>
+
+              <!-- Step 3: Join Project -->
+              <rect x="544" y="52" width="212" height="210" rx="6" fill="#f9fafb" stroke="#e5e7eb"/>
+              <text x="650" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1f2937" text-anchor="middle">Join Project</text>
+
+              <!-- Success checkmark circle -->
+              <circle cx="650" cy="134" r="30" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+              <polyline points="636,134 646,144 664,124" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- Success text -->
+              <text x="650" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#1f2937" text-anchor="middle" font-weight="600">Sarah joined as</text>
+              <rect x="606" y="198" width="88" height="22" rx="11" fill="#d6e8f3"/>
+              <text x="650" y="214" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#3376A3" text-anchor="middle">Team Member</text>
+
+              <!-- Project name -->
+              <text x="650" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Acme SaaS Project</text>
+            </svg>
+            <figcaption class="image-placeholder__caption">Team invitation flow showing the email invite and acceptance process</figcaption>
+          </figure>
+
+          <h2 id="team-roles">Team Roles</h2>
+          <p>PathPro offers three team roles, each with a different level of access and responsibility. Roles are assigned per project, so the same person can be an Admin on one project and a Team Member on another.</p>
+          <ul>
+            <li><strong>Admin</strong> — Full access to everything in the project. Admins can manage settings, invite and remove team members, create and edit task groups, manage features, publish release notes, handle support tickets, and access analytics. Every project must have at least one Admin (the project creator is automatically the first Admin).</li>
+            <li><strong>Team Lead</strong> — Broad access to day-to-day project management. Team Leads can create and manage tasks, respond to community submissions and support tickets, publish release notes, and moderate comments. They cannot modify project settings, manage billing, or invite other team members.</li>
+            <li><strong>Team Member</strong> — Focused access for contributors who need to work on tasks and engage with the community. Team Members can update tasks assigned to them, reply to support tickets, post comments, and view community submissions. They cannot create task groups, manage features, or access project settings.</li>
+          </ul>
+          <p>Choosing the right role matters. Give Admin access only to people who need to manage the project's structure and settings. For most collaborators — developers, designers, support staff — the Team Lead or Team Member role provides everything they need without exposing sensitive configuration options.</p>
+
+          <h2 id="managing-team-members">Managing Team Members</h2>
+          <p>The team section in your project settings shows all current team members and pending invitations. From here, admins can perform several management actions:</p>
+          <ul>
+            <li><strong>Change roles</strong> — Promote a Team Member to Team Lead, or adjust an Admin down to a different role. Role changes take effect immediately and the team member's permissions update the next time they load any project page.</li>
+            <li><strong>Remove members</strong> — Remove a team member from your project. Their account isn't deleted — they simply lose access to this specific project. Any tasks they created or comments they posted remain in the project.</li>
+            <li><strong>Resend invitations</strong> — If a pending invitation wasn't received or expired, you can resend it. This generates a new token and sends a fresh email to the same address.</li>
+            <li><strong>Revoke invitations</strong> — Cancel a pending invitation before it's accepted. The original invitation link becomes invalid immediately.</li>
+          </ul>
+          <p>When a team member is removed, they can still be re-invited later if needed. Re-inviting follows the same flow as a new invitation — they'll receive an email and need to accept it to regain access. Their previous activity (comments, task updates, etc.) is preserved and attributed to their account.</p>
+
+          <h2 id="free-plan-limitations">Free Plan Limitations</h2>
+          <p>Team member support is <strong>not included on the free plan</strong>. On the free tier, only the account owner (Super Admin) can manage the project — you cannot invite Admins, Team Leads, or Team Members. To add team members to your project, you'll need to upgrade to a paid plan.</p>
+          <p>If you need collaborators on the free plan, consider whether they can participate as community members instead. Community members can view the roadmap, vote on features, submit feedback, and comment — which covers many collaboration scenarios without requiring a team seat.</p>
+          <p>When you're ready to bring on team members, upgrading takes effect immediately and unlocks team invitation capabilities so you can start building your team right away. See <a href="../advanced/billing-and-plans.html">Billing &amp; Plans</a> for a full comparison of what each plan tier includes.</p>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Use Case Shout-Out</div>
+              <div class="callout__text">Invite your designer as a Team Member on the marketing project — they can manage tasks and reply to community feedback without full Admin access.</div>
+            </div>
+          </div>
+
+          <nav class="article__nav">
+            <a href="community-members.html" class="article__nav-link article__nav-link--prev">
+              <span class="article__nav-label">← Previous</span>
+              <span class="article__nav-title">Community Members</span>
+            </a>
+            <a href="comments-and-discussions.html" class="article__nav-link article__nav-link--next">
+              <span class="article__nav-label">Next →</span>
+              <span class="article__nav-title">Comments &amp; Discussions</span>
+            </a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../../js/sidebar.js"></script>
+  <script src="../../js/toc.js"></script>
+  <script src="../../js/search.js"></script>
+</body>
+</html>

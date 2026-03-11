@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer API — PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="../../index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Getting Started <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../getting-started/creating-your-first-project.html" class="sidebar__link">Creating Your First Project</a></li>
+            <li><a href="../getting-started/quick-start-guide.html" class="sidebar__link">Quick Start Guide</a></li>
+            <li><a href="../getting-started/roles-and-permissions.html" class="sidebar__link">Roles &amp; Permissions</a></li>
+            <li><a href="../getting-started/publish-your-project.html" class="sidebar__link">Publish Your Project</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Core Features <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../core-features/roadmap-and-tasks.html" class="sidebar__link">Roadmap &amp; Tasks</a></li>
+            <li><a href="../core-features/feature-voting.html" class="sidebar__link">Feature Voting</a></li>
+            <li><a href="../core-features/release-notes.html" class="sidebar__link">Release Notes</a></li>
+            <li><a href="../core-features/community-submissions.html" class="sidebar__link">Community Submissions</a></li>
+            <li><a href="../core-features/support-tickets.html" class="sidebar__link">Support Tickets</a></li>
+            <li><a href="../core-features/community-members.html" class="sidebar__link">Community Members</a></li>
+            <li><a href="../core-features/team-management.html" class="sidebar__link">Team Management</a></li>
+            <li><a href="../core-features/comments-and-discussions.html" class="sidebar__link">Comments &amp; Discussions</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Advanced <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="pathfox-ai.html" class="sidebar__link">PathFox Product Intelligence</a></li>
+            <li><a href="developer-api.html" class="sidebar__link">Developer API</a></li>
+            <li><a href="custom-domains.html" class="sidebar__link">Custom Domains &amp; Branding</a></li>
+            <li><a href="header-and-design.html" class="sidebar__link">Header &amp; Design</a></li>
+            <li><a href="analytics-dashboard.html" class="sidebar__link">Analytics Dashboard</a></li>
+            <li><a href="billing-and-plans.html" class="sidebar__link">Billing &amp; Plans</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Best Practices <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../best-practices/feature-voting-campaigns.html" class="sidebar__link">Feature Voting Campaigns</a></li>
+            <li><a href="../best-practices/public-roadmap.html" class="sidebar__link">Public Roadmap Strategy</a></li>
+            <li><a href="../best-practices/closing-the-feedback-loop.html" class="sidebar__link">Closing the Feedback Loop</a></li>
+            <li><a href="../best-practices/community-engagement.html" class="sidebar__link">Community Engagement</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="developer-api.html">Advanced</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Developer API</span>
+        </nav>
+
+        <article class="article">
+          <h1>Developer API</h1>
+          <p class="article__intro">PathPro provides a RESTful API that lets you programmatically manage tasks, read project data, and integrate PathPro with your existing development workflow. Whether you're syncing tasks with an internal tool or building custom dashboards, the API gives you full access to your project's data.</p>
+
+          <div class="toc"></div>
+
+          <h2 id="generating-api-tokens">Generating API Tokens</h2>
+          <p>Before you can make API requests, you need to generate an API token. Navigate to your project's <strong>Settings</strong> page and click the <strong>"API"</strong> tab. From there, click <strong>"Create New Token"</strong> to generate a personal access token.</p>
+          <p>Each token should be given a descriptive name that reflects its purpose — for example, "CI/CD Pipeline" or "Jira Sync." Naming tokens clearly makes it easy to identify which integrations are using which credentials, and allows you to revoke specific tokens without disrupting other integrations.</p>
+          <p>Tokens are shown only once at creation time. Copy your token immediately and store it securely — in an environment variable, a secrets manager, or your CI/CD platform's encrypted storage. If you lose a token, you'll need to revoke it and create a new one.</p>
+          <p>Only project admins can create and manage API tokens. Team members and community members do not have access to the API settings.</p>
+
+          <figure class="image-placeholder" style="border:none; background:none; padding:0; margin:24px 0;">
+            <svg width="100%" viewBox="0 0 780 350" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+              <!-- Outer card -->
+              <rect x="0.5" y="0.5" width="779" height="349" rx="8" fill="#fff" stroke="#e5e7eb"/>
+
+              <!-- Header row -->
+              <text x="32" y="42" font-size="18" font-weight="700" fill="#1f2937">API Tokens</text>
+              <!-- Generate New Token button -->
+              <rect x="610" y="20" width="148" height="34" rx="6" fill="#3376A3"/>
+              <text x="684" y="42" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">Generate New Token</text>
+
+              <!-- Table header -->
+              <rect x="24" y="64" width="732" height="36" rx="6" fill="#f9fafb"/>
+              <text x="44" y="87" font-size="11" font-weight="600" fill="#6b7280">Name</text>
+              <text x="210" y="87" font-size="11" font-weight="600" fill="#6b7280">Token</text>
+              <text x="410" y="87" font-size="11" font-weight="600" fill="#6b7280">Created</text>
+              <text x="540" y="87" font-size="11" font-weight="600" fill="#6b7280">Last Used</text>
+              <text x="680" y="87" font-size="11" font-weight="600" fill="#6b7280">Actions</text>
+
+              <!-- Divider -->
+              <line x1="24" y1="100" x2="756" y2="100" stroke="#e5e7eb"/>
+
+              <!-- Row 1: Production API -->
+              <rect x="24" y="100" width="732" height="52" fill="#fff"/>
+              <circle cx="44" cy="126" r="10" fill="#d6e8f3"/>
+              <text x="40" y="130" font-size="10" font-weight="700" fill="#3376A3">P</text>
+              <text x="62" y="130" font-size="13" font-weight="500" fill="#1f2937">Production API</text>
+              <!-- Token masked -->
+              <rect x="210" y="116" width="160" height="22" rx="4" fill="#f3f4f6"/>
+              <text x="220" y="131" font-size="11" fill="#6b7280" font-family="monospace">pk_live_****3f8a</text>
+              <text x="410" y="130" font-size="12" fill="#374151">Jan 5, 2026</text>
+              <!-- Green dot for recent use -->
+              <circle cx="544" cy="126" r="3" fill="#22c55e"/>
+              <text x="552" y="130" font-size="12" fill="#374151">Today</text>
+              <!-- Revoke button -->
+              <rect x="668" y="114" width="68" height="26" rx="6" fill="#fef2f2" stroke="#fecaca"/>
+              <text x="702" y="131" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">Revoke</text>
+
+              <!-- Divider -->
+              <line x1="44" y1="152" x2="740" y2="152" stroke="#f3f4f6"/>
+
+              <!-- Row 2: CI/CD Pipeline -->
+              <rect x="24" y="152" width="732" height="52" fill="#fff"/>
+              <circle cx="44" cy="178" r="10" fill="#d6e8f3"/>
+              <text x="40" y="182" font-size="10" font-weight="700" fill="#3376A3">C</text>
+              <text x="62" y="182" font-size="13" font-weight="500" fill="#1f2937">CI/CD Pipeline</text>
+              <rect x="210" y="168" width="160" height="22" rx="4" fill="#f3f4f6"/>
+              <text x="220" y="183" font-size="11" fill="#6b7280" font-family="monospace">pk_live_****a1c2</text>
+              <text x="410" y="182" font-size="12" fill="#374151">Dec 12, 2025</text>
+              <circle cx="544" cy="178" r="3" fill="#f59e0b"/>
+              <text x="552" y="182" font-size="12" fill="#374151">Yesterday</text>
+              <rect x="668" y="166" width="68" height="26" rx="6" fill="#fef2f2" stroke="#fecaca"/>
+              <text x="702" y="183" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">Revoke</text>
+
+              <!-- Divider -->
+              <line x1="44" y1="204" x2="740" y2="204" stroke="#f3f4f6"/>
+
+              <!-- Row 3: Development -->
+              <rect x="24" y="204" width="732" height="52" fill="#fff"/>
+              <circle cx="44" cy="230" r="10" fill="#d6e8f3"/>
+              <text x="40" y="234" font-size="10" font-weight="700" fill="#3376A3">D</text>
+              <text x="62" y="234" font-size="13" font-weight="500" fill="#1f2937">Development</text>
+              <rect x="210" y="220" width="160" height="22" rx="4" fill="#f3f4f6"/>
+              <text x="220" y="235" font-size="11" fill="#6b7280" font-family="monospace">pk_test_****7e9d</text>
+              <text x="410" y="234" font-size="12" fill="#374151">Feb 14, 2026</text>
+              <circle cx="544" cy="230" r="3" fill="#d1d5db"/>
+              <text x="552" y="234" font-size="12" fill="#9ca3af">Never used</text>
+              <rect x="668" y="218" width="68" height="26" rx="6" fill="#fef2f2" stroke="#fecaca"/>
+              <text x="702" y="235" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">Revoke</text>
+
+              <!-- Bottom info bar -->
+              <rect x="24" y="272" width="732" height="1" fill="#e5e7eb"/>
+              <rect x="24" y="288" width="732" height="44" rx="6" fill="#f9fafb"/>
+              <!-- Info icon -->
+              <circle cx="48" cy="310" r="9" fill="#d6e8f3"/>
+              <text x="44" y="314" font-size="11" font-weight="700" fill="#3376A3">i</text>
+              <text x="66" y="307" font-size="11" fill="#6b7280">Tokens are shown only once at creation. Store them securely in environment variables or a secrets manager.</text>
+              <text x="66" y="322" font-size="11" fill="#6b7280">Revoked tokens are invalidated immediately. Rate limit: 60 requests/min per token.</text>
+            </svg>
+            <figcaption class="image-placeholder__caption">API token management page in project settings</figcaption>
+          </figure>
+
+          <h2 id="authentication">Authentication</h2>
+          <p>All API requests must include your token in the <code>Authorization</code> header using the Bearer scheme. Requests without a valid token will receive a <code>401 Unauthorized</code> response.</p>
+
+          <div class="code-block">
+            <div class="code-block__header">HTTP Request</div>
+            <div class="code-block__body"><code>GET /api/v1/tasks HTTP/1.1
+Host: your-project.app.pathpro.co
+Authorization: Bearer YOUR_API_TOKEN
+Accept: application/json</code></div>
+          </div>
+
+          <p>All API responses are returned in JSON format. Make sure to include the <code>Accept: application/json</code> header in your requests to ensure consistent response formatting. For requests that send data (POST, PUT), also include <code>Content-Type: application/json</code>.</p>
+
+          <h2 id="task-endpoints">Task Endpoints</h2>
+          <p>The Tasks API allows you to create, read, update, and delete tasks within your project. All task endpoints are scoped to the project associated with your API token.</p>
+
+          <h3 id="list-tasks">List Tasks</h3>
+          <p>Retrieve a paginated list of all tasks in your project. Results are returned in reverse chronological order by default, with 25 tasks per page. You can filter by task group, status, or assignee using query parameters.</p>
+
+          <div class="code-block">
+            <div class="code-block__header">HTTP Request</div>
+            <div class="code-block__body"><code>GET /api/v1/tasks HTTP/1.1
+Host: your-project.app.pathpro.co
+Authorization: Bearer YOUR_API_TOKEN
+Accept: application/json</code></div>
+          </div>
+
+          <div class="code-block">
+            <div class="code-block__header">JSON Response (200 OK)</div>
+            <div class="code-block__body"><code>{
+  "data": [
+    {
+      "id": 1,
+      "title": "Implement dark mode",
+      "description": "Add dark mode support across all pages",
+      "status": "in_progress",
+      "task_group_id": 3,
+      "assigned_to": 12,
+      "position": 1,
+      "created_at": "2026-01-15T10:30:00Z",
+      "updated_at": "2026-02-10T14:22:00Z"
+    }
+  ],
+  "meta": {
+    "current_page": 1,
+    "last_page": 4,
+    "per_page": 25,
+    "total": 87
+  }
+}</code></div>
+          </div>
+
+          <h3 id="get-single-task">Get Single Task</h3>
+          <p>Retrieve detailed information about a specific task, including its subtasks, comments count, and full description.</p>
+
+          <div class="code-block">
+            <div class="code-block__header">HTTP Request</div>
+            <div class="code-block__body"><code>GET /api/v1/tasks/1 HTTP/1.1
+Host: your-project.app.pathpro.co
+Authorization: Bearer YOUR_API_TOKEN
+Accept: application/json</code></div>
+          </div>
+
+          <div class="code-block">
+            <div class="code-block__header">JSON Response (200 OK)</div>
+            <div class="code-block__body"><code>{
+  "data": {
+    "id": 1,
+    "title": "Implement dark mode",
+    "description": "Add dark mode support across all pages",
+    "status": "in_progress",
+    "task_group_id": 3,
+    "assigned_to": 12,
+    "position": 1,
+    "subtasks_count": 4,
+    "comments_count": 7,
+    "created_at": "2026-01-15T10:30:00Z",
+    "updated_at": "2026-02-10T14:22:00Z"
+  }
+}</code></div>
+          </div>
+
+          <h3 id="create-task">Create Task</h3>
+          <p>Create a new task in your project. The <code>title</code> and <code>task_group_id</code> fields are required. All other fields are optional and will use sensible defaults if omitted.</p>
+
+          <div class="code-block">
+            <div class="code-block__header">HTTP Request</div>
+            <div class="code-block__body"><code>POST /api/v1/tasks HTTP/1.1
+Host: your-project.app.pathpro.co
+Authorization: Bearer YOUR_API_TOKEN
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Add export to CSV",
+  "description": "Allow users to export task lists as CSV files",
+  "task_group_id": 3,
+  "status": "planned",
+  "assigned_to": 12
+}</code></div>
+          </div>
+
+          <div class="code-block">
+            <div class="code-block__header">JSON Response (201 Created)</div>
+            <div class="code-block__body"><code>{
+  "data": {
+    "id": 88,
+    "title": "Add export to CSV",
+    "description": "Allow users to export task lists as CSV files",
+    "status": "planned",
+    "task_group_id": 3,
+    "assigned_to": 12,
+    "position": 15,
+    "created_at": "2026-02-17T09:15:00Z",
+    "updated_at": "2026-02-17T09:15:00Z"
+  }
+}</code></div>
+          </div>
+
+          <h3 id="update-task">Update Task</h3>
+          <p>Update an existing task. You only need to include the fields you want to change — omitted fields will retain their current values. This is a partial update (PATCH-style behavior on a PUT endpoint).</p>
+
+          <div class="code-block">
+            <div class="code-block__header">HTTP Request</div>
+            <div class="code-block__body"><code>PUT /api/v1/tasks/88 HTTP/1.1
+Host: your-project.app.pathpro.co
+Authorization: Bearer YOUR_API_TOKEN
+Content-Type: application/json
+Accept: application/json
+
+{
+  "status": "in_progress",
+  "assigned_to": 5
+}</code></div>
+          </div>
+
+          <div class="code-block">
+            <div class="code-block__header">JSON Response (200 OK)</div>
+            <div class="code-block__body"><code>{
+  "data": {
+    "id": 88,
+    "title": "Add export to CSV",
+    "description": "Allow users to export task lists as CSV files",
+    "status": "in_progress",
+    "task_group_id": 3,
+    "assigned_to": 5,
+    "position": 15,
+    "created_at": "2026-02-17T09:15:00Z",
+    "updated_at": "2026-02-17T11:42:00Z"
+  }
+}</code></div>
+          </div>
+
+          <h3 id="delete-task">Delete Task</h3>
+          <p>Permanently delete a task and all of its associated subtasks and comments. This action cannot be undone, so use it with caution. The API returns a <code>204 No Content</code> response on successful deletion.</p>
+
+          <div class="code-block">
+            <div class="code-block__header">HTTP Request</div>
+            <div class="code-block__body"><code>DELETE /api/v1/tasks/88 HTTP/1.1
+Host: your-project.app.pathpro.co
+Authorization: Bearer YOUR_API_TOKEN
+Accept: application/json</code></div>
+          </div>
+
+          <div class="code-block">
+            <div class="code-block__header">Response (204 No Content)</div>
+            <div class="code-block__body"><code>(empty response body)</code></div>
+          </div>
+
+          <h2 id="rate-limiting">Rate Limiting</h2>
+          <p>To ensure fair usage and platform stability, the PathPro API enforces rate limits on all endpoints. The default limit is <strong>60 requests per minute</strong> per API token. If you exceed this limit, the API returns a <code>429 Too Many Requests</code> response.</p>
+          <p>Every API response includes rate limit headers so you can monitor your usage programmatically:</p>
+          <ul>
+            <li><code>X-RateLimit-Limit</code> — Your maximum requests per minute (e.g., 60).</li>
+            <li><code>X-RateLimit-Remaining</code> — How many requests you have left in the current window.</li>
+            <li><code>X-RateLimit-Reset</code> — Unix timestamp indicating when the rate limit window resets.</li>
+          </ul>
+          <p>If you need higher rate limits for a specific integration, contact PathPro support. Higher-tier plans may include increased API rate limits as part of the subscription.</p>
+
+          <h2 id="revoking-tokens">Revoking Tokens</h2>
+          <p>You can revoke any API token at any time from the <strong>Settings > API</strong> page. Click the revoke button next to the token you want to disable. Revocation is immediate — any requests using that token will start receiving <code>401 Unauthorized</code> responses right away.</p>
+          <p>It's good practice to rotate tokens periodically, especially if team members who had access to a token leave the organization. To rotate a token, create a new one, update your integration to use the new token, verify that everything works, and then revoke the old token.</p>
+          <p>If you suspect a token has been compromised, revoke it immediately and create a replacement. There is no limit to the number of tokens you can create per project, so you can maintain separate tokens for each integration and rotate them independently.</p>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Use Case Shout-Out</div>
+              <div class="callout__text">Use the API to sync PathPro tasks with your internal project management tool, or build custom integrations with your CI/CD pipeline.</div>
+            </div>
+          </div>
+
+          <nav class="article__nav">
+            <a href="pathfox-ai.html" class="article__nav-link article__nav-link--prev">
+              <span class="article__nav-label">← Previous</span>
+              <span class="article__nav-title">PathFox Product Intelligence</span>
+            </a>
+            <a href="custom-domains.html" class="article__nav-link article__nav-link--next">
+              <span class="article__nav-label">Next →</span>
+              <span class="article__nav-title">Custom Domains &amp; Branding</span>
+            </a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../../js/sidebar.js"></script>
+  <script src="../../js/toc.js"></script>
+  <script src="../../js/search.js"></script>
+</body>
+</html>

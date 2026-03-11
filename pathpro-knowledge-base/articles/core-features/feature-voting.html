@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Voting — PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="../../index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Getting Started <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../getting-started/creating-your-first-project.html" class="sidebar__link">Creating Your First Project</a></li>
+            <li><a href="../getting-started/quick-start-guide.html" class="sidebar__link">Quick Start Guide</a></li>
+            <li><a href="../getting-started/roles-and-permissions.html" class="sidebar__link">Roles &amp; Permissions</a></li>
+            <li><a href="../getting-started/publish-your-project.html" class="sidebar__link">Publish Your Project</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Core Features <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="roadmap-and-tasks.html" class="sidebar__link">Roadmap &amp; Tasks</a></li>
+            <li><a href="feature-voting.html" class="sidebar__link">Feature Voting</a></li>
+            <li><a href="release-notes.html" class="sidebar__link">Release Notes</a></li>
+            <li><a href="community-submissions.html" class="sidebar__link">Community Submissions</a></li>
+            <li><a href="support-tickets.html" class="sidebar__link">Support Tickets</a></li>
+            <li><a href="community-members.html" class="sidebar__link">Community Members</a></li>
+            <li><a href="team-management.html" class="sidebar__link">Team Management</a></li>
+            <li><a href="comments-and-discussions.html" class="sidebar__link">Comments &amp; Discussions</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Advanced <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../advanced/pathfox-ai.html" class="sidebar__link">PathFox Product Intelligence</a></li>
+            <li><a href="../advanced/developer-api.html" class="sidebar__link">Developer API</a></li>
+            <li><a href="../advanced/custom-domains.html" class="sidebar__link">Custom Domains &amp; Branding</a></li>
+            <li><a href="../advanced/header-and-design.html" class="sidebar__link">Header &amp; Design</a></li>
+            <li><a href="../advanced/analytics-dashboard.html" class="sidebar__link">Analytics Dashboard</a></li>
+            <li><a href="../advanced/billing-and-plans.html" class="sidebar__link">Billing &amp; Plans</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Best Practices <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../best-practices/feature-voting-campaigns.html" class="sidebar__link">Feature Voting Campaigns</a></li>
+            <li><a href="../best-practices/public-roadmap.html" class="sidebar__link">Public Roadmap Strategy</a></li>
+            <li><a href="../best-practices/closing-the-feedback-loop.html" class="sidebar__link">Closing the Feedback Loop</a></li>
+            <li><a href="../best-practices/community-engagement.html" class="sidebar__link">Community Engagement</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="roadmap-and-tasks.html">Core Features</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Feature Voting</span>
+        </nav>
+
+        <article class="article">
+          <h1>Feature Voting</h1>
+          <p class="article__intro">Feature voting lets your community tell you what matters most to them. Instead of guessing which features to build next, you can let the people who use your product propose ideas and vote on each other's suggestions -- giving you a data-driven signal for prioritization.</p>
+
+          <div class="toc"></div>
+
+          <h2 id="how-feature-voting-works">How Feature Voting Works</h2>
+          <p>The feature voting system creates a two-way conversation between your team and your community. Here's the overall flow:</p>
+          <ol>
+            <li><strong>Features are added</strong> -- Either your team creates features directly, or community members submit ideas that get promoted to the voting board.</li>
+            <li><strong>Community votes</strong> -- Registered community members browse the feature list and upvote the ones they care about most. Each person gets one vote per feature.</li>
+            <li><strong>Rankings emerge</strong> -- Features naturally sort by popularity, giving your team a clear picture of demand.</li>
+            <li><strong>Team takes action</strong> -- When a feature accumulates enough interest, your team can confirm it and adopt it to the roadmap as a task.</li>
+          </ol>
+          <p>This cycle keeps your product development aligned with what your users actually want. Instead of relying on the loudest voice in the room or internal assumptions, you have quantifiable data showing which features will deliver the most value to the most people.</p>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Why It Matters</div>
+              <div class="callout__text">Feature voting eliminates guesswork from your product roadmap. When your community can directly influence what gets built next, you ship features that people actually want -- reducing wasted development effort and increasing user satisfaction.</div>
+            </div>
+          </div>
+
+          <h2 id="feature-types">Feature Types</h2>
+          <p>Every feature in PathPro is categorized by type, which helps both your team and your community quickly understand what kind of request they're looking at. Feature types include:</p>
+          <ul>
+            <li><strong>Enhancement</strong> -- A request to improve or extend existing functionality. These are the most common type and represent incremental improvements to your product.</li>
+            <li><strong>Bug</strong> -- A report of something that isn't working correctly. Surfacing bugs through the voting system lets your community help you prioritize which fixes matter most.</li>
+            <li><strong>Integration</strong> -- A request to connect your product with a third-party tool or service. Integration requests often cluster around a few popular tools, making vote counts especially useful for prioritization.</li>
+            <li><strong>New Feature</strong> -- A request for entirely new functionality that doesn't exist yet. These tend to generate the most discussion and votes.</li>
+          </ul>
+          <p>Each type is displayed with a distinct color-coded chip on the feature card, making it easy to visually scan the voting board and distinguish between different kinds of requests. Your team can filter the feature list by type to focus on a specific category during planning sessions.</p>
+
+          <figure class="image-placeholder" style="border:none; background:none; padding:0; margin:24px 0;">
+            <img src="../../doc_images/feature-voting.png" alt="Voting page list view with feature types, vote counts, and group filters" style="width:100%; border-radius:8px; border:1px solid #e5e7eb;">
+            <figcaption class="image-placeholder__caption">Voting page list view with feature types, vote counts, and group filters</figcaption>
+          </figure>
+
+          <h2 id="view-modes-and-filtering">View Modes and Filtering</h2>
+          <p>PathPro's voting page supports two view modes so your community can browse features in the layout that works best for them:</p>
+          <ul>
+            <li><strong>List View</strong> -- A compact, scannable list showing the feature title, type chip, vote count, and status. Best for quickly reviewing many features at once.</li>
+            <li><strong>Grid View</strong> -- A card-based layout that shows more detail per feature, including a description preview and the feature author. Better for exploring individual features in depth.</li>
+          </ul>
+          <p>Both views support the same filtering and sorting options:</p>
+          <ul>
+            <li><strong>Filter by Type</strong> -- Show only Enhancements, Bugs, Integrations, or New Features.</li>
+            <li><strong>Filter by Status</strong> -- Focus on features that are open for voting, confirmed, or already in progress.</li>
+            <li><strong>Filter by Source</strong> -- See features created by team members vs. community submissions.</li>
+            <li><strong>Sort by Votes</strong> -- Rank features by total vote count to surface the most popular ideas.</li>
+            <li><strong>Sort by Recent</strong> -- See the newest features first.</li>
+          </ul>
+          <p>Filters persist during your session, so you can combine them -- for example, showing only "Enhancement" features sorted by votes -- to get exactly the view you need. Your team can use these same filters during sprint planning to identify the highest-impact features to adopt.</p>
+
+          <h2 id="upvoting-mechanics">Upvoting Mechanics</h2>
+          <p>Upvoting is the core interaction on the feature voting page. Here's how it works:</p>
+          <p>Any registered community member can upvote a feature by clicking the vote button on its card. Each user gets exactly <strong>one vote per feature</strong> -- there's no way to vote multiple times on the same item. This ensures that vote counts accurately represent the number of people who want a feature, not the enthusiasm of a few power users.</p>
+          <p>Votes can be removed at any time. If a community member changes their mind or accidentally votes, they can click the vote button again to retract their vote. The total count updates in real time.</p>
+          <p>Vote counts are displayed prominently on every feature card, along with the current ranking. The ranking is simply the position of the feature when the list is sorted by total votes. This makes it easy for your community to see where their favorite features stand relative to others.</p>
+          <p>Depending on your project settings, you can control whether logged-out visitors can see vote counts or if viewing counts requires registration. This lets you decide whether to use visible vote counts as social proof to encourage signups.</p>
+
+          <h2 id="feature-statuses">Feature Statuses</h2>
+          <p>Features in PathPro move through a lifecycle defined by their status. The two primary statuses visible to your community are:</p>
+          <ul>
+            <li><strong>Vote Now</strong> -- The feature is open for voting. Community members can upvote it, and it appears in the active voting list. This is the default status for newly created features.</li>
+            <li><strong>Confirmed</strong> -- Your team has reviewed the feature and decided to build it. Confirmed features remain visible on the voting page so the community knows their votes were heard, but they are visually distinguished from features still in the voting phase.</li>
+          </ul>
+          <p>Changing a feature's status to Confirmed sends a strong signal to your community. It tells them that their feedback has directly influenced your roadmap, which builds trust and encourages continued participation. Many teams announce confirmed features in their release notes or community channels to close the feedback loop.</p>
+          <p>Behind the scenes, your team can also use internal notes and comments on features to discuss feasibility, estimate effort, and decide whether to confirm or decline a request. This deliberation happens privately -- the community only sees the final status change.</p>
+
+          <h2 id="adopting-features-to-your-roadmap">Adopting Features to Your Roadmap</h2>
+          <p>When a feature has accumulated enough votes and your team decides to build it, you can adopt it directly to your roadmap. The adoption workflow bridges the gap between what your community wants and what your team is actively working on.</p>
+          <p>To adopt a feature, open its detail panel and click <strong>"Confirm This Item"</strong>. Then, you'll select the option <strong>"Confirm &amp; Add to Roadmap"</strong>. You'll be prompted to choose a task group where the new task should live and can optionally edit the title and description before it's created. PathPro automatically links the resulting task back to the original feature, so there's a clear trail from community request to roadmap item.</p>
+          <p>Once adopted, the feature's status updates to Confirmed, and anyone who voted for it can see that it's now on the roadmap. If you later ship the feature and publish release notes, the connection from vote to release note creates a complete feedback loop.</p>
+          <p>This workflow is one of PathPro's most powerful capabilities. It transforms feature voting from a passive suggestion box into an active pipeline that feeds directly into your team's sprint planning.</p>
+
+          <figure class="image-placeholder" style="border:none; background:none; padding:0; margin:24px 0; text-align:center;">
+            <img src="../../doc_images/confirm-voting-item.png" alt="Confirm and adopt a feature to your roadmap" style="width:60%; border-radius:8px; border:1px solid #e5e7eb;">
+          </figure>
+
+          <h2 id="pathfox-product-intelligence">PathFox: Next-Level Demand Analysis</h2>
+          <p>PathFox, PathPro's built-in product intelligence engine, works alongside your feature voting data to surface insights your team might otherwise miss. Rather than writing content for you, PathFox analyzes the community feedback flowing through your voting board -- identifying demand patterns, detecting duplicate requests, and gauging sentiment across your feature list.</p>
+          <p>When your voting board has dozens or hundreds of features with comments scattered across them, PathFox helps you cut through the noise. It can identify clusters of related requests that might look different on the surface but are asking for the same underlying capability. It also highlights features where community sentiment is shifting -- a feature that's gaining momentum or one where recent comments suggest frustration.</p>
+          <p>PathFox analysis is available on demand and visible only to team members. It complements your own judgment by giving you a data-driven read on what your community is telling you, so you can prioritize with confidence during triage and sprint planning sessions.</p>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Nothing Gets Lost</div>
+              <div class="callout__text">When a voting item is converted to a roadmap task, all community interactions — votes, comments, and contributor history — carry over automatically. Even after the feature ships and release notes go out, the original voters and commenters are credited, ensuring every contributor gets a shout-out when the feature goes live.</div>
+            </div>
+          </div>
+
+          <nav class="article__nav">
+            <a href="roadmap-and-tasks.html" class="article__nav-link article__nav-link--prev">
+              <span class="article__nav-label">← Previous</span>
+              <span class="article__nav-title">Roadmap &amp; Tasks</span>
+            </a>
+            <a href="release-notes.html" class="article__nav-link article__nav-link--next">
+              <span class="article__nav-label">Next →</span>
+              <span class="article__nav-title">Release Notes</span>
+            </a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../../js/sidebar.js"></script>
+  <script src="../../js/toc.js"></script>
+  <script src="../../js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating Your First Project — PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="../../index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Getting Started <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="creating-your-first-project.html" class="sidebar__link">Creating Your First Project</a></li>
+            <li><a href="quick-start-guide.html" class="sidebar__link">Quick Start Guide</a></li>
+            <li><a href="roles-and-permissions.html" class="sidebar__link">Roles &amp; Permissions</a></li>
+            <li><a href="publish-your-project.html" class="sidebar__link">Publish Your Project</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Core Features <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../core-features/roadmap-and-tasks.html" class="sidebar__link">Roadmap &amp; Tasks</a></li>
+            <li><a href="../core-features/feature-voting.html" class="sidebar__link">Feature Voting</a></li>
+            <li><a href="../core-features/release-notes.html" class="sidebar__link">Release Notes</a></li>
+            <li><a href="../core-features/community-submissions.html" class="sidebar__link">Community Submissions</a></li>
+            <li><a href="../core-features/support-tickets.html" class="sidebar__link">Support Tickets</a></li>
+            <li><a href="../core-features/community-members.html" class="sidebar__link">Community Members</a></li>
+            <li><a href="../core-features/team-management.html" class="sidebar__link">Team Management</a></li>
+            <li><a href="../core-features/comments-and-discussions.html" class="sidebar__link">Comments &amp; Discussions</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Advanced <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../advanced/pathfox-ai.html" class="sidebar__link">PathFox Product Intelligence</a></li>
+            <li><a href="../advanced/developer-api.html" class="sidebar__link">Developer API</a></li>
+            <li><a href="../advanced/custom-domains.html" class="sidebar__link">Custom Domains &amp; Branding</a></li>
+            <li><a href="../advanced/header-and-design.html" class="sidebar__link">Header &amp; Design</a></li>
+            <li><a href="../advanced/analytics-dashboard.html" class="sidebar__link">Analytics Dashboard</a></li>
+            <li><a href="../advanced/billing-and-plans.html" class="sidebar__link">Billing &amp; Plans</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__section-header">Best Practices <svg class="sidebar__section-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <ul class="sidebar__section-links">
+            <li><a href="../best-practices/feature-voting-campaigns.html" class="sidebar__link">Feature Voting Campaigns</a></li>
+            <li><a href="../best-practices/public-roadmap.html" class="sidebar__link">Public Roadmap Strategy</a></li>
+            <li><a href="../best-practices/closing-the-feedback-loop.html" class="sidebar__link">Closing the Feedback Loop</a></li>
+            <li><a href="../best-practices/community-engagement.html" class="sidebar__link">Community Engagement</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="creating-your-first-project.html">Getting Started</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Creating Your First Project</span>
+        </nav>
+
+        <article class="article">
+          <h1>Creating Your First Project</h1>
+          <p class="article__intro">Your project is the foundation of everything in PathPro. It's where your roadmap, feature voting, release notes, and community all live. Here's how to set one up.</p>
+
+          <div class="toc"></div>
+
+          <h2 id="project-creation-flow">Project Creation Flow</h2>
+          <p>After signing up and logging into PathPro, you'll be taken to your dashboard. Click the <strong>"New Project"</strong> button to start the creation wizard. The process takes about two minutes and you can always adjust settings later.</p>
+          <p>The creation form walks you through the essentials: naming your project, choosing a URL slug, configuring visibility, and setting basic preferences.</p>
+
+          <h2 id="project-name-slug-and-subdomain">Project Name, Slug &amp; Subdomain</h2>
+          <p>Every project has three identity elements:</p>
+          <ul>
+            <li><strong>Project Name</strong> — The display name your team and community will see (e.g., "Acme SaaS").</li>
+            <li><strong>Slug</strong> — A URL-safe version of your name, auto-generated but editable (e.g., <code>acme-saas</code>).</li>
+            <li><strong>Subdomain</strong> — Your project is immediately available at <code>acme-saas.app.pathpro.co</code>. You can later connect a custom domain.</li>
+          </ul>
+          <p>The slug is permanent once set, so choose carefully. It becomes part of every URL your community interacts with.</p>
+
+          <h2 id="visibility-settings">Visibility Settings</h2>
+          <p>PathPro gives you control over who can see your project:</p>
+          <ul>
+            <li><strong>Public</strong> — Anyone with the link can view your roadmap, feature voting page, and release notes. They need to register to vote or submit feedback.</li>
+            <li><strong>Private</strong> — Only invited team members and approved community members can access the project. Useful for internal tools or beta programs.</li>
+          </ul>
+          <p>You can change visibility at any time from your project settings.</p>
+
+          <h2 id="basic-project-settings">Basic Project Settings</h2>
+          <p>During creation, you can also configure:</p>
+          <ul>
+            <li><strong>Date format</strong> — Choose how dates appear throughout your project.</li>
+            <li><strong>Upvoting permissions</strong> — Control whether logged-out visitors can see vote counts or if voting requires registration.</li>
+            <li><strong>Submissions toggle</strong> — Enable or disable the community feedback button.</li>
+            <li><strong>Support tickets</strong> — Turn on the support ticket system if you want to handle customer issues directly in PathPro.</li>
+          </ul>
+
+          <figure class="image-placeholder" style="border:none; background:none; padding:0; margin:24px 0;">
+            <img src="../../doc_images/create-new-project.png" alt="Project creation form" style="width:100%; border-radius:8px; border:1px solid #e5e7eb;">
+            <figcaption class="image-placeholder__caption">Project creation form</figcaption>
+          </figure>
+
+          <h2 id="what-your-community-sees">What Your Community Sees</h2>
+          <p>Once you create your project, it's immediately live. Visitors to your subdomain will see:</p>
+          <ul>
+            <li>A clean project header with your project name and navigation tabs.</li>
+            <li>Your roadmap (if you've added task groups and tasks).</li>
+            <li>A feature voting page (once you add features).</li>
+            <li>A "Submit Feedback" button (if enabled).</li>
+            <li>A registration option so they can participate.</li>
+          </ul>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Use Case Shout-Out</div>
+              <div class="callout__text">Your project is live the moment you create it. Share your subdomain link and community members can start registering immediately.</div>
+            </div>
+          </div>
+
+          <nav class="article__nav">
+            <a href="../../index.html" class="article__nav-link article__nav-link--prev">
+              <span class="article__nav-label">← Previous</span>
+              <span class="article__nav-title">Welcome to PathPro</span>
+            </a>
+            <a href="quick-start-guide.html" class="article__nav-link article__nav-link--next">
+              <span class="article__nav-label">Next →</span>
+              <span class="article__nav-title">Quick Start Guide</span>
+            </a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../../js/sidebar.js"></script>
+  <script src="../../js/toc.js"></script>
+  <script src="../../js/search.js"></script>
+</body>
+</html>

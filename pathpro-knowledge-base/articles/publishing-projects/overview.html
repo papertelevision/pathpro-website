@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publishing Projects — PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="no-toc">
+  <div class="layout">
+
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="../../index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="overview.html">Publishing Projects</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Overview</span>
+        </nav>
+
+        <article class="article">
+          <h1>Publishing Projects</h1>
+          <p class="article__intro">PathPro provides multiple ways to present your project publicly, from sharing the full project interface via a dedicated URL to embedding individual sections as widgets on your own website. This flexibility lets you meet your audience wherever they already are.</p>
+
+          <h2 id="publishing-overview">Publishing Overview</h2>
+          <p>PathPro uses a hybrid publishing approach: the same project URL serves different views depending on who is viewing it. Admins and team members see the full internal interface — settings, management tools, and internal-only content. Community members and visitors see only the public-facing details: your roadmap, feature voting board, release notes, and other sections you've chosen to make visible.</p>
+          <p>There are three main strategies for publishing your project:</p>
+          <ul>
+            <li><strong>Full Interface (Domain/Subdomain Method)</strong> — Publish the entire project via its subdomain URL (e.g., <code>your-project.app.pathpro.co</code>) or a <a href="../advanced/custom-domains.html">custom domain</a>. Visitors get access to all public sections in one place, with navigation between your roadmap, feature voting, release notes, and more.</li>
+            <li><strong>Full Interface (Embed Method)</strong> — Use your project's main embed code to embed the complete project interface directly into any page on your website. This gives visitors the same full experience — roadmap, feature voting, release notes, and all other public sections — without leaving your site. You'll find the embed code in <strong>Settings &amp; Design → Widgets</strong>.</li>
+            <li><strong>Widgets</strong> — Embed individual sections (Feature Voting, Roadmap, Release Notes, Support) anywhere on your own website using iframe snippets. Each widget operates independently, so you can place them on different pages throughout your site.</li>
+          </ul>
+          <p>For a walkthrough of publishing the full interface, setting up direct links, and configuring custom domains, see the <a href="../getting-started/publish-your-project.html">Publish Your Project</a> getting started guide and the <a href="../advanced/custom-domains.html">Custom Domains &amp; Branding</a> article.</p>
+
+          <nav class="article__nav">
+            <a href="../core-features/comments-and-discussions.html" class="article__nav-link article__nav-link--prev">
+              <span class="article__nav-label">← Previous</span>
+              <span class="article__nav-title">Comments &amp; Discussions</span>
+            </a>
+            <a href="widgets.html" class="article__nav-link article__nav-link--next">
+              <span class="article__nav-label">Next →</span>
+              <span class="article__nav-title">Widgets</span>
+            </a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../../js/sidebar-nav.js"></script>
+  <script src="../../js/sidebar.js"></script>
+  <script src="../../js/search.js"></script>
+</body>
+</html>

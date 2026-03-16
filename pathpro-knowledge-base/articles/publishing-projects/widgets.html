@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Widgets — PathPro Knowledge Base</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="no-toc full-width">
+  <div class="layout">
+
+    <button class="sidebar__hamburger" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="sidebar__overlay"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="../../index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">P</span>
+          PathPro Docs
+        </a>
+        <div class="sidebar__search">
+          <svg class="sidebar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="sidebar__search-input" placeholder="Search docs…" aria-label="Search documentation">
+          <span class="sidebar__search-kbd">/</span>
+          <div class="search-results"></div>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content__inner">
+
+        <nav class="breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span class="breadcrumb__sep">›</span>
+          <a href="overview.html">Publishing Projects</a>
+          <span class="breadcrumb__sep">›</span>
+          <span class="breadcrumb__current">Widgets</span>
+        </nav>
+
+        <article class="article">
+          <h1>Widgets</h1>
+          <p class="article__intro">Widgets are standalone, embeddable versions of each core project section. Instead of sending visitors to your full PathPro project, you can embed specific sections directly into your own website — a feedback page, a product updates page, a support portal, or anywhere else that makes sense for your workflow.</p>
+
+          <p>To access widget embed codes, go to <strong>Settings &amp; Design → Widgets</strong> tab in your project. Each widget has customizable settings for width, height, margins, and background color. As you adjust these settings, the embed code updates in real time. When you're happy with the configuration, copy the code and paste it into any HTML page.</p>
+          <p>If you're not sure where to start, open the <strong>help (?) dropdown</strong> in your project header and look for the <strong>"How to Publish"</strong> guided tour. It walks you through the widget configuration process step by step.</p>
+
+          <h2 id="full-project-widget">Full Project Widget</h2>
+          <p>The Full Project embed places your entire PathPro project interface inside a single iframe — header, navigation, and all public sections included. Visitors can browse your roadmap, vote on features, read release notes, submit support tickets, and more, all without leaving your website. This is the simplest way to publish your project: one embed code gives your audience the complete experience.</p>
+          <p>Unlike the individual widgets below, the Full Project embed doesn't include a background color setting because the project's own styling controls the appearance. You can still configure width, height, and margins from the <strong>Settings &amp; Design → Widgets</strong> tab — it appears as the first card on the page.</p>
+          <p>To see an example of how we used this method to embed our own roadmap, <a href="https://pathpro.co/pathpro-official-roadmap.html" target="_blank" rel="noopener noreferrer">click here</a>.</p>
+
+          <h2 id="feature-voting-widget">Feature Voting Widget</h2>
+          <p>The Feature Voting widget embeds your full voting board. Visitors can browse feature requests, upvote the ones they care about, and submit new ideas — all without leaving your website. This is ideal for feedback pages where you want to capture user input in the context of your own brand and site design.</p>
+          <div style="margin: 24px 0;">
+            <iframe
+              src="https://e-commerce-platform-sprint-board-2.app.pathpro.co/widgets/feature-voting?bg=%23ffffff"
+              title="Feature Voting Widget"
+              width="100%"
+              height="600px"
+              style="border: none; margin: 15px 15px 15px 15px;"
+            ></iframe>
+          </div>
+
+          <h2 id="roadmap-widget">Roadmap Widget</h2>
+          <p>The Roadmap widget displays your public roadmap with task groups, statuses, and progress indicators. Visitors can see what you're working on, what's coming next, and what's been completed. Embed this on a product updates or "what's next" page to keep your audience informed about your development progress.</p>
+          <div style="margin: 24px 0;">
+            <iframe
+              src="https://e-commerce-platform-sprint-board-2.app.pathpro.co/widgets/roadmap?bg=%23ffffff"
+              title="Roadmap Widget"
+              width="100%"
+              height="600px"
+              style="border: none; margin: 15px 15px 15px 15px;"
+            ></iframe>
+          </div>
+
+          <h2 id="release-notes-widget">Release Notes Widget</h2>
+          <p>The Release Notes widget shows your public changelog — the latest announcements, updates, and product changes. Embed this on a changelog or "what's new" page so visitors can stay up to date with your latest releases without navigating away from your site.</p>
+          <div style="margin: 24px 0;">
+            <iframe
+              src="https://e-commerce-platform-sprint-board-2.app.pathpro.co/widgets/release-notes?bg=%23ffffff"
+              title="Release Notes Widget"
+              width="100%"
+              height="400px"
+              style="border: none; margin: 15px 15px 15px 15px;"
+            ></iframe>
+          </div>
+
+          <h2 id="support-widget">Support Widget</h2>
+          <p>The Support widget embeds a support ticket form where visitors can submit tickets directly from your website. This is perfect for a help or contact page — visitors describe their issue and submit it without needing a separate support portal or email workflow.</p>
+          <div style="margin: 24px 0;">
+            <iframe
+              src="https://e-commerce-platform-sprint-board-2.app.pathpro.co/widgets/support?bg=%23ffffff"
+              title="Support Widget"
+              width="100%"
+              height="550px"
+              style="border: none; margin: 0px 0px 0px 0px;"
+            ></iframe>
+          </div>
+
+          <div class="callout">
+            <div class="callout__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <div class="callout__content">
+              <div class="callout__label">Use Case Shout-Out</div>
+              <div class="callout__text">Embed the Feature Voting widget on your feedback page so customers can vote without leaving your site, and place the Roadmap widget on a product updates page so they can see what you're building next — all within your own brand experience.</div>
+            </div>
+          </div>
+
+          <nav class="article__nav">
+            <a href="overview.html" class="article__nav-link article__nav-link--prev">
+              <span class="article__nav-label">← Previous</span>
+              <span class="article__nav-title">Overview</span>
+            </a>
+            <a href="../advanced/pathfox-ai.html" class="article__nav-link article__nav-link--next">
+              <span class="article__nav-label">Next →</span>
+              <span class="article__nav-title">PathFox Product Intelligence</span>
+            </a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../../js/sidebar-nav.js"></script>
+  <script src="../../js/sidebar.js"></script>
+  <script src="../../js/search.js"></script>
+</body>
+</html>
